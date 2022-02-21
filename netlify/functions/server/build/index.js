@@ -460,41 +460,70 @@ init_react();
 // app/assets/logo.png
 var logo_default = "/build/_assets/logo-YWPIQDAA.png";
 
+// app/assets/website-files/PGM.png
+var PGM_default = "/build/_assets/PGM-YWG5S2U7.png";
+
+// app/assets/website-files/enter-page-art.png
+var enter_page_art_default = "/build/_assets/enter-page-art-IVFVLEQ5.png";
+
+// app/assets/website-files/enter-button.png
+var enter_button_default = "/build/_assets/enter-button-2CP4LHGG.png";
+
+// app/styles/splash.js
+init_react();
+var import_styled_components = __toModule(require("styled-components"));
+
+// app/assets/website-files/enter-page-background.png
+var enter_page_background_default = "/build/_assets/enter-page-background-GJU26JUL.png";
+
+// app/assets/fonts/HelveticaNeueLTPro-Blk.otf
+var HelveticaNeueLTPro_Blk_default = "/build/_assets/HelveticaNeueLTPro-Blk-HVYOXMFI.otf";
+
+// app/styles/splash.js
+var SplashPageContainer = import_styled_components.default.div`
+  background-image: url(${enter_page_background_default});
+  height: 100%;
+  background-repeat: repeat;
+  display: flex;
+  flex-direction: column;
+  @font-face {
+    font-family: 'Neue Helvetica Pro 95 Black';
+    src: url(${HelveticaNeueLTPro_Blk_default});
+  }
+  justify-content: center;
+  align-items: center;
+`;
+var SplashLogoContainer = import_styled_components.default.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
+var SplashLogo = import_styled_components.default.img`
+  max-width: 300px;
+`;
+var SplashBanner = import_styled_components.default.img`
+  max-width: 1600px;
+`;
+var SplashButton = import_styled_components.default.img`
+  margin-top: -70%;
+  max-width: 1600px;
+`;
+
 // route-module:/Users/jakepepple/pharoah-god-mob/pgm-landing/app/routes/index.jsx
 function Index() {
-  return /* @__PURE__ */ React.createElement("div", {
-    className: "common-container"
-  }, /* @__PURE__ */ React.createElement("div", {
-    className: "container"
-  }, /* @__PURE__ */ React.createElement("div", {
-    className: "mb-5 mb-lg-0 row"
-  }, /* @__PURE__ */ React.createElement("div", {
-    className: "col-lg-4 col-12 offset-lg-4"
-  }, /* @__PURE__ */ React.createElement("img", {
-    className: "img-fluid d-block mx-auto custom-logo pt-4",
+  return /* @__PURE__ */ React.createElement(SplashPageContainer, null, /* @__PURE__ */ React.createElement(SplashLogoContainer, null, /* @__PURE__ */ React.createElement(SplashLogo, {
     src: logo_default,
+    alt: "pgm header logo"
+  }), /* @__PURE__ */ React.createElement(SplashLogo, {
+    src: PGM_default,
     alt: "pgm header logo",
-    width: "300px",
-    height: "300px"
-  })), /* @__PURE__ */ React.createElement("div", {
-    className: "px-0 col-12"
-  }, /* @__PURE__ */ React.createElement("div", {
-    className: "mb-4 mb-lg-5 container"
-  }, /* @__PURE__ */ React.createElement("div", {
-    className: "row"
-  }, /* @__PURE__ */ React.createElement("div", {
-    className: "px-0 col-12"
-  })))), /* @__PURE__ */ React.createElement("div", {
-    style: { display: "flex", justifyContent: "center" }
-  }, /* @__PURE__ */ React.createElement("div", {
-    className: "welcome pt-lg-4 row"
-  }, /* @__PURE__ */ React.createElement("h1", {
-    className: "common-title mb-3 text-center"
-  }, "WELCOME TO", /* @__PURE__ */ React.createElement("br", null), "PGM"), /* @__PURE__ */ React.createElement("button", {
-    className: "bayc-button mb-4 w-100",
-    type: "button",
+    style: { marginTop: "-100px" }
+  })), /* @__PURE__ */ React.createElement(SplashBanner, {
+    src: enter_page_art_default
+  }), /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement(SplashButton, {
+    src: enter_button_default,
     onClick: () => window.location.href = "/home"
-  }, "ENTER"))))));
+  })));
 }
 
 // route-module:/Users/jakepepple/pharoah-god-mob/pgm-landing/app/routes/home.jsx
@@ -507,6 +536,11 @@ init_react();
 // app/components/Navbar.jsx
 init_react();
 var import_react = __toModule(require("react"));
+
+// app/assets/website-files/logo-vector.png
+var logo_vector_default = "/build/_assets/logo-vector-FDR3KCYJ.png";
+
+// app/components/Navbar.jsx
 var Navbar = () => {
   return /* @__PURE__ */ import_react.default.createElement("nav", {
     id: "nav",
@@ -516,7 +550,7 @@ var Navbar = () => {
     id: "pgm-brand",
     className: "navbar-brand"
   }, /* @__PURE__ */ import_react.default.createElement("img", {
-    src: logo_default,
+    src: logo_vector_default,
     className: "d-inline-block align-top",
     alt: "pgm logo",
     height: "75px",
@@ -531,79 +565,49 @@ var Navbar = () => {
     "data-bs-target": "#navbarToggler"
   }, /* @__PURE__ */ import_react.default.createElement("span", {
     className: "navbar-toggler-icon"
-  })), /* @__PURE__ */ import_react.default.createElement("div", {
-    className: "collapse navbar-collapse",
-    id: "navbarToggler",
-    style: { justifyContent: "space-between" }
-  }, /* @__PURE__ */ import_react.default.createElement("div", {
-    className: "navbar-nav",
-    id: "nav-bar"
-  }, /* @__PURE__ */ import_react.default.createElement("a", {
-    id: "nav-link",
-    title: "BUY AN APE",
-    href: "#/home#buy-an-ape",
-    className: "nav-link"
-  }, "BUY"), /* @__PURE__ */ import_react.default.createElement("a", {
-    id: "nav-link",
-    title: "ROADMAP",
-    href: "#/home#roadmap",
-    className: "nav-link"
-  }, "ROADMAP"), /* @__PURE__ */ import_react.default.createElement("span", {
-    id: "nav-link",
-    title: "TEAM",
-    href: "#/home#team",
-    className: "nav-link"
-  }, "TEAM"), /* @__PURE__ */ import_react.default.createElement("a", {
-    id: "nav-link",
-    title: "GALLERY",
-    href: "#/gallery",
-    "data-rb-event-key": "/gallery",
-    className: "nav-link"
-  }, "GALLERY"), /* @__PURE__ */ import_react.default.createElement("a", {
-    id: "nav-link",
-    title: "PROVENANCE",
-    href: "#/provenance",
-    "data-rb-event-key": "/provenance",
-    className: "nav-link"
-  }, "PROVENANCE"), /* @__PURE__ */ import_react.default.createElement("div", {
-    className: "nav-item dropdown"
-  }, /* @__PURE__ */ import_react.default.createElement("a", {
-    "aria-haspopup": "true",
-    "aria-expanded": "false",
-    id: "nav-dropdown",
-    href: "#",
-    className: "dropdown-toggle nav-link",
-    role: "button"
-  }, "MEMBERS"))), /* @__PURE__ */ import_react.default.createElement("div", {
-    className: "navbar-nav",
-    id: "nav-social"
-  }, /* @__PURE__ */ import_react.default.createElement("a", {
-    href: "https://www.youtube.com/watch?v=Yqga_WgX58k"
-  }, /* @__PURE__ */ import_react.default.createElement("i", {
-    className: "fa fa-youtube-play social-icon pr-lg-0"
-  })), /* @__PURE__ */ import_react.default.createElement("a", {
-    href: "https://www.instagram.com/boredapeyachtclub"
-  }, /* @__PURE__ */ import_react.default.createElement("i", {
-    className: "fa fa-instagram social-icon pr-lg-0"
-  })), /* @__PURE__ */ import_react.default.createElement("a", {
-    href: "https://twitter.com/BoredApeYC"
-  }, /* @__PURE__ */ import_react.default.createElement("i", {
-    className: "fa fa-twitter social-icon pr-lg-0"
-  })))));
+  })));
 };
 var Navbar_default = Navbar;
 
-// app/assets/banner.png
-var banner_default = "/build/_assets/banner-MPDAYSRO.png";
+// app/assets/website-files/main-page-banner.png
+var main_page_banner_default = "/build/_assets/main-page-banner-HUJNXMIU.png";
+
+// app/assets/website-files/Samples.gif
+var Samples_default = "/build/_assets/Samples-HDQTHYT7.gif";
+
+// app/assets/website-files/MintNow.png
+var MintNow_default = "/build/_assets/MintNow-DWSKTAOO.png";
+
+// app/styles/home.js
+init_react();
+var import_styled_components2 = __toModule(require("styled-components"));
+
+// app/assets/website-files/main-page-background.png
+var main_page_background_default = "/build/_assets/main-page-background-UC7JMYR3.png";
+
+// app/styles/home.js
+var HomePageContainer = import_styled_components2.default.div`
+  background-image: url(${main_page_background_default});
+  height: 100%;
+  background-repeat: repeat;
+  display: flex;
+  flex-direction: column;
+  @font-face {
+    font-family: 'Neue Helvetica Pro 95 Black';
+    src: url(${HelveticaNeueLTPro_Blk_default});
+  }
+  justify-content: center;
+  align-items: center;
+`;
 
 // route-module:/Users/jakepepple/pharoah-god-mob/pgm-landing/app/routes/home.jsx
 function Home() {
-  return /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement(Navbar_default, null), /* @__PURE__ */ React.createElement("div", {
+  return /* @__PURE__ */ React.createElement(HomePageContainer, null, /* @__PURE__ */ React.createElement(Navbar_default, null), /* @__PURE__ */ React.createElement("div", {
     className: "container"
   }), /* @__PURE__ */ React.createElement("div", {
     className: "container"
   }, /* @__PURE__ */ React.createElement("img", {
-    src: banner_default,
+    src: main_page_banner_default,
     className: "img-fluid px-0"
   })), /* @__PURE__ */ React.createElement("div", {
     className: "px-4 mt-md-4 container"
@@ -612,169 +616,30 @@ function Home() {
   }, /* @__PURE__ */ React.createElement("div", {
     className: "col"
   }, /* @__PURE__ */ React.createElement("div", {
-    className: "mb-4 row"
+    className: " row"
   }, /* @__PURE__ */ React.createElement("div", {
-    className: "mb-4 col-lg-7 col-12"
+    className: "mb-4  col-12"
   }, /* @__PURE__ */ React.createElement("h1", {
     className: "d-flex font-italic welcome-title mb-3"
   }, "WELCOME TO THE", /* @__PURE__ */ React.createElement("br", null), "PHAROAH GOD MOB"), /* @__PURE__ */ React.createElement("p", {
     className: "common-p mb-0"
-  }, "PGM is a collection of NFTs\u2014unique digital collectibles living on the Ethereum blockchain. Your Pharoah doubles as your PGM Club membership card, and grants access to members-only benefits, the first of which is access to THE BATHROOM, a collaborative graffiti board. Future areas and perks can be unlocked by the community through roadmap activation.")), /* @__PURE__ */ React.createElement("div", {
-    className: "my-lg-auto col-lg-4 col-12 offset-lg-1"
-  }, /* @__PURE__ */ React.createElement("div", {
-    className: "common-container"
-  }, /* @__PURE__ */ React.createElement("div", {
-    className: "row"
-  }, /* @__PURE__ */ React.createElement("div", {
-    className: "pb-2 pr-2 col-6"
-  }, /* @__PURE__ */ React.createElement("img", {
-    className: "img-fluid",
-    src: "https://ik.imagekit.io/bayc/assets/ape1.png",
-    alt: "ape1",
-    "aria-label": "ape1"
-  })), /* @__PURE__ */ React.createElement("div", {
-    className: "pb-2 pl-2 col-6"
-  }, /* @__PURE__ */ React.createElement("img", {
-    className: "img-fluid",
-    src: "https://ik.imagekit.io/bayc/assets/ape2.png",
-    alt: "ape2",
-    "aria-label": "ape2"
-  }))), /* @__PURE__ */ React.createElement("div", {
-    className: "row"
-  }, /* @__PURE__ */ React.createElement("div", {
-    className: "pt-2 pr-2 col-6"
-  }, /* @__PURE__ */ React.createElement("img", {
-    className: "img-fluid",
-    src: "https://ik.imagekit.io/bayc/assets/ape3.png",
-    alt: "ape3",
-    "aria-label": "ape3"
-  })), /* @__PURE__ */ React.createElement("div", {
-    className: "pt-2 pl-2 col-6"
-  }, /* @__PURE__ */ React.createElement("img", {
-    className: "img-fluid",
-    src: "https://ik.imagekit.io/bayc/assets/ape4.png",
-    "aria-label": "ape4"
-  })))))), /* @__PURE__ */ React.createElement("div", {
-    className: "row"
-  }, /* @__PURE__ */ React.createElement("div", {
-    className: "mb-3 col-12"
-  }, /* @__PURE__ */ React.createElement("h3", {
-    className: "fair-title"
-  }, "FAIR DISTRIBUTION"), /* @__PURE__ */ React.createElement("h4", {
-    className: "ponzi"
-  }, "(BONDING CURVES ARE A PONZI)")), /* @__PURE__ */ React.createElement("div", {
-    className: "mb-2 mb-lg-0 col-lg-7 col-12"
-  }, /* @__PURE__ */ React.createElement("p", {
-    className: "common-p mb-lg-0"
-  }, "There are no bonding curves here. Buying a Pharoah costs 0.08 ETH. There are no price tiers; PGM membership costs the same for everyone.")), /* @__PURE__ */ React.createElement("div", {
-    className: "col-lg-4 col-12 offset-lg-1"
-  }, /* @__PURE__ */ React.createElement("p", {
-    className: "note text-justify mb-0"
-  }, "Note: Thirty Pharoahs are being withheld from the sale. These will be used for giveaways, puzzle rewards\u2014and for the creators' PGM memberships."))))), /* @__PURE__ */ React.createElement("hr", {
-    className: "gray-line mb-5"
-  }), /* @__PURE__ */ React.createElement("div", {
+  }, "PGM is a collection of NFTs\u2014unique digital collectibles living on the Ethereum blockchain. Your Pharoah doubles as your PGM Club membership card, and grants access to members-only benefits, the first of which is access to THE BATHROOM, a collaborative graffiti board. Future areas and perks can be unlocked by the community through roadmap activation."))))), /* @__PURE__ */ React.createElement("div", {
     className: "mb-5 row"
   }, /* @__PURE__ */ React.createElement("div", {
     className: "col"
   }, /* @__PURE__ */ React.createElement("div", {
-    className: "common-container"
+    className: " row"
   }, /* @__PURE__ */ React.createElement("div", {
-    className: "row"
-  }, /* @__PURE__ */ React.createElement("div", {
-    className: "mb-3 col-lg-7 col-12"
-  }, /* @__PURE__ */ React.createElement("h2", {
-    className: "common-title mb-3"
-  }, "THE SPECS"), /* @__PURE__ */ React.createElement("p", {
-    className: "common-p"
-  }, "Each Pharoah is unique and programmatically generated from over 170 possible traits, including expression, headwear, clothing, and more. All pharoahs are dope, but some are rarer than others.", /* @__PURE__ */ React.createElement("br", null), /* @__PURE__ */ React.createElement("br", null), "The pharoahs are stored as ERC-721 tokens on the Ethereum blockchain and hosted on IPFS. (", /* @__PURE__ */ React.createElement("a", {
-    className: "link",
-    href: "#/provenance"
-  }, "See Record and Proof."), ") Purchasing an pharoah costs 0.08 ETH.", /* @__PURE__ */ React.createElement("br", null), /* @__PURE__ */ React.createElement("br", null), "To access members-only areas such as\xA0", /* @__PURE__ */ React.createElement("a", {
-    className: "link",
-    href: "#/bathroom"
-  }, "THE BATHROOM"), ", members will need to be signed into their Metamask Wallet.")), /* @__PURE__ */ React.createElement("div", {
-    className: "my-auto col-lg-4 col-12 offset-lg-1"
+    className: "mb-4  col-12"
   }, /* @__PURE__ */ React.createElement("img", {
     className: "img-fluid w-100",
-    src: "https://ik.imagekit.io/bayc/assets/mystery-ape.gif",
+    src: Samples_default,
     alt: "mystery token"
-  })))))), /* @__PURE__ */ React.createElement("hr", {
-    className: "gray-line mb-5"
-  }), /* @__PURE__ */ React.createElement("div", {
-    className: "mb-5 row"
-  }, /* @__PURE__ */ React.createElement("div", {
-    className: "col"
-  }, /* @__PURE__ */ React.createElement("div", {
-    id: "team",
-    className: "common-container"
-  }, /* @__PURE__ */ React.createElement("div", {
-    className: "row"
-  }, /* @__PURE__ */ React.createElement("div", {
-    className: "mb-3 col-lg-7 col-12"
-  }, /* @__PURE__ */ React.createElement("h2", {
-    className: "common-title mb-3"
-  }, "THE TEAM"), /* @__PURE__ */ React.createElement("p", {
-    className: "common-p"
-  }, "PGM was created by four friends who set out to make some dope art, test our skills, and try to build something (ridiculous)."), /* @__PURE__ */ React.createElement("p", {
-    className: "common-p"
-  }, /* @__PURE__ */ React.createElement("span", {
-    className: "bayc-color bold-text"
-  }, "SOMEONE."), " ", /* @__PURE__ */ React.createElement("span", {
-    className: "font-italic"
-  }, "STARCRAFT OBSESSED. EATS SMURFS.")), /* @__PURE__ */ React.createElement("p", {
-    className: "common-p"
-  }, /* @__PURE__ */ React.createElement("span", {
-    className: "bayc-color bold-text"
-  }, "SOMEONE ELSE."), " ", /* @__PURE__ */ React.createElement("span", {
-    className: "font-italic"
-  }, "REFORMED LEVERAGE ADDICT.")), /* @__PURE__ */ React.createElement("p", {
-    className: "common-p"
-  }, /* @__PURE__ */ React.createElement("span", {
-    className: "bayc-color bold-text"
-  }, "A THIRD PERSON."), " ", /* @__PURE__ */ React.createElement("span", {
-    className: "font-italic"
-  }, "SPENT ALL THEIR MONEY ON FIRST PRESSES AND PET-NAT.")), /* @__PURE__ */ React.createElement("p", {
-    className: "common-p"
-  }, /* @__PURE__ */ React.createElement("span", {
-    className: "bayc-color bold-text"
-  }, "NO SASS."), " ", /* @__PURE__ */ React.createElement("span", {
-    className: "font-italic"
-  }, " ", "HERE FOR THE NFTS. NOT FOR THE SASS."))), /* @__PURE__ */ React.createElement("div", {
-    className: "col-lg-4 col-12 offset-lg-1"
-  }, /* @__PURE__ */ React.createElement("div", {
-    className: "common-container"
-  }, /* @__PURE__ */ React.createElement("div", {
-    className: "row"
-  }, /* @__PURE__ */ React.createElement("div", {
-    className: "pb-2 pr-2 col-6"
-  }, /* @__PURE__ */ React.createElement("img", {
-    className: "img-fluid",
-    src: "https://ik.imagekit.io/bayc/assets/garga.png",
-    alt: "garga",
-    "aria-label": "garga"
-  })), /* @__PURE__ */ React.createElement("div", {
-    className: "pb-2 pl-2 col-6"
-  }, /* @__PURE__ */ React.createElement("img", {
-    className: "img-fluid",
-    src: "https://ik.imagekit.io/bayc/assets/gordy.png",
-    alt: "gordy",
-    "aria-label": "gordy"
-  }))), /* @__PURE__ */ React.createElement("div", {
-    className: "row"
-  }, /* @__PURE__ */ React.createElement("div", {
-    className: "pt-2 pr-2 col-6"
-  }, /* @__PURE__ */ React.createElement("img", {
-    className: "img-fluid",
-    src: "https://ik.imagekit.io/bayc/assets/tomato.png",
-    alt: "tomato",
-    "aria-label": "tomato"
-  })), /* @__PURE__ */ React.createElement("div", {
-    className: "pt-2 pl-2 col-6"
-  }, /* @__PURE__ */ React.createElement("img", {
-    className: "img-fluid",
-    src: "https://ik.imagekit.io/bayc/assets/sass.png",
-    "aria-label": "sass"
-  })))))))))));
+  }), /* @__PURE__ */ React.createElement("img", {
+    className: "img-fluid w-100",
+    src: MintNow_default,
+    alt: "mystery token"
+  })))))));
 }
 
 // <stdin>
