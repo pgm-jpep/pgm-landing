@@ -385,11 +385,15 @@ __export(entry_server_exports, {
 init_react();
 var import_server = __toModule(require("react-dom/server"));
 var import_remix = __toModule(require_remix());
+var import_styled_components = __toModule(require("styled-components"));
 function handleRequest(request, responseStatusCode, responseHeaders, remixContext) {
-  const markup = (0, import_server.renderToString)(/* @__PURE__ */ React.createElement(import_remix.RemixServer, {
+  const sheet = new import_styled_components.ServerStyleSheet();
+  let markup = (0, import_server.renderToString)(sheet.collectStyles(/* @__PURE__ */ React.createElement(import_remix.RemixServer, {
     context: remixContext,
     url: request.url
-  }));
+  })));
+  const styles = sheet.getStyleTags();
+  markup = markup.replace("__STYLES__", styles);
   responseHeaders.set("Content-Type", "text/html");
   return new Response("<!DOCTYPE html>" + markup, {
     status: responseStatusCode,
@@ -440,7 +444,7 @@ function App() {
   }), /* @__PURE__ */ React.createElement("meta", {
     name: "viewport",
     content: "width=device-width,initial-scale=1"
-  }), /* @__PURE__ */ React.createElement(import_remix2.Meta, null), /* @__PURE__ */ React.createElement(import_remix2.Links, null)), /* @__PURE__ */ React.createElement("body", null, /* @__PURE__ */ React.createElement(import_remix2.Outlet, null), /* @__PURE__ */ React.createElement(import_remix2.ScrollRestoration, null), /* @__PURE__ */ React.createElement(import_remix2.Scripts, null), false, /* @__PURE__ */ React.createElement("script", {
+  }), /* @__PURE__ */ React.createElement(import_remix2.Meta, null), /* @__PURE__ */ React.createElement(import_remix2.Links, null), typeof document === "undefined" ? "__STYLES__" : null), /* @__PURE__ */ React.createElement("body", null, /* @__PURE__ */ React.createElement(import_remix2.Outlet, null), /* @__PURE__ */ React.createElement(import_remix2.ScrollRestoration, null), /* @__PURE__ */ React.createElement(import_remix2.Scripts, null), false, /* @__PURE__ */ React.createElement("script", {
     src: "https:/cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js",
     integrity: "sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p",
     crossOrigin: "anonymous"
@@ -471,7 +475,7 @@ var enter_button_default = "/build/_assets/enter-button-2CP4LHGG.png";
 
 // app/styles/splash.js
 init_react();
-var import_styled_components = __toModule(require("styled-components"));
+var import_styled_components2 = __toModule(require("styled-components"));
 
 // app/assets/website-files/enter-page-background.png
 var enter_page_background_default = "/build/_assets/enter-page-background-GJU26JUL.png";
@@ -480,7 +484,7 @@ var enter_page_background_default = "/build/_assets/enter-page-background-GJU26J
 var HelveticaNeueLTPro_Blk_default = "/build/_assets/HelveticaNeueLTPro-Blk-HVYOXMFI.otf";
 
 // app/styles/splash.js
-var SplashPageContainer = import_styled_components.default.div`
+var SplashPageContainer = import_styled_components2.default.div`
   background-image: url(${enter_page_background_default});
   height: 100%;
   background-repeat: repeat;
@@ -493,18 +497,18 @@ var SplashPageContainer = import_styled_components.default.div`
   justify-content: center;
   align-items: center;
 `;
-var SplashLogoContainer = import_styled_components.default.div`
+var SplashLogoContainer = import_styled_components2.default.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
 `;
-var SplashLogo = import_styled_components.default.img`
+var SplashLogo = import_styled_components2.default.img`
   max-width: 300px;
 `;
-var SplashBanner = import_styled_components.default.img`
+var SplashBanner = import_styled_components2.default.img`
   max-width: 1600px;
 `;
-var SplashButton = import_styled_components.default.img`
+var SplashButton = import_styled_components2.default.img`
   margin-top: -70%;
   max-width: 1600px;
 `;
@@ -580,13 +584,13 @@ var MintNow_default = "/build/_assets/MintNow-DWSKTAOO.png";
 
 // app/styles/home.js
 init_react();
-var import_styled_components2 = __toModule(require("styled-components"));
+var import_styled_components3 = __toModule(require("styled-components"));
 
 // app/assets/website-files/main-page-background.png
 var main_page_background_default = "/build/_assets/main-page-background-UC7JMYR3.png";
 
 // app/styles/home.js
-var HomePageContainer = import_styled_components2.default.div`
+var HomePageContainer = import_styled_components3.default.div`
   background-image: url(${main_page_background_default});
   height: 100%;
   background-repeat: repeat;
