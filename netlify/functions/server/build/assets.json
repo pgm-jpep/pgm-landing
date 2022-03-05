@@ -1,5 +1,5 @@
 {
-  "version": "1269d52e",
+  "version": "cee3b374",
   "entry": {
     "module": "/build/entry.client-YC2SBRZX.js",
     "imports": [
@@ -11,7 +11,7 @@
     "root": {
       "id": "root",
       "path": "",
-      "module": "/build/root-QW3ICBED.js",
+      "module": "/build/root-FMV2OHIA.js",
       "hasAction": false,
       "hasLoader": false,
       "hasCatchBoundary": false,
@@ -44,5 +44,5 @@
       "hasErrorBoundary": false
     }
   },
-  "url": "/build/manifest-1269D52E.js"
+  "url": "/build/manifest-CEE3B374.js"
 }
