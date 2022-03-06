@@ -1,5 +1,5 @@
 {
-  "version": "cee3b374",
+  "version": "7a10468c",
   "entry": {
     "module": "/build/entry.client-YC2SBRZX.js",
     "imports": [
@@ -34,7 +34,7 @@
       "id": "routes/index",
       "parentId": "root",
       "index": true,
-      "module": "/build/routes/index-5HQY2EQN.js",
+      "module": "/build/routes/index-7NCKHFY3.js",
       "imports": [
         "/build/_shared/chunk-ZIAYVDQN.js"
       ],
@@ -44,5 +44,5 @@
       "hasErrorBoundary": false
     }
   },
-  "url": "/build/manifest-CEE3B374.js"
+  "url": "/build/manifest-7A10468C.js"
 }

@@ -473,19 +473,31 @@ var enter_page_art_default = "/build/_assets/enter-page-art-IVFVLEQ5.png";
 // app/assets/website-files/enter-button.png
 var enter_button_default = "/build/_assets/enter-button-2CP4LHGG.png";
 
+// app/assets/website-files/footer-bar-cropped.png
+var footer_bar_cropped_default = "/build/_assets/footer-bar-cropped-SLHOEKH5.png";
+
+// app/assets/website-files/twitter-logo.png
+var twitter_logo_default = "/build/_assets/twitter-logo-LEZRBKZK.png";
+
+// app/assets/website-files/discord-logo.png
+var discord_logo_default = "/build/_assets/discord-logo-TN2XSTQ4.png";
+
+// app/assets/website-files/instagram-logo.png
+var instagram_logo_default = "/build/_assets/instagram-logo-VFYFIZL7.png";
+
 // app/styles/splash.js
 init_react();
 var import_styled_components2 = __toModule(require("styled-components"));
 
-// app/assets/website-files/enter-page-background.png
-var enter_page_background_default = "/build/_assets/enter-page-background-GJU26JUL.png";
+// app/assets/website-files/enter-page-background-cropped.png
+var enter_page_background_cropped_default = "/build/_assets/enter-page-background-cropped-J63ZTAKJ.png";
 
 // app/assets/fonts/HelveticaNeueLTPro-Blk.otf
 var HelveticaNeueLTPro_Blk_default = "/build/_assets/HelveticaNeueLTPro-Blk-HVYOXMFI.otf";
 
 // app/styles/splash.js
 var SplashPageContainer = import_styled_components2.default.div`
-  background-image: url(${enter_page_background_default});
+  background-image: url(${enter_page_background_cropped_default});
   height: 100%;
   background-repeat: repeat;
   display: flex;
@@ -506,11 +518,31 @@ var SplashLogo = import_styled_components2.default.img`
   max-width: 300px;
 `;
 var SplashBanner = import_styled_components2.default.img`
-  max-width: 1600px;
+  width: 100%;
+  max-width: 80vw;
 `;
 var SplashButton = import_styled_components2.default.img`
   margin-top: -70%;
-  max-width: 1600px;
+  width: 100%;
+  max-width: 80vw;
+`;
+var SplashFooterContainer = import_styled_components2.default.div`
+  margin: 48px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
+var SplashFooterBar = import_styled_components2.default.img`
+  max-width: 95vw;
+`;
+var SocialLinks = import_styled_components2.default.div`
+  margin: 24px auto;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+`;
+var SocialLink = import_styled_components2.default.img`
+  max-height: 50px;
 `;
 
 // route-module:/Users/jakepepple/pharoah-god-mob/pgm-landing/app/routes/index.jsx
@@ -527,7 +559,15 @@ function Index() {
   }), /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement(SplashButton, {
     src: enter_button_default,
     onClick: () => window.location.href = "/home"
-  })));
+  })), /* @__PURE__ */ React.createElement(SplashFooterContainer, null, /* @__PURE__ */ React.createElement(SplashFooterBar, {
+    src: footer_bar_cropped_default
+  }), /* @__PURE__ */ React.createElement(SocialLinks, null, /* @__PURE__ */ React.createElement(SocialLink, {
+    src: twitter_logo_default
+  }), /* @__PURE__ */ React.createElement(SocialLink, {
+    src: discord_logo_default
+  }), /* @__PURE__ */ React.createElement(SocialLink, {
+    src: instagram_logo_default
+  }))));
 }
 
 // route-module:/Users/jakepepple/pharoah-god-mob/pgm-landing/app/routes/home.jsx
