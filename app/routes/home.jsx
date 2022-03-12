@@ -1,3 +1,4 @@
+import { IKImage, IKContext, IKUpload } from 'imagekitio-react'
 import Navbar from "~/components/Navbar";
 import Banner from "../assets/website-files/main-page-banner.png";
 import SamplesGif from "../assets/website-files/Samples.gif";
@@ -7,6 +8,8 @@ import Footer from "~/components/Footer";
 
 export default function Home() {
   return (
+    <IKContext>
+
     <HomePageContainer>
       <Navbar />
       <div className="container"></div>
@@ -57,5 +60,7 @@ export default function Home() {
       </div>
       <Footer />
     </HomePageContainer>
+    </IKContext>
+
   );
 }

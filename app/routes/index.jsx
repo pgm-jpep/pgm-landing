@@ -11,26 +11,61 @@ import {
   SplashBanner,
   SplashButton,
 } from "../styles/splash";
+import { IKContext, IKImage } from "imagekitio-react";
 
 export default function Index() {
   return (
-    <SplashPageContainer>
-      <SplashLogoContainer>
-        <SplashLogo src={Logo} alt="pgm header logo" />
-        <SplashLogo
-          src={PGM}
-          alt="pgm header logo"
-          style={{ marginTop: "-100px" }}
-        />
-      </SplashLogoContainer>
-      <SplashBanner src={SplashBannerImage} />
-      <div>
-        <SplashButton
-          src={SplashButtonImage}
-          onClick={() => (window.location.href = "/home")}
-        />
-      </div>
-      <Footer />
-    </SplashPageContainer>
+    <IKContext urlEndpoint="https://ik.imagekit.io/pgm">
+
+      <SplashPageContainer>
+        <SplashLogoContainer>
+          <IKImage
+            path="/logo-vector_1gzBYRGiHGR4.png"
+            transformation={[{
+              width: "300"
+            }]}
+            loading="lazy"
+            lqip={{active: true}}
+
+          />
+          <IKImage
+            path="/PGM_OXTYtPPw7yvd1.png"
+            transformation={[{
+              width: "300"
+            }]}
+            loading="lazy"
+            lqip={{active: true}}
+            style={{ marginTop: "-100px"}}
+          />
+        </SplashLogoContainer>
+        <SplashBanner>
+
+          <IKImage
+            path="/enter-page-art_tFjMQYASpnrT.png"
+            loading="lazy"
+            lqip={{active: true}}
+            style={{
+            width: "100%"
+            }}
+          />
+          <SplashButton
+            onClick={() => (window.location.href = "/home")}
+          >
+            <IKImage
+              path="/enter_button_cropped_toafS3QB-ntK.png"
+              transformation={[{
+                "width": "350"
+              }]}
+              loading="lazy"
+              lqip={{active: true}}
+              style={{
+                "margin": "auto"
+              }}
+            />
+          </SplashButton>
+        </SplashBanner>
+        <Footer />
+      </SplashPageContainer>
+    </IKContext>
   );
 }

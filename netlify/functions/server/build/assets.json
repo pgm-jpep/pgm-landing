@@ -1,5 +1,5 @@
 {
-  "version": "7a8b0450",
+  "version": "2bb87813",
   "entry": {
     "module": "/build/entry.client-YC2SBRZX.js",
     "imports": [
@@ -21,9 +21,9 @@
       "id": "routes/home",
       "parentId": "root",
       "path": "home",
-      "module": "/build/routes/home-VSFIOVMK.js",
+      "module": "/build/routes/home-5XVR6F5F.js",
       "imports": [
-        "/build/_shared/chunk-7XTXZCK3.js"
+        "/build/_shared/chunk-MXLDA6JL.js"
       ],
       "hasAction": false,
       "hasLoader": false,
@@ -34,9 +34,9 @@
       "id": "routes/index",
       "parentId": "root",
       "index": true,
-      "module": "/build/routes/index-FPF7NEOE.js",
+      "module": "/build/routes/index-3EPFAOL7.js",
       "imports": [
-        "/build/_shared/chunk-7XTXZCK3.js"
+        "/build/_shared/chunk-MXLDA6JL.js"
       ],
       "hasAction": false,
       "hasLoader": false,
@@ -44,5 +44,5 @@
       "hasErrorBoundary": false
     }
   },
-  "url": "/build/manifest-7A8B0450.js"
+  "url": "/build/manifest-2BB87813.js"
 }
