@@ -3,6 +3,7 @@ import Banner from "../assets/website-files/main-page-banner.png";
 import SamplesGif from "../assets/website-files/Samples.gif";
 import MintNow from "../assets/website-files/MintNow.png";
 import { HomePageContainer } from "../styles/home";
+import Footer from "~/components/Footer";
 
 export default function Home() {
   return (
@@ -54,6 +55,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Footer />
     </HomePageContainer>
   );
 }

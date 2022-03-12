@@ -27,9 +27,11 @@ export const SplashLogo = styled.img`
 `;
 
 export const SplashBanner = styled.img`
-  max-width: 1600px;
+  width: 100%;
+  max-width: 80vw;
 `;
 export const SplashButton = styled.img`
   margin-top: -70%;
-  max-width: 1600px;
-`
+  width: 100%;
+  max-width: 80vw;
+`;
