@@ -412,7 +412,7 @@ init_react();
 var import_remix2 = __toModule(require_remix());
 
 // app/styles/root.css
-var root_default = "/build/_assets/root-2BOTZCX3.css";
+var root_default = "/build/_assets/root-6UDIH6RT.css";
 
 // route-module:/Users/jakepepple/pharoah-god-mob/pgm-landing/app/root.jsx
 function meta() {
@@ -473,8 +473,11 @@ var enter_page_art_default = "/build/_assets/enter-page-art-IVFVLEQ5.png";
 // app/assets/website-files/enter-button.png
 var enter_button_default = "/build/_assets/enter-button-2CP4LHGG.png";
 
-// app/assets/website-files/footer-bar-cropped.png
-var footer_bar_cropped_default = "/build/_assets/footer-bar-cropped-SLHOEKH5.png";
+// app/components/Footer.jsx
+init_react();
+
+// app/assets/website-files/footer-bar.png
+var footer_bar_default = "/build/_assets/footer-bar-SLHOEKH5.png";
 
 // app/assets/website-files/twitter-logo.png
 var twitter_logo_default = "/build/_assets/twitter-logo-LEZRBKZK.png";
@@ -485,19 +488,55 @@ var discord_logo_default = "/build/_assets/discord-logo-TN2XSTQ4.png";
 // app/assets/website-files/instagram-logo.png
 var instagram_logo_default = "/build/_assets/instagram-logo-VFYFIZL7.png";
 
-// app/styles/splash.js
+// app/styles/footer.js
 init_react();
 var import_styled_components2 = __toModule(require("styled-components"));
+var FooterContainer = import_styled_components2.default.div`
+  margin: 48px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
+var FooterBar = import_styled_components2.default.img`
+  max-width: 95vw;
+`;
+var SocialLinks = import_styled_components2.default.div`
+  margin: 24px auto;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+`;
+var SocialLink = import_styled_components2.default.img`
+  max-height: 50px;
+`;
 
-// app/assets/website-files/enter-page-background-cropped.png
-var enter_page_background_cropped_default = "/build/_assets/enter-page-background-cropped-J63ZTAKJ.png";
+// app/components/Footer.jsx
+var Footer = () => {
+  return /* @__PURE__ */ React.createElement(FooterContainer, null, /* @__PURE__ */ React.createElement(FooterBar, {
+    src: footer_bar_default
+  }), /* @__PURE__ */ React.createElement(SocialLinks, null, /* @__PURE__ */ React.createElement(SocialLink, {
+    src: twitter_logo_default
+  }), /* @__PURE__ */ React.createElement(SocialLink, {
+    src: discord_logo_default
+  }), /* @__PURE__ */ React.createElement(SocialLink, {
+    src: instagram_logo_default
+  })));
+};
+var Footer_default = Footer;
+
+// app/styles/splash.js
+init_react();
+var import_styled_components3 = __toModule(require("styled-components"));
+
+// app/assets/website-files/enter-page-background.png
+var enter_page_background_default = "/build/_assets/enter-page-background-J63ZTAKJ.png";
 
 // app/assets/fonts/HelveticaNeueLTPro-Blk.otf
 var HelveticaNeueLTPro_Blk_default = "/build/_assets/HelveticaNeueLTPro-Blk-HVYOXMFI.otf";
 
 // app/styles/splash.js
-var SplashPageContainer = import_styled_components2.default.div`
-  background-image: url(${enter_page_background_cropped_default});
+var SplashPageContainer = import_styled_components3.default.div`
+  background-image: url(${enter_page_background_default});
   height: 100%;
   background-repeat: repeat;
   display: flex;
@@ -509,40 +548,22 @@ var SplashPageContainer = import_styled_components2.default.div`
   justify-content: center;
   align-items: center;
 `;
-var SplashLogoContainer = import_styled_components2.default.div`
+var SplashLogoContainer = import_styled_components3.default.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
 `;
-var SplashLogo = import_styled_components2.default.img`
+var SplashLogo = import_styled_components3.default.img`
   max-width: 300px;
 `;
-var SplashBanner = import_styled_components2.default.img`
+var SplashBanner = import_styled_components3.default.img`
   width: 100%;
   max-width: 80vw;
 `;
-var SplashButton = import_styled_components2.default.img`
+var SplashButton = import_styled_components3.default.img`
   margin-top: -70%;
   width: 100%;
   max-width: 80vw;
-`;
-var SplashFooterContainer = import_styled_components2.default.div`
-  margin: 48px 24px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-`;
-var SplashFooterBar = import_styled_components2.default.img`
-  max-width: 95vw;
-`;
-var SocialLinks = import_styled_components2.default.div`
-  margin: 24px auto;
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-`;
-var SocialLink = import_styled_components2.default.img`
-  max-height: 50px;
 `;
 
 // route-module:/Users/jakepepple/pharoah-god-mob/pgm-landing/app/routes/index.jsx
@@ -559,15 +580,7 @@ function Index() {
   }), /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement(SplashButton, {
     src: enter_button_default,
     onClick: () => window.location.href = "/home"
-  })), /* @__PURE__ */ React.createElement(SplashFooterContainer, null, /* @__PURE__ */ React.createElement(SplashFooterBar, {
-    src: footer_bar_cropped_default
-  }), /* @__PURE__ */ React.createElement(SocialLinks, null, /* @__PURE__ */ React.createElement(SocialLink, {
-    src: twitter_logo_default
-  }), /* @__PURE__ */ React.createElement(SocialLink, {
-    src: discord_logo_default
-  }), /* @__PURE__ */ React.createElement(SocialLink, {
-    src: instagram_logo_default
-  }))));
+  })), /* @__PURE__ */ React.createElement(Footer_default, null));
 }
 
 // route-module:/Users/jakepepple/pharoah-god-mob/pgm-landing/app/routes/home.jsx
@@ -579,27 +592,28 @@ init_react();
 
 // app/components/Navbar.jsx
 init_react();
-var import_react = __toModule(require("react"));
 
 // app/assets/website-files/logo-vector.png
 var logo_vector_default = "/build/_assets/logo-vector-FDR3KCYJ.png";
 
 // app/components/Navbar.jsx
 var Navbar = () => {
-  return /* @__PURE__ */ import_react.default.createElement("nav", {
+  return /* @__PURE__ */ React.createElement("div", {
+    className: "container"
+  }, /* @__PURE__ */ React.createElement("nav", {
     id: "nav",
     className: "navbar navbar-expand-md navbar-light sticky-top"
-  }, /* @__PURE__ */ import_react.default.createElement("a", {
+  }, /* @__PURE__ */ React.createElement("a", {
     href: "#/",
     id: "pgm-brand",
     className: "navbar-brand"
-  }, /* @__PURE__ */ import_react.default.createElement("img", {
+  }, /* @__PURE__ */ React.createElement("img", {
     src: logo_vector_default,
     className: "d-inline-block align-top",
     alt: "pgm logo",
     height: "75px",
     width: "auto"
-  })), /* @__PURE__ */ import_react.default.createElement("button", {
+  })), /* @__PURE__ */ React.createElement("button", {
     "aria-controls": "responsive-navbar-nav",
     id: "nav-toggle",
     type: "button",
@@ -607,9 +621,9 @@ var Navbar = () => {
     className: "navbar-dark navbar-toggler",
     "data-bs-toggle": "collapse",
     "data-bs-target": "#navbarToggler"
-  }, /* @__PURE__ */ import_react.default.createElement("span", {
+  }, /* @__PURE__ */ React.createElement("span", {
     className: "navbar-toggler-icon"
-  })));
+  }))));
 };
 var Navbar_default = Navbar;
 
@@ -624,24 +638,20 @@ var MintNow_default = "/build/_assets/MintNow-DWSKTAOO.png";
 
 // app/styles/home.js
 init_react();
-var import_styled_components3 = __toModule(require("styled-components"));
+var import_styled_components4 = __toModule(require("styled-components"));
 
 // app/assets/website-files/main-page-background.png
-var main_page_background_default = "/build/_assets/main-page-background-UC7JMYR3.png";
+var main_page_background_default = "/build/_assets/main-page-background-FLVPU6QJ.png";
 
 // app/styles/home.js
-var HomePageContainer = import_styled_components3.default.div`
+var HomePageContainer = import_styled_components4.default.div`
   background-image: url(${main_page_background_default});
   height: 100%;
   background-repeat: repeat;
-  display: flex;
-  flex-direction: column;
   @font-face {
     font-family: 'Neue Helvetica Pro 95 Black';
     src: url(${HelveticaNeueLTPro_Blk_default});
   }
-  justify-content: center;
-  align-items: center;
 `;
 
 // route-module:/Users/jakepepple/pharoah-god-mob/pgm-landing/app/routes/home.jsx
@@ -683,7 +693,7 @@ function Home() {
     className: "img-fluid w-100",
     src: MintNow_default,
     alt: "mystery token"
-  })))))));
+  })))))), /* @__PURE__ */ React.createElement(Footer_default, null));
 }
 
 // <stdin>

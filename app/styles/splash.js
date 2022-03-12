@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import SplashBackgroundImage from '../assets/website-files/enter-page-background-cropped.png';
+import SplashBackgroundImage from '../assets/website-files/enter-page-background.png';
 import HelveticaNeueLTPro from '../assets/fonts/HelveticaNeueLTPro-Blk.otf';
 
 export const SplashPageContainer = styled.div`
@@ -34,23 +34,4 @@ export const SplashButton = styled.img`
   margin-top: -70%;
   width: 100%;
   max-width: 80vw;
-`;
-
-export const SplashFooterContainer = styled.div`
-  margin: 48px 24px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-`;
-export const SplashFooterBar = styled.img`
-  max-width: 95vw;
-`;
-export const SocialLinks = styled.div`
-  margin: 24px auto;
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-`;
-export const SocialLink = styled.img`
-  max-height: 50px;
 `;
