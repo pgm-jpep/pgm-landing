@@ -571,8 +571,7 @@ function Index() {
       width: "500"
     }],
     loading: "lazy",
-    lqip: { active: true },
-    style: { marginTop: "50px" }
+    lqip: { active: true }
   }), /* @__PURE__ */ React.createElement(import_imagekitio_react.IKImage, {
     path: "/PGM_OXTYtPPw7yvd1.png",
     transformation: [{
@@ -580,7 +579,7 @@ function Index() {
     }],
     loading: "lazy",
     lqip: { active: true },
-    style: { marginTop: "-150px" }
+    style: { maxWidth: "300px", margin: "-130px auto 0px" }
   })), /* @__PURE__ */ React.createElement(SplashBanner, null, /* @__PURE__ */ React.createElement(import_imagekitio_react.IKImage, {
     path: "/enter-page-art_tFjMQYASpnrT.png",
     loading: "lazy",

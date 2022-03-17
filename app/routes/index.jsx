@@ -26,8 +26,6 @@ export default function Index() {
             }]}
             loading="lazy"
             lqip={{active: true}}
-            style={{marginTop: "50px"}}
-
           />
           <IKImage
             path="/PGM_OXTYtPPw7yvd1.png"
@@ -36,7 +34,7 @@ export default function Index() {
             }]}
             loading="lazy"
             lqip={{active: true}}
-            style={{ marginTop: "-150px"}}
+            style={{ maxWidth: "300px", margin: "-130px auto 0px"}}
           />
         </SplashLogoContainer>
         <SplashBanner>
