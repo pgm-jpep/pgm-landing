@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-// import SplashBackgroundImage from '../assets/website-files/enter-page-background.png';
 
 import HelveticaNeueLTPro from '../assets/fonts/HelveticaNeueLTPro-Blk.otf';
 
@@ -41,4 +40,5 @@ export const SplashButton = styled.div`
   position: absolute;
   top: 45%;
   display: flex;
+  cursor: pointer;
 `;

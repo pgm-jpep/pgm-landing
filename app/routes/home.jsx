@@ -21,18 +21,14 @@ export default function Home() {
           <div className="col">
             <div className=" row">
               <div className="mb-4  col-12">
-                <h1 className="d-flex font-italic welcome-title mb-3">
-                  WELCOME TO THE
-                  <br />
-                  PHAROAH GOD MOB
+                <h1 className="d-flex welcome-title mb-3">
+                  WELCOME TO THE PHAROAH GOD MOB
                 </h1>
                 <p className="common-p mb-0">
-                  PGM is a collection of NFTs—unique digital collectibles living
-                  on the Ethereum blockchain. Your Pharoah doubles as your PGM
-                  Club membership card, and grants access to members-only
-                  benefits, the first of which is access to THE BATHROOM, a
-                  collaborative graffiti board. Future areas and perks can be
-                  unlocked by the community through roadmap activation.
+                  PGM is a collection of 5,000 NFTs existing on the ethereum
+                  blockchain. Each unique digital illustration signifies your
+                  seat in the mob. Those on the inside benefit from all future
+                  roadmap endeavors.
                 </p>
               </div>
             </div>

@@ -555,6 +555,7 @@ var SplashButton = import_styled_components3.default.div`
   position: absolute;
   top: 45%;
   display: flex;
+  cursor: pointer;
 `;
 
 // route-module:/Users/jakepepple/pharoah-god-mob/pgm-landing/app/routes/index.jsx
@@ -562,21 +563,24 @@ var import_imagekitio_react = __toModule(require("imagekitio-react"));
 function Index() {
   return /* @__PURE__ */ React.createElement(import_imagekitio_react.IKContext, {
     urlEndpoint: "https://ik.imagekit.io/pgm"
-  }, /* @__PURE__ */ React.createElement(SplashPageContainer, null, /* @__PURE__ */ React.createElement(SplashLogoContainer, null, /* @__PURE__ */ React.createElement(import_imagekitio_react.IKImage, {
-    path: "/logo-vector_1gzBYRGiHGR4.png",
+  }, /* @__PURE__ */ React.createElement(SplashPageContainer, null, /* @__PURE__ */ React.createElement(SplashLogoContainer, {
+    style: { maxWidth: "400px" }
+  }, /* @__PURE__ */ React.createElement(import_imagekitio_react.IKImage, {
+    path: "/w-pharaoh_yBUimLV0dw.gif",
     transformation: [{
-      width: "300"
-    }],
-    loading: "lazy",
-    lqip: { active: true }
-  }), /* @__PURE__ */ React.createElement(import_imagekitio_react.IKImage, {
-    path: "/PGM_OXTYtPPw7yvd1.png",
-    transformation: [{
-      width: "300"
+      width: "500"
     }],
     loading: "lazy",
     lqip: { active: true },
-    style: { marginTop: "-100px" }
+    style: { marginTop: "50px" }
+  }), /* @__PURE__ */ React.createElement(import_imagekitio_react.IKImage, {
+    path: "/PGM_OXTYtPPw7yvd1.png",
+    transformation: [{
+      width: "500"
+    }],
+    loading: "lazy",
+    lqip: { active: true },
+    style: { marginTop: "-150px" }
   })), /* @__PURE__ */ React.createElement(SplashBanner, null, /* @__PURE__ */ React.createElement(import_imagekitio_react.IKImage, {
     path: "/enter-page-art_tFjMQYASpnrT.png",
     loading: "lazy",
@@ -691,10 +695,10 @@ function Home() {
   }, /* @__PURE__ */ React.createElement("div", {
     className: "mb-4  col-12"
   }, /* @__PURE__ */ React.createElement("h1", {
-    className: "d-flex font-italic welcome-title mb-3"
-  }, "WELCOME TO THE", /* @__PURE__ */ React.createElement("br", null), "PHAROAH GOD MOB"), /* @__PURE__ */ React.createElement("p", {
+    className: "d-flex welcome-title mb-3"
+  }, "WELCOME TO THE PHAROAH GOD MOB"), /* @__PURE__ */ React.createElement("p", {
     className: "common-p mb-0"
-  }, "PGM is a collection of NFTs\u2014unique digital collectibles living on the Ethereum blockchain. Your Pharoah doubles as your PGM Club membership card, and grants access to members-only benefits, the first of which is access to THE BATHROOM, a collaborative graffiti board. Future areas and perks can be unlocked by the community through roadmap activation."))))), /* @__PURE__ */ React.createElement("div", {
+  }, "PGM is a collection of 5,000 NFTs existing on the ethereum blockchain. Each unique digital illustration signifies your seat in the mob. Those on the inside benefit from all future roadmap endeavors."))))), /* @__PURE__ */ React.createElement("div", {
     className: "mb-5 row"
   }, /* @__PURE__ */ React.createElement("div", {
     className: "col"

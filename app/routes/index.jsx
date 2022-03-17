@@ -18,24 +18,25 @@ export default function Index() {
     <IKContext urlEndpoint="https://ik.imagekit.io/pgm">
 
       <SplashPageContainer>
-        <SplashLogoContainer>
+        <SplashLogoContainer style={{maxWidth: '400px'}}>
           <IKImage
-            path="/logo-vector_1gzBYRGiHGR4.png"
+            path="/w-pharaoh_yBUimLV0dw.gif"
             transformation={[{
-              width: "300"
+              width: "500"
             }]}
             loading="lazy"
             lqip={{active: true}}
+            style={{marginTop: "50px"}}
 
           />
           <IKImage
             path="/PGM_OXTYtPPw7yvd1.png"
             transformation={[{
-              width: "300"
+              width: "500"
             }]}
             loading="lazy"
             lqip={{active: true}}
-            style={{ marginTop: "-100px"}}
+            style={{ marginTop: "-150px"}}
           />
         </SplashLogoContainer>
         <SplashBanner>
