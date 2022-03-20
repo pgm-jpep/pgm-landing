@@ -10,7 +10,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 0.5rem 1rem;
+    min-height: 130px;
 }
 #nav {
     max-width: 1200px;

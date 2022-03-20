@@ -1,16 +1,28 @@
-import Logo from '../assets/website-files/logo-vector.png'
+import { IKImage } from 'imagekitio-react';
+
+/**
+ * Links:
+ * - Vision
+ * - Team
+ * - Mint Now
+ * - Home
+ *
+ */
+
 
 const Navbar = () => {
   return (
     <div className="container">
       <nav id="nav" className="navbar navbar-expand-md navbar-light sticky-top">
         <a href="#/" id="pgm-brand" className="navbar-brand">
-          <img
-            src={Logo}
-            className="d-inline-block align-top"
-            alt="pgm logo"
-            height="75px"
-            width="auto"
+
+          <IKImage
+            path="/logo-vector_1gzBYRGiHGR4.png"
+            transformation={[{
+              height: "130"
+            }]}
+            loading="lazy"
+            lqip={{active: true}}
           />
         </a>
         <button
