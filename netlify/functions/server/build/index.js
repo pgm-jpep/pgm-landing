@@ -412,7 +412,7 @@ init_react();
 var import_remix2 = __toModule(require_remix());
 
 // app/styles/root.css
-var root_default = "/build/_assets/root-6UDIH6RT.css";
+var root_default = "/build/_assets/root-UXWZWFM4.css";
 
 // route-module:/Users/jakepepple/pharoah-god-mob/pgm-landing/app/root.jsx
 function meta() {
@@ -463,30 +463,20 @@ init_react();
 
 // app/components/Footer.jsx
 init_react();
-
-// app/assets/website-files/footer-bar.png
-var footer_bar_default = "/build/_assets/footer-bar-SLHOEKH5.png";
-
-// app/assets/website-files/twitter-logo.png
-var twitter_logo_default = "/build/_assets/twitter-logo-LEZRBKZK.png";
-
-// app/assets/website-files/discord-logo.png
-var discord_logo_default = "/build/_assets/discord-logo-TN2XSTQ4.png";
-
-// app/assets/website-files/instagram-logo.png
-var instagram_logo_default = "/build/_assets/instagram-logo-VFYFIZL7.png";
+var import_imagekitio_react = __toModule(require("imagekitio-react"));
 
 // app/styles/footer.js
 init_react();
 var import_styled_components2 = __toModule(require("styled-components"));
 var FooterContainer = import_styled_components2.default.div`
-  margin: 96px 24px 24px;
+  margin: 12px 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 `;
 var FooterBar = import_styled_components2.default.img`
-  max-width: 95vw;
+  width: 100%;
+  max-width: 1200px;
 `;
 var SocialLinks = import_styled_components2.default.div`
   margin: 24px auto;
@@ -499,15 +489,65 @@ var SocialLink = import_styled_components2.default.img`
 `;
 
 // app/components/Footer.jsx
-var Footer = () => {
-  return /* @__PURE__ */ React.createElement(FooterContainer, null, /* @__PURE__ */ React.createElement(FooterBar, {
-    src: footer_bar_default
-  }), /* @__PURE__ */ React.createElement(SocialLinks, null, /* @__PURE__ */ React.createElement(SocialLink, {
-    src: twitter_logo_default
-  }), /* @__PURE__ */ React.createElement(SocialLink, {
-    src: discord_logo_default
-  }), /* @__PURE__ */ React.createElement(SocialLink, {
-    src: instagram_logo_default
+var Variations = {
+  PURPLE: "purple",
+  PINK: "pink",
+  YELLOW: "yellow"
+};
+var getFooterBarImagePath = (variation) => {
+  console.log(variation);
+  return {
+    [Variations.PURPLE]: "/bar-purple_zL2qHlmDLQ0Ug.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647716394704",
+    [Variations.PINK]: "/bar-pink_5box97MV6.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647740115147",
+    [Variations.YELLOW]: "/bar-yellow_BXbrtuCWY.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647740115220"
+  }[variation];
+};
+var getInstagramImagePath = (variation) => {
+  return {
+    [Variations.PURPLE]: "/instagram-purple_1YkVL_3WXp8SY.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647716304712",
+    [Variations.PINK]: "/instagram-pink_SEsHVWNNU.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647716211708",
+    [Variations.YELLOW]: "/instagram-yellow_84f2YzvbsF.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647716211792"
+  }[variation];
+};
+var getTwitterImagePath = (variation) => {
+  return {
+    [Variations.PURPLE]: "/twitter-purple_dBcNgQlNe2.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647716211896",
+    [Variations.PINK]: "/twitter-pink_5IvjTJvCcA.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647716211908",
+    [Variations.YELLOW]: "/twitter-yellow_Ydkia8xH9T.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647716211930"
+  }[variation];
+};
+var getDiscordImagePath = (variation) => {
+  return {
+    [Variations.PURPLE]: "/discord-purple_QGcqb_xHlVkLc.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647716279853",
+    [Variations.PINK]: "/discord-pink_sNIlBiwsAq.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647716211863",
+    [Variations.YELLOW]: "/discord-yellow_zzDwUgrlvJ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647716211878"
+  }[variation];
+};
+var Footer = ({ variation = Variations.PURPLE }) => {
+  const FooterBarPath = getFooterBarImagePath(variation);
+  const TwitterPath = getTwitterImagePath(variation);
+  const InstagramPath = getInstagramImagePath(variation);
+  const DiscordPath = getDiscordImagePath(variation);
+  return /* @__PURE__ */ React.createElement(FooterContainer, null, /* @__PURE__ */ React.createElement(import_imagekitio_react.IKImage, {
+    path: FooterBarPath,
+    transformation: [{
+      width: "1200"
+    }]
+  }), /* @__PURE__ */ React.createElement(SocialLinks, null, /* @__PURE__ */ React.createElement(import_imagekitio_react.IKImage, {
+    path: TwitterPath,
+    transformation: [{
+      height: "50"
+    }]
+  }), /* @__PURE__ */ React.createElement(import_imagekitio_react.IKImage, {
+    path: DiscordPath,
+    transformation: [{
+      height: "50"
+    }]
+  }), /* @__PURE__ */ React.createElement(import_imagekitio_react.IKImage, {
+    path: InstagramPath,
+    transformation: [{
+      height: "50"
+    }]
   })));
 };
 var Footer_default = Footer;
@@ -521,7 +561,8 @@ var HelveticaNeueLTPro_Blk_default = "/build/_assets/HelveticaNeueLTPro-Blk-HVYO
 
 // app/styles/splash.js
 var SplashPageContainer = import_styled_components3.default.div`
-  background-image: url(https://ik.imagekit.io/pgm/enter-page-background_bvpln_LIZOfPK.png);
+  background-image: url(https://ik.imagekit.io/pgm/splash-page-background_ispuh5fagl.png);
+  background-size: 100% auto;
   height: 100%;
   min-height: 100vh;
   background-repeat: repeat;
@@ -545,13 +586,14 @@ var SplashLogo = import_styled_components3.default.img`
 `;
 var SplashBanner = import_styled_components3.default.div`
   width: 100%;
-  max-width: 80vw;
+  max-width: 1200px;
   position: relative;
   min-height: 500px;
+  margin: 24px 0px 48px;
 `;
 var SplashButton = import_styled_components3.default.div`
   width: 100%;
-  max-width: 80vw;
+  max-width: 1200px;
   position: absolute;
   top: 45%;
   display: flex;
@@ -559,20 +601,20 @@ var SplashButton = import_styled_components3.default.div`
 `;
 
 // route-module:/Users/jakepepple/pharoah-god-mob/pgm-landing/app/routes/index.jsx
-var import_imagekitio_react = __toModule(require("imagekitio-react"));
+var import_imagekitio_react2 = __toModule(require("imagekitio-react"));
 function Index() {
-  return /* @__PURE__ */ React.createElement(import_imagekitio_react.IKContext, {
+  return /* @__PURE__ */ React.createElement(import_imagekitio_react2.IKContext, {
     urlEndpoint: "https://ik.imagekit.io/pgm"
   }, /* @__PURE__ */ React.createElement(SplashPageContainer, null, /* @__PURE__ */ React.createElement(SplashLogoContainer, {
     style: { maxWidth: "400px" }
-  }, /* @__PURE__ */ React.createElement(import_imagekitio_react.IKImage, {
+  }, /* @__PURE__ */ React.createElement(import_imagekitio_react2.IKImage, {
     path: "/w-pharaoh_yBUimLV0dw.gif",
     transformation: [{
       width: "500"
     }],
     loading: "lazy",
     lqip: { active: true }
-  }), /* @__PURE__ */ React.createElement(import_imagekitio_react.IKImage, {
+  }), /* @__PURE__ */ React.createElement(import_imagekitio_react2.IKImage, {
     path: "/PGM_OXTYtPPw7yvd1.png",
     transformation: [{
       width: "500"
@@ -580,8 +622,10 @@ function Index() {
     loading: "lazy",
     lqip: { active: true },
     style: { maxWidth: "300px", margin: "-130px auto 0px" }
-  })), /* @__PURE__ */ React.createElement(SplashBanner, null, /* @__PURE__ */ React.createElement(import_imagekitio_react.IKImage, {
-    path: "/enter-page-art_tFjMQYASpnrT.png",
+  })), /* @__PURE__ */ React.createElement(SplashBanner, {
+    style: { marginTop: "-100px" }
+  }, /* @__PURE__ */ React.createElement(import_imagekitio_react2.IKImage, {
+    path: "/splash-page-banner_5zTRhCoW-.png",
     loading: "lazy",
     lqip: { active: true },
     style: {
@@ -589,7 +633,7 @@ function Index() {
     }
   }), /* @__PURE__ */ React.createElement(SplashButton, {
     onClick: () => window.location.href = "/home"
-  }, /* @__PURE__ */ React.createElement(import_imagekitio_react.IKImage, {
+  }, /* @__PURE__ */ React.createElement(import_imagekitio_react2.IKImage, {
     path: "/enter_button_cropped_toafS3QB-ntK.png",
     transformation: [{
       "width": "350"
@@ -608,15 +652,11 @@ __export(home_exports, {
   default: () => Home
 });
 init_react();
-var import_imagekitio_react2 = __toModule(require("imagekitio-react"));
+var import_imagekitio_react4 = __toModule(require("imagekitio-react"));
 
 // app/components/Navbar.jsx
 init_react();
-
-// app/assets/website-files/logo-vector.png
-var logo_vector_default = "/build/_assets/logo-vector-FDR3KCYJ.png";
-
-// app/components/Navbar.jsx
+var import_imagekitio_react3 = __toModule(require("imagekitio-react"));
 var Navbar = () => {
   return /* @__PURE__ */ React.createElement("div", {
     className: "container"
@@ -627,12 +667,13 @@ var Navbar = () => {
     href: "#/",
     id: "pgm-brand",
     className: "navbar-brand"
-  }, /* @__PURE__ */ React.createElement("img", {
-    src: logo_vector_default,
-    className: "d-inline-block align-top",
-    alt: "pgm logo",
-    height: "75px",
-    width: "auto"
+  }, /* @__PURE__ */ React.createElement(import_imagekitio_react3.IKImage, {
+    path: "/logo-vector_1gzBYRGiHGR4.png",
+    transformation: [{
+      height: "130"
+    }],
+    loading: "lazy",
+    lqip: { active: true }
   })), /* @__PURE__ */ React.createElement("button", {
     "aria-controls": "responsive-navbar-nav",
     id: "nav-toggle",
@@ -647,73 +688,160 @@ var Navbar = () => {
 };
 var Navbar_default = Navbar;
 
-// app/assets/website-files/main-page-banner.png
-var main_page_banner_default = "/build/_assets/main-page-banner-HUJNXMIU.png";
-
-// app/assets/website-files/Samples.gif
-var Samples_default = "/build/_assets/Samples-HDQTHYT7.gif";
-
-// app/assets/website-files/MintNow.png
-var MintNow_default = "/build/_assets/MintNow-DWSKTAOO.png";
-
 // app/styles/home.js
 init_react();
 var import_styled_components4 = __toModule(require("styled-components"));
-
-// app/assets/website-files/main-page-background.png
-var main_page_background_default = "/build/_assets/main-page-background-FLVPU6QJ.png";
-
-// app/styles/home.js
 var HomePageContainer = import_styled_components4.default.div`
-  background-image: url(${main_page_background_default});
+  background-image: url(https://ik.imagekit.io/pgm/main-page-background_BxJCwGSlS.png);
+  background-size: 100% auto;
   height: 100%;
   background-repeat: repeat;
+  display: flex;
+  flex-direction: column;
   @font-face {
     font-family: 'Neue Helvetica Pro 95 Black';
     src: url(${HelveticaNeueLTPro_Blk_default});
   }
+  justify-content: center;
+  align-items: center;
+`;
+var TextContainer = import_styled_components4.default.div`
+  width: 100%;
+  padding: 32px;
+`;
+var ParagraphText = import_styled_components4.default.p`
+  font-size: 1.4em;
+  color: #e3afff;
+`;
+var HeaderText = import_styled_components4.default.h1`
+  text-align: center;
+  font-size: 2.4em;
+  font-weight: 900;
+  margin: 24px 0px;
+`;
+var SubheaderText = import_styled_components4.default.h3`
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: 800;
+  margin: 24px 0px;
+`;
+var MainSection = import_styled_components4.default.div`
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  margin: 24px 0px;
+  ${({ center }) => center && `
+    text-align: center
+  `};
+  ${({ column }) => column && `
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+  `}
+`;
+var Divider = import_styled_components4.default.div`
+  background-color: #e3afff;
+  width: 100%;
+  max-width: 1200px;
+  height: 4px;
+`;
+var InputContainer = import_styled_components4.default.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+`;
+var InputFieldBox = import_styled_components4.default.div`
+    width: 600px;
+`;
+var InputField = import_styled_components4.default.input`
+  background: #443050;
+  width: 600px;
+  border: 1px solid #443050;
+  border-radius: 4px;
+  line-height:28px;
+  color: white;
+  font-size: 16px;
+
+  &::placeholder {
+    color: white;
+    font-size: 16px;
+  }
+`;
+var InputIconBox = import_styled_components4.default.div`
+  height: 32px;
+  width: 32px;
+  ${({ solid }) => solid && `
+  background: #e3afff;
+  border: 1px solid #e3afff;
+  `}
+  border-radius: 4px;
+`;
+var InputBracketBox = import_styled_components4.default.div`
+  height: 56px;
 `;
 
 // route-module:/Users/jakepepple/pharoah-god-mob/pgm-landing/app/routes/home.jsx
 function Home() {
-  return /* @__PURE__ */ React.createElement(import_imagekitio_react2.IKContext, null, /* @__PURE__ */ React.createElement(HomePageContainer, null, /* @__PURE__ */ React.createElement(Navbar_default, null), /* @__PURE__ */ React.createElement("div", {
+  return /* @__PURE__ */ React.createElement(import_imagekitio_react4.IKContext, {
+    urlEndpoint: "https://ik.imagekit.io/pgm"
+  }, /* @__PURE__ */ React.createElement(HomePageContainer, null, /* @__PURE__ */ React.createElement(Navbar_default, null), /* @__PURE__ */ React.createElement("div", {
     className: "container"
-  }), /* @__PURE__ */ React.createElement("div", {
-    className: "container"
-  }, /* @__PURE__ */ React.createElement("img", {
-    src: main_page_banner_default,
-    className: "img-fluid px-0"
-  })), /* @__PURE__ */ React.createElement("div", {
-    className: "px-4 mt-md-4 container"
-  }, /* @__PURE__ */ React.createElement("div", {
-    className: "mb-5 row"
-  }, /* @__PURE__ */ React.createElement("div", {
-    className: "col"
-  }, /* @__PURE__ */ React.createElement("div", {
-    className: " row"
-  }, /* @__PURE__ */ React.createElement("div", {
-    className: "mb-4  col-12"
-  }, /* @__PURE__ */ React.createElement("h1", {
-    className: "d-flex welcome-title mb-3"
-  }, "WELCOME TO THE PHAROAH GOD MOB"), /* @__PURE__ */ React.createElement("p", {
-    className: "common-p mb-0"
-  }, "PGM is a collection of 5,000 NFTs existing on the ethereum blockchain. Each unique digital illustration signifies your seat in the mob. Those on the inside benefit from all future roadmap endeavors."))))), /* @__PURE__ */ React.createElement("div", {
-    className: "mb-5 row"
-  }, /* @__PURE__ */ React.createElement("div", {
-    className: "col"
-  }, /* @__PURE__ */ React.createElement("div", {
-    className: " row"
-  }, /* @__PURE__ */ React.createElement("div", {
-    className: "mb-4  col-12"
-  }, /* @__PURE__ */ React.createElement("img", {
-    className: "img-fluid w-100",
-    src: Samples_default,
-    alt: "mystery token"
-  }), /* @__PURE__ */ React.createElement("img", {
-    className: "img-fluid w-100",
-    src: MintNow_default,
-    alt: "mystery token"
-  })))))), /* @__PURE__ */ React.createElement(Footer_default, null)));
+  }), /* @__PURE__ */ React.createElement(SplashBanner, null, /* @__PURE__ */ React.createElement(import_imagekitio_react4.IKImage, {
+    path: "/main-page-banner_MfwH9Mfib.png",
+    loading: "lazy",
+    lqip: { active: true },
+    style: {
+      width: "100%"
+    }
+  })), /* @__PURE__ */ React.createElement(MainSection, null, /* @__PURE__ */ React.createElement(TextContainer, null, /* @__PURE__ */ React.createElement(HeaderText, null, "WELCOME TO THE PHAROAH GOD MOB"), /* @__PURE__ */ React.createElement(ParagraphText, null, "PGM is a collection of 5,000 NFTs existing on the ethereum blockchain. Each unique digital illustration signifies your seat in the mob. Those on the inside benefit from all future roadmap endeavors."))), /* @__PURE__ */ React.createElement(MainSection, {
+    center: true,
+    column: true
+  }, /* @__PURE__ */ React.createElement(import_imagekitio_react4.IKImage, {
+    path: "/Samples_ogqPMGZD7AWvG.gif",
+    transformation: [{
+      width: "875"
+    }],
+    style: { margin: "auto" }
+  }), /* @__PURE__ */ React.createElement(import_imagekitio_react4.IKImage, {
+    path: "/mint-now-button_tX1SzsxSW.png",
+    transformation: [{
+      width: "350"
+    }],
+    style: { margin: "24px auto" }
+  })), /* @__PURE__ */ React.createElement(MainSection, null, /* @__PURE__ */ React.createElement(Divider, null)), /* @__PURE__ */ React.createElement(MainSection, {
+    center: true
+  }, /* @__PURE__ */ React.createElement(HeaderText, null, "THE VISION"), /* @__PURE__ */ React.createElement(import_imagekitio_react4.IKImage, {
+    path: "/seeing-eye-pyramid-crop_JHKYh1Gy5.png",
+    transformation: [{
+      width: "600"
+    }],
+    style: { margin: "48px auto" }
+  })), /* @__PURE__ */ React.createElement(MainSection, null), /* @__PURE__ */ React.createElement(MainSection, {
+    center: true
+  }, /* @__PURE__ */ React.createElement(SubheaderText, null, "KEEP ME POSTED"), /* @__PURE__ */ React.createElement(InputContainer, null, /* @__PURE__ */ React.createElement(InputBracketBox, null, /* @__PURE__ */ React.createElement(import_imagekitio_react4.IKImage, {
+    path: "/left-bracket_1__6K2LI739qq.png",
+    transformation: [{
+      height: "56"
+    }]
+  })), /* @__PURE__ */ React.createElement(InputFieldBox, null, /* @__PURE__ */ React.createElement(InputField, {
+    type: "email",
+    placeholder: "Email address"
+  })), /* @__PURE__ */ React.createElement(InputIconBox, {
+    solid: true
+  }, /* @__PURE__ */ React.createElement(import_imagekitio_react4.IKImage, {
+    path: "/dotted-arrow_Q-88Z_X2q.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647711227720",
+    transformation: [{
+      height: "32"
+    }]
+  })), /* @__PURE__ */ React.createElement(InputBracketBox, null, /* @__PURE__ */ React.createElement(import_imagekitio_react4.IKImage, {
+    path: "/right-bracket_Vjhzhsrc5.png",
+    transformation: [{
+      height: "56"
+    }]
+  })))), /* @__PURE__ */ React.createElement(Footer_default, {
+    variation: Variations.PINK
+  })));
 }
 
 // <stdin>

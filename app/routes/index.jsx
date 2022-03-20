@@ -1,7 +1,3 @@
-import Logo from "../assets/logo.png";
-import PGM from "../assets/website-files/PGM.png";
-import SplashBannerImage from "../assets/website-files/enter-page-art.png";
-import SplashButtonImage from "../assets/website-files/enter-button.png";
 import Footer from '../components/Footer';
 
 import {
@@ -37,10 +33,10 @@ export default function Index() {
             style={{ maxWidth: "300px", margin: "-130px auto 0px"}}
           />
         </SplashLogoContainer>
-        <SplashBanner>
+        <SplashBanner style={{marginTop: '-100px'}}>
 
           <IKImage
-            path="/enter-page-art_tFjMQYASpnrT.png"
+            path="/splash-page-banner_5zTRhCoW-.png"
             loading="lazy"
             lqip={{active: true}}
             style={{
