@@ -1,5 +1,5 @@
 {
-  "version": "5162f16f",
+  "version": "f5667885",
   "entry": {
     "module": "/build/entry.client-YC2SBRZX.js",
     "imports": [
@@ -11,7 +11,7 @@
     "root": {
       "id": "root",
       "path": "",
-      "module": "/build/root-ZV65AUP6.js",
+      "module": "/build/root-YEKPIPIS.js",
       "hasAction": false,
       "hasLoader": false,
       "hasCatchBoundary": false,
@@ -21,10 +21,10 @@
       "id": "routes/home",
       "parentId": "root",
       "path": "home",
-      "module": "/build/routes/home-IF5ASTL4.js",
+      "module": "/build/routes/home-PE4YOUPD.js",
       "imports": [
-        "/build/_shared/chunk-6O73GGYG.js",
-        "/build/_shared/chunk-QIKHAOHD.js"
+        "/build/_shared/chunk-EVVRBEM6.js",
+        "/build/_shared/chunk-DU5HCUWB.js"
       ],
       "hasAction": false,
       "hasLoader": false,
@@ -35,9 +35,23 @@
       "id": "routes/index",
       "parentId": "root",
       "index": true,
-      "module": "/build/routes/index-BAVSWYCN.js",
+      "module": "/build/routes/index-M4LSNHX2.js",
       "imports": [
-        "/build/_shared/chunk-QIKHAOHD.js"
+        "/build/_shared/chunk-DU5HCUWB.js"
+      ],
+      "hasAction": false,
+      "hasLoader": false,
+      "hasCatchBoundary": false,
+      "hasErrorBoundary": false
+    },
+    "routes/team": {
+      "id": "routes/team",
+      "parentId": "root",
+      "path": "team",
+      "module": "/build/routes/team-56MVBQG2.js",
+      "imports": [
+        "/build/_shared/chunk-EVVRBEM6.js",
+        "/build/_shared/chunk-DU5HCUWB.js"
       ],
       "hasAction": false,
       "hasLoader": false,
@@ -48,10 +62,10 @@
       "id": "routes/vision",
       "parentId": "root",
       "path": "vision",
-      "module": "/build/routes/vision-4QYAUOOB.js",
+      "module": "/build/routes/vision-UTVIAZYR.js",
       "imports": [
-        "/build/_shared/chunk-6O73GGYG.js",
-        "/build/_shared/chunk-QIKHAOHD.js"
+        "/build/_shared/chunk-EVVRBEM6.js",
+        "/build/_shared/chunk-DU5HCUWB.js"
       ],
       "hasAction": false,
       "hasLoader": false,
@@ -59,5 +73,5 @@
       "hasErrorBoundary": false
     }
   },
-  "url": "/build/manifest-5162F16F.js"
+  "url": "/build/manifest-F5667885.js"
 }

@@ -24,6 +24,7 @@ export const TextContainer = styled.div`
 export const ParagraphText = styled.p`
   font-size: 1.4em;
   color: ${({ color }) => color};
+  text-align: center;
 `;
 export const HeaderText = styled.h1`
   text-align: center;

@@ -1,0 +1,9 @@
+import{a as p,b as m,c as s,d as l,e as h,f as g,g as r,i as u}from"/build/_shared/chunk-EVVRBEM6.js";import{a as I,b as i,d as n,e as d,h as x}from"/build/_shared/chunk-DU5HCUWB.js";import{b,e,f as o}from"/build/_shared/chunk-AKSB5QXU.js";o();o();var t=b(I());o();var f=i(m)`
+  background-image: url(https://ik.imagekit.io/pgm/team-page-background_P2sNYIzXW.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647920620750)
+`,T=i.div`
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+`,a=i.div`
+  flex: 1 1 30%;
+`;function E(){return e.createElement(t.IKContext,{urlEndpoint:"https://ik.imagekit.io/pgm"},e.createElement(f,null,e.createElement(p,null),e.createElement("div",{className:"container"}),e.createElement(x,null,e.createElement(t.IKImage,{path:"/about-page-banner_GJWwV_zZv.png",loading:"lazy",lqip:{active:!0},style:{width:"100%"}})),e.createElement(r,null,e.createElement(s,null,e.createElement(h,null,"THE TEAM"),e.createElement(T,null,e.createElement(a,null,e.createElement(t.IKImage,{path:"/rob-pharoah-2_-MUe3EEm9.png",transformation:[{width:"350"}],style:{margin:"24px auto"}})),e.createElement(a,null,e.createElement(t.IKImage,{path:"/jake-pharoah-2_A7m9plMaI.png",transformation:[{width:"350"}],style:{margin:"24px auto"}})),e.createElement(a,null,e.createElement(t.IKImage,{path:"/ben-pharoah-2_DiL89LpII.png",transformation:[{width:"350"}],style:{margin:"24px auto"}}))),e.createElement(l,{color:"#263A0B"},"PGM is a collection of 5,000 NFTs existing on the ethereum blockchain. Each unique digital illustration signifies your seat in the mob. Those on the inside benefit from all future roadmap endeavors."))),e.createElement(r,{center:!0},e.createElement(g,null,"KEEP ME POSTED"),e.createElement(u,{variation:n.GREEN})),e.createElement(d,{variation:n.GREEN})))}export{E as default};

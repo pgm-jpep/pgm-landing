@@ -412,7 +412,7 @@ init_react();
 var import_remix2 = __toModule(require_remix());
 
 // app/styles/root.css
-var root_default = "/build/_assets/root-UXWZWFM4.css";
+var root_default = "/build/_assets/root-Y2MH32LR.css";
 
 // route-module:/Users/jakepepple/pharoah-god-mob/pgm-landing/app/root.jsx
 function meta() {
@@ -465,6 +465,23 @@ var import_imagekitio_react4 = __toModule(require("imagekitio-react"));
 // app/components/Navbar.jsx
 init_react();
 var import_imagekitio_react = __toModule(require("imagekitio-react"));
+
+// app/styles/navbar.js
+init_react();
+var import_styled_components2 = __toModule(require("styled-components"));
+var NavLink = import_styled_components2.default.a`
+  color: #fff;
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  caret-color: transparent;
+  text-align: end;
+  transition: .15s;
+  cursor: pointer;
+  text-decoration: none;
+`;
+
+// app/components/Navbar.jsx
 var Navbar = () => {
   return /* @__PURE__ */ React.createElement("div", {
     className: "container"
@@ -472,7 +489,7 @@ var Navbar = () => {
     id: "nav",
     className: "navbar navbar-expand-md navbar-light sticky-top"
   }, /* @__PURE__ */ React.createElement("a", {
-    href: "#/",
+    href: "/",
     id: "pgm-brand",
     className: "navbar-brand"
   }, /* @__PURE__ */ React.createElement(import_imagekitio_react.IKImage, {
@@ -492,19 +509,35 @@ var Navbar = () => {
     "data-bs-target": "#navbarToggler"
   }, /* @__PURE__ */ React.createElement("span", {
     className: "navbar-toggler-icon"
-  }))));
+  })), /* @__PURE__ */ React.createElement("div", {
+    className: "collapse navbar-collapse",
+    id: "navbarToggler",
+    style: { justifyContent: "space-between" }
+  }, /* @__PURE__ */ React.createElement("div", {
+    className: "navbar-nav",
+    id: "nav-bar"
+  }, /* @__PURE__ */ React.createElement(NavLink, {
+    title: "HOME",
+    href: "/home"
+  }, "HOME"), /* @__PURE__ */ React.createElement(NavLink, {
+    title: "VISION",
+    href: "/vision"
+  }, "VISION"), /* @__PURE__ */ React.createElement(NavLink, {
+    title: "TEAM",
+    href: "/team"
+  }, "TEAM")))));
 };
 var Navbar_default = Navbar;
 
 // app/styles/home.js
 init_react();
-var import_styled_components2 = __toModule(require("styled-components"));
+var import_styled_components3 = __toModule(require("styled-components"));
 
 // app/assets/fonts/HelveticaNeueLTPro-Blk.otf
 var HelveticaNeueLTPro_Blk_default = "/build/_assets/HelveticaNeueLTPro-Blk-HVYOXMFI.otf";
 
 // app/styles/home.js
-var HomePageContainer = import_styled_components2.default.div`
+var HomePageContainer = import_styled_components3.default.div`
   background-image: url(https://ik.imagekit.io/pgm/main-page-background_BxJCwGSlS.png);
   background-size: 100% auto;
   height: 100%;
@@ -518,27 +551,28 @@ var HomePageContainer = import_styled_components2.default.div`
   justify-content: center;
   align-items: center;
 `;
-var TextContainer = import_styled_components2.default.div`
+var TextContainer = import_styled_components3.default.div`
   width: 100%;
   padding: 32px;
 `;
-var ParagraphText = import_styled_components2.default.p`
+var ParagraphText = import_styled_components3.default.p`
   font-size: 1.4em;
   color: ${({ color }) => color};
+  text-align: center;
 `;
-var HeaderText = import_styled_components2.default.h1`
+var HeaderText = import_styled_components3.default.h1`
   text-align: center;
   font-size: 2.4em;
   font-weight: 900;
   margin: 24px 0px;
 `;
-var SubheaderText = import_styled_components2.default.h3`
+var SubheaderText = import_styled_components3.default.h3`
   text-align: center;
   font-size: 1.8em;
   font-weight: 800;
   margin: 24px 0px;
 `;
-var MainSection = import_styled_components2.default.div`
+var MainSection = import_styled_components3.default.div`
   width: 100%;
   max-width: 1200px;
   position: relative;
@@ -552,7 +586,7 @@ var MainSection = import_styled_components2.default.div`
     gap: 64px;
   `}
 `;
-var Divider = import_styled_components2.default.div`
+var Divider = import_styled_components3.default.div`
   background-color: #e3afff;
   width: 100%;
   max-width: 1200px;
@@ -561,8 +595,8 @@ var Divider = import_styled_components2.default.div`
 
 // app/styles/vision.js
 init_react();
-var import_styled_components3 = __toModule(require("styled-components"));
-var VisionPageContainer = (0, import_styled_components3.default)(HomePageContainer)`
+var import_styled_components4 = __toModule(require("styled-components"));
+var VisionPageContainer = (0, import_styled_components4.default)(HomePageContainer)`
   background-image: url(https://ik.imagekit.io/pgm/about-page-background_iT62uu7OZ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647710010332)
 `;
 
@@ -572,36 +606,36 @@ var import_imagekitio_react2 = __toModule(require("imagekitio-react"));
 
 // app/styles/footer.js
 init_react();
-var import_styled_components4 = __toModule(require("styled-components"));
-var FooterContainer = import_styled_components4.default.div`
+var import_styled_components5 = __toModule(require("styled-components"));
+var FooterContainer = import_styled_components5.default.div`
   margin: 12px 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 `;
-var FooterBar = import_styled_components4.default.img`
+var FooterBar = import_styled_components5.default.img`
   width: 100%;
   max-width: 1200px;
 `;
-var SocialLinks = import_styled_components4.default.div`
+var SocialLinks = import_styled_components5.default.div`
   margin: 24px auto;
   display: flex;
   justify-content: center;
   gap: 12px;
 `;
-var SocialLink = import_styled_components4.default.img`
+var SocialLink = import_styled_components5.default.img`
   max-height: 50px;
 `;
-var InputContainer = import_styled_components4.default.div`
+var InputContainer = import_styled_components5.default.div`
   display: flex;
   justify-content: center;
   align-items: center;
 
 `;
-var InputFieldBox = import_styled_components4.default.div`
+var InputFieldBox = import_styled_components5.default.div`
     width: 600px;
 `;
-var InputField = import_styled_components4.default.input`
+var InputField = import_styled_components5.default.input`
   background: #443050;
   width: 600px;
   border: 1px solid #443050;
@@ -615,7 +649,7 @@ var InputField = import_styled_components4.default.input`
     font-size: 16px;
   }
 `;
-var InputIconBox = import_styled_components4.default.div`
+var InputIconBox = import_styled_components5.default.div`
   height: 32px;
   width: 32px;
   ${({ solid }) => solid && `
@@ -624,7 +658,7 @@ var InputIconBox = import_styled_components4.default.div`
   `}
   border-radius: 4px;
 `;
-var InputBracketBox = import_styled_components4.default.div`
+var InputBracketBox = import_styled_components5.default.div`
   height: 56px;
 `;
 
@@ -632,35 +666,39 @@ var InputBracketBox = import_styled_components4.default.div`
 var Variations = {
   PURPLE: "purple",
   PINK: "pink",
-  YELLOW: "yellow"
+  YELLOW: "yellow",
+  GREEN: "green"
 };
 var getFooterBarImagePath = (variation) => {
-  console.log(variation);
   return {
     [Variations.PURPLE]: "/bar-purple_zL2qHlmDLQ0Ug.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647716394704",
     [Variations.PINK]: "/bar-pink_5box97MV6.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647740115147",
-    [Variations.YELLOW]: "/bar-yellow_BXbrtuCWY.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647740115220"
+    [Variations.YELLOW]: "/bar-yellow_BXbrtuCWY.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647740115220",
+    [Variations.GREEN]: "/bar-green_5-nUD_VPwb.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647922144336"
   }[variation];
 };
 var getInstagramImagePath = (variation) => {
   return {
     [Variations.PURPLE]: "/instagram-purple_1YkVL_3WXp8SY.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647716304712",
     [Variations.PINK]: "/instagram-pink_SEsHVWNNU.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647716211708",
-    [Variations.YELLOW]: "/instagram-yellow_84f2YzvbsF.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647716211792"
+    [Variations.YELLOW]: "/instagram-yellow_84f2YzvbsF.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647716211792",
+    [Variations.GREEN]: "/instagram-green_CRdS4msc7.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647922144271"
   }[variation];
 };
 var getTwitterImagePath = (variation) => {
   return {
     [Variations.PURPLE]: "/twitter-purple_dBcNgQlNe2.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647716211896",
     [Variations.PINK]: "/twitter-pink_5IvjTJvCcA.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647716211908",
-    [Variations.YELLOW]: "/twitter-yellow_Ydkia8xH9T.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647716211930"
+    [Variations.YELLOW]: "/twitter-yellow_Ydkia8xH9T.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647716211930",
+    [Variations.GREEN]: "/twitter-green_BLOI2JRs_.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647922144360"
   }[variation];
 };
 var getDiscordImagePath = (variation) => {
   return {
     [Variations.PURPLE]: "/discord-purple_QGcqb_xHlVkLc.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647716279853",
     [Variations.PINK]: "/discord-pink_sNIlBiwsAq.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647716211863",
-    [Variations.YELLOW]: "/discord-yellow_zzDwUgrlvJ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647716211878"
+    [Variations.YELLOW]: "/discord-yellow_zzDwUgrlvJ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647716211878",
+    [Variations.GREEN]: "/discord-green_nQ7TryHQq.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647922205774"
   }[variation];
 };
 var Footer = ({ variation = Variations.PURPLE }) => {
@@ -694,8 +732,8 @@ var Footer_default = Footer;
 
 // app/styles/splash.js
 init_react();
-var import_styled_components5 = __toModule(require("styled-components"));
-var SplashPageContainer = import_styled_components5.default.div`
+var import_styled_components6 = __toModule(require("styled-components"));
+var SplashPageContainer = import_styled_components6.default.div`
   background-image: url(https://ik.imagekit.io/pgm/splash-page-background_ispuh5fagl.png);
   background-size: 100% auto;
   height: 100%;
@@ -710,23 +748,23 @@ var SplashPageContainer = import_styled_components5.default.div`
   justify-content: center;
   align-items: center;
 `;
-var SplashLogoContainer = import_styled_components5.default.div`
+var SplashLogoContainer = import_styled_components6.default.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   max-height: 500px;
 `;
-var SplashLogo = import_styled_components5.default.img`
+var SplashLogo = import_styled_components6.default.img`
   max-width: 300px;
 `;
-var SplashBanner = import_styled_components5.default.div`
+var SplashBanner = import_styled_components6.default.div`
   width: 100%;
   max-width: 1200px;
   position: relative;
   min-height: 500px;
   margin: 24px 0px 48px;
 `;
-var SplashButton = import_styled_components5.default.div`
+var SplashButton = import_styled_components6.default.div`
   width: 100%;
   max-width: 1200px;
   position: absolute;
@@ -741,16 +779,16 @@ var import_imagekitio_react3 = __toModule(require("imagekitio-react"));
 
 // app/styles/forms.js
 init_react();
-var import_styled_components6 = __toModule(require("styled-components"));
-var InputContainer2 = import_styled_components6.default.div`
+var import_styled_components7 = __toModule(require("styled-components"));
+var InputContainer2 = import_styled_components7.default.div`
   display: flex;
   justify-content: center;
   align-items: center;
 `;
-var InputFieldBox2 = import_styled_components6.default.div`
+var InputFieldBox2 = import_styled_components7.default.div`
     width: 600px;
 `;
-var InputField2 = import_styled_components6.default.input`
+var InputField2 = import_styled_components7.default.input`
   ${({ color }) => color && `
     background: ${color};
     border: 1px solid ${color}
@@ -766,7 +804,7 @@ var InputField2 = import_styled_components6.default.input`
     font-size: 16px;
   }
 `;
-var InputIconBox2 = import_styled_components6.default.div`
+var InputIconBox2 = import_styled_components7.default.div`
   height: 32px;
   width: 32px;
   ${({ color }) => color && `
@@ -775,39 +813,42 @@ var InputIconBox2 = import_styled_components6.default.div`
   `}
   border-radius: 4px;
 `;
-var InputBracketBox2 = import_styled_components6.default.div`
+var InputBracketBox2 = import_styled_components7.default.div`
   height: 56px;
 `;
 
 // app/components/EmailInput.jsx
 var Variations2 = {
-  PURPLE: "purple",
+  GREEN: "green",
   PINK: "pink",
   YELLOW: "yellow"
 };
 var getInputColor = (variation) => {
   return {
     [Variations2.PINK]: "#443050",
-    [Variations2.PURPLE]: "",
-    [Variations2.YELLOW]: "#485508"
+    [Variations2.YELLOW]: "#485508",
+    [Variations2.GREEN]: "#53702c"
   }[variation];
 };
 var getInputIconColor = (variation) => {
   return {
     [Variations2.PINK]: "#e3afff",
-    [Variations2.YELLOW]: "#CAD913"
+    [Variations2.YELLOW]: "#CAD913",
+    [Variations2.GREEN]: "#263A0B"
   }[variation];
 };
 var getLeftBracketPath = (variation) => {
   return {
     [Variations2.PINK]: "/left-bracket-pink_6K2LI739qq.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647916171574",
-    [Variations2.YELLOW]: "/left-bracket-yellow_i0Hxi4GbTw.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647916234146"
+    [Variations2.YELLOW]: "/left-bracket-yellow_i0Hxi4GbTw.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647916234146",
+    [Variations2.GREEN]: "/left-bracket-green_cv5DIzo-6.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647922205783"
   }[variation];
 };
 var getRightBracketPath = (variation) => {
   return {
     [Variations2.PINK]: "/right-bracket-pink_Vjhzhsrc5.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647916185573",
-    [Variations2.YELLOW]: "/right-bracket-yellow_7zGMd1buh8.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647916234119"
+    [Variations2.YELLOW]: "/right-bracket-yellow_7zGMd1buh8.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647916234119",
+    [Variations2.GREEN]: "/right-bracket-green_MiZlkJC722.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647922205791"
   }[variation];
 };
 var EmailInput = ({ variation = Variations2.PINK }) => {
@@ -958,10 +999,84 @@ function Home() {
     }],
     style: { margin: "48px auto" },
     onClick: () => window.location.assign("/vision")
+  })), /* @__PURE__ */ React.createElement(MainSection, null, /* @__PURE__ */ React.createElement(Divider, null)), /* @__PURE__ */ React.createElement(MainSection, {
+    center: true
+  }, /* @__PURE__ */ React.createElement(HeaderText, null, "THE TEAM"), /* @__PURE__ */ React.createElement(import_imagekitio_react6.IKImage, {
+    path: "/seeing-eye-pyramid-crop_JHKYh1Gy5.png",
+    transformation: [{
+      width: "600"
+    }],
+    style: { margin: "48px auto" },
+    onClick: () => window.location.assign("/team")
   })), /* @__PURE__ */ React.createElement(MainSection, null), /* @__PURE__ */ React.createElement(MainSection, {
     center: true
   }, /* @__PURE__ */ React.createElement(SubheaderText, null, "KEEP ME POSTED"), /* @__PURE__ */ React.createElement(EmailInput_default, null)), /* @__PURE__ */ React.createElement(Footer_default, {
     variation: Variations.PINK
+  })));
+}
+
+// route-module:/Users/jakepepple/pharoah-god-mob/pgm-landing/app/routes/team.jsx
+var team_exports = {};
+__export(team_exports, {
+  default: () => Team
+});
+init_react();
+var import_imagekitio_react7 = __toModule(require("imagekitio-react"));
+
+// app/styles/team.js
+init_react();
+var import_styled_components8 = __toModule(require("styled-components"));
+var TeamPageContainer = (0, import_styled_components8.default)(HomePageContainer)`
+  background-image: url(https://ik.imagekit.io/pgm/team-page-background_P2sNYIzXW.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647920620750)
+`;
+var FlexList = import_styled_components8.default.div`
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+`;
+var FlexListItem = import_styled_components8.default.div`
+  flex: 1 1 30%;
+`;
+
+// route-module:/Users/jakepepple/pharoah-god-mob/pgm-landing/app/routes/team.jsx
+function Team() {
+  return /* @__PURE__ */ React.createElement(import_imagekitio_react7.IKContext, {
+    urlEndpoint: "https://ik.imagekit.io/pgm"
+  }, /* @__PURE__ */ React.createElement(TeamPageContainer, null, /* @__PURE__ */ React.createElement(Navbar_default, null), /* @__PURE__ */ React.createElement("div", {
+    className: "container"
+  }), /* @__PURE__ */ React.createElement(SplashBanner, null, /* @__PURE__ */ React.createElement(import_imagekitio_react7.IKImage, {
+    path: "/about-page-banner_GJWwV_zZv.png",
+    loading: "lazy",
+    lqip: { active: true },
+    style: {
+      width: "100%"
+    }
+  })), /* @__PURE__ */ React.createElement(MainSection, null, /* @__PURE__ */ React.createElement(TextContainer, null, /* @__PURE__ */ React.createElement(HeaderText, null, "THE TEAM"), /* @__PURE__ */ React.createElement(FlexList, null, /* @__PURE__ */ React.createElement(FlexListItem, null, /* @__PURE__ */ React.createElement(import_imagekitio_react7.IKImage, {
+    path: "/rob-pharoah-2_-MUe3EEm9.png",
+    transformation: [{
+      width: "350"
+    }],
+    style: { margin: "24px auto" }
+  })), /* @__PURE__ */ React.createElement(FlexListItem, null, /* @__PURE__ */ React.createElement(import_imagekitio_react7.IKImage, {
+    path: "/jake-pharoah-2_A7m9plMaI.png",
+    transformation: [{
+      width: "350"
+    }],
+    style: { margin: "24px auto" }
+  })), /* @__PURE__ */ React.createElement(FlexListItem, null, /* @__PURE__ */ React.createElement(import_imagekitio_react7.IKImage, {
+    path: "/ben-pharoah-2_DiL89LpII.png",
+    transformation: [{
+      width: "350"
+    }],
+    style: { margin: "24px auto" }
+  }))), /* @__PURE__ */ React.createElement(ParagraphText, {
+    color: "#263A0B"
+  }, "PGM is a collection of 5,000 NFTs existing on the ethereum blockchain. Each unique digital illustration signifies your seat in the mob. Those on the inside benefit from all future roadmap endeavors."))), /* @__PURE__ */ React.createElement(MainSection, {
+    center: true
+  }, /* @__PURE__ */ React.createElement(SubheaderText, null, "KEEP ME POSTED"), /* @__PURE__ */ React.createElement(EmailInput_default, {
+    variation: Variations.GREEN
+  })), /* @__PURE__ */ React.createElement(Footer_default, {
+    variation: Variations.GREEN
   })));
 }
 
@@ -1000,6 +1115,14 @@ var routes = {
     index: void 0,
     caseSensitive: void 0,
     module: home_exports
+  },
+  "routes/team": {
+    id: "routes/team",
+    parentId: "root",
+    path: "team",
+    index: void 0,
+    caseSensitive: void 0,
+    module: team_exports
   }
 };
 // Annotate the CommonJS export names for ESM import in node:

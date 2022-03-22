@@ -31,9 +31,7 @@ body {
     align-items: center;
     gap: 24px;
 }
-.navbar-brand {
-    min-width: 130px;
-}
+
 #nav-social {
     display: none;
 }

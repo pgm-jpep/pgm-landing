@@ -68,6 +68,22 @@ export default function Home() {
           />
         </MainSection>
         <MainSection>
+          <Divider />
+        </MainSection>
+        <MainSection center>
+           <HeaderText>
+            THE TEAM
+          </HeaderText>
+          <IKImage
+            path="/seeing-eye-pyramid-crop_JHKYh1Gy5.png"
+            transformation={[{
+              width: "600"
+            }]}
+            style={{ margin: '48px auto' }}
+            onClick={() => window.location.assign('/team')}
+          />
+        </MainSection>
+        <MainSection>
         </MainSection>
         <MainSection center>
            <SubheaderText>
