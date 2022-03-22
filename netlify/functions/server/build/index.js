@@ -1044,14 +1044,7 @@ function Team() {
     urlEndpoint: "https://ik.imagekit.io/pgm"
   }, /* @__PURE__ */ React.createElement(TeamPageContainer, null, /* @__PURE__ */ React.createElement(Navbar_default, null), /* @__PURE__ */ React.createElement("div", {
     className: "container"
-  }), /* @__PURE__ */ React.createElement(SplashBanner, null, /* @__PURE__ */ React.createElement(import_imagekitio_react7.IKImage, {
-    path: "/about-page-banner_GJWwV_zZv.png",
-    loading: "lazy",
-    lqip: { active: true },
-    style: {
-      width: "100%"
-    }
-  })), /* @__PURE__ */ React.createElement(MainSection, null, /* @__PURE__ */ React.createElement(TextContainer, null, /* @__PURE__ */ React.createElement(HeaderText, null, "THE TEAM"), /* @__PURE__ */ React.createElement(FlexList, null, /* @__PURE__ */ React.createElement(FlexListItem, null, /* @__PURE__ */ React.createElement(import_imagekitio_react7.IKImage, {
+  }), /* @__PURE__ */ React.createElement(MainSection, null, /* @__PURE__ */ React.createElement(TextContainer, null, /* @__PURE__ */ React.createElement(HeaderText, null, "THE TEAM"), /* @__PURE__ */ React.createElement(FlexList, null, /* @__PURE__ */ React.createElement(FlexListItem, null, /* @__PURE__ */ React.createElement(import_imagekitio_react7.IKImage, {
     path: "/rob-pharoah-2_-MUe3EEm9.png",
     transformation: [{
       width: "350"

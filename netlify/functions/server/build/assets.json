@@ -1,5 +1,5 @@
 {
-  "version": "f5667885",
+  "version": "646e9b80",
   "entry": {
     "module": "/build/entry.client-YC2SBRZX.js",
     "imports": [
@@ -48,7 +48,7 @@
       "id": "routes/team",
       "parentId": "root",
       "path": "team",
-      "module": "/build/routes/team-56MVBQG2.js",
+      "module": "/build/routes/team-5NN5V56M.js",
       "imports": [
         "/build/_shared/chunk-EVVRBEM6.js",
         "/build/_shared/chunk-DU5HCUWB.js"
@@ -73,5 +73,5 @@
       "hasErrorBoundary": false
     }
   },
-  "url": "/build/manifest-F5667885.js"
+  "url": "/build/manifest-646E9B80.js"
 }

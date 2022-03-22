@@ -12,16 +12,6 @@ export default function Team() {
       <TeamPageContainer>
         <Navbar />
         <div className="container"></div>
-        <SplashBanner>
-          <IKImage
-            path="/about-page-banner_GJWwV_zZv.png"
-            loading="lazy"
-            lqip={{active: true}}
-            style={{
-            width: "100%"
-            }}
-          />
-        </SplashBanner>
 
         <MainSection>
           <TextContainer>
