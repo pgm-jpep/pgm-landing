@@ -23,7 +23,8 @@ export const TextContainer = styled.div`
 `;
 export const ParagraphText = styled.p`
   font-size: 1.4em;
-  color: #e3afff;
+  color: ${({ color }) => color};
+  text-align: center;
 `;
 export const HeaderText = styled.h1`
   text-align: center;
@@ -60,40 +61,5 @@ export const Divider = styled.div`
   height: 4px;
 `;
 
-export const InputContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-`;
-export const InputFieldBox = styled.div`
-    width: 600px;
-`;
-export const InputField = styled.input`
-  background: #443050;
-  width: 600px;
-  border: 1px solid #443050;
-  border-radius: 4px;
-  line-height:28px;
-  color: white;
-  font-size: 16px;
-
-  &::placeholder {
-    color: white;
-    font-size: 16px;
-  }
-`;
-export const InputIconBox = styled.div`
-  height: 32px;
-  width: 32px;
-  ${({ solid }) => solid && `
-  background: #e3afff;
-  border: 1px solid #e3afff;
-  `}
-  border-radius: 4px;
-`;
-export const InputBracketBox = styled.div`
-  height: 56px;
-`;
 
 // #e3afff

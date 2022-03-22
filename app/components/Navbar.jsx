@@ -1,4 +1,5 @@
 import { IKImage } from 'imagekitio-react';
+import { NavLink } from '../styles/navbar';
 
 /**
  * Links:
@@ -14,8 +15,7 @@ const Navbar = () => {
   return (
     <div className="container">
       <nav id="nav" className="navbar navbar-expand-md navbar-light sticky-top">
-        <a href="#/" id="pgm-brand" className="navbar-brand">
-
+        <a href="/" id="pgm-brand" className="navbar-brand">
           <IKImage
             path="/logo-vector_1gzBYRGiHGR4.png"
             transformation={[{
@@ -36,6 +36,28 @@ const Navbar = () => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
+        <div className="collapse navbar-collapse" id="navbarToggler" style={{ justifyContent: 'space-between'}}>
+          <div className="navbar-nav" id="nav-bar">
+            <NavLink
+              title="HOME"
+              href="/home"
+            >
+              HOME
+            </NavLink>
+            <NavLink
+              title="VISION"
+              href="/vision"
+            >
+              VISION
+            </NavLink>
+            <NavLink
+              title="TEAM"
+              href="/team"
+            >
+              TEAM
+            </NavLink>
+          </div>
+        </div>
       </nav>
     </div>
   );

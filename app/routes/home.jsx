@@ -1,8 +1,9 @@
 import { IKImage, IKContext } from 'imagekitio-react'
 import Navbar from "~/components/Navbar";
-import { HeaderText, HomePageContainer, ParagraphText, TextContainer, MainSection, Divider, SubheaderText, InputField, InputIconBox, InputContainer, InputBracketBox, InputFieldBox } from "../styles/home";
+import { HeaderText, HomePageContainer, ParagraphText, TextContainer, MainSection, Divider, SubheaderText } from "../styles/home";
 import Footer, { Variations } from "~/components/Footer";
 import { SplashBanner} from '../styles/splash'
+import EmailInput from '~/components/EmailInput';
 
 export default function Home() {
   return (
@@ -62,7 +63,24 @@ export default function Home() {
             transformation={[{
               width: "600"
             }]}
-            style={{ margin: '48px auto' }}
+            style={{ margin: '48px auto', cursor: 'pointer' }}
+            onClick={() => window.location.assign('/vision')}
+          />
+        </MainSection>
+        <MainSection>
+          <Divider />
+        </MainSection>
+        <MainSection center>
+           <HeaderText>
+            THE TEAM
+          </HeaderText>
+          <IKImage
+            path="/hands_shX038CJSn.png"
+            transformation={[{
+              width: "800"
+            }]}
+            style={{ margin: '48px auto', cursor: 'pointer' }}
+            onClick={() => window.location.assign('/team')}
           />
         </MainSection>
         <MainSection>
@@ -71,39 +89,8 @@ export default function Home() {
            <SubheaderText>
             KEEP ME POSTED
           </SubheaderText>
-          <InputContainer >
-            <InputBracketBox>
-            <IKImage
-                path="/left-bracket_1__6K2LI739qq.png"
-                transformation={[{
-                  height: "56"
-                }]}
-              />
-            </InputBracketBox>
-            <InputFieldBox >
-
-              <InputField type='email' placeholder="Email address" />
-            </InputFieldBox>
-            <InputIconBox solid>
-              <IKImage
-                path="/dotted-arrow_Q-88Z_X2q.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647711227720"
-                transformation={[{
-                  height: "32"
-                }]}
-              />
-            </InputIconBox>
-            <InputBracketBox>
-            <IKImage
-                path="/right-bracket_Vjhzhsrc5.png"
-                transformation={[{
-                  height: "56"
-                }]}
-              />
-            </InputBracketBox>
-          </InputContainer>
-
+          <EmailInput />
         </MainSection>
-
         <Footer variation={Variations.PINK} />
       </HomePageContainer>
     </IKContext>

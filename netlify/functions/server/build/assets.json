@@ -1,5 +1,5 @@
 {
-  "version": "c30068f4",
+  "version": "37cbf419",
   "entry": {
     "module": "/build/entry.client-YC2SBRZX.js",
     "imports": [
@@ -11,7 +11,7 @@
     "root": {
       "id": "root",
       "path": "",
-      "module": "/build/root-ZV65AUP6.js",
+      "module": "/build/root-YEKPIPIS.js",
       "hasAction": false,
       "hasLoader": false,
       "hasCatchBoundary": false,
@@ -21,9 +21,10 @@
       "id": "routes/home",
       "parentId": "root",
       "path": "home",
-      "module": "/build/routes/home-XLYIORUZ.js",
+      "module": "/build/routes/home-NEDSCDMX.js",
       "imports": [
-        "/build/_shared/chunk-PVNQDKCT.js"
+        "/build/_shared/chunk-EVVRBEM6.js",
+        "/build/_shared/chunk-DU5HCUWB.js"
       ],
       "hasAction": false,
       "hasLoader": false,
@@ -34,9 +35,37 @@
       "id": "routes/index",
       "parentId": "root",
       "index": true,
-      "module": "/build/routes/index-HE26QM4O.js",
+      "module": "/build/routes/index-M4LSNHX2.js",
       "imports": [
-        "/build/_shared/chunk-PVNQDKCT.js"
+        "/build/_shared/chunk-DU5HCUWB.js"
+      ],
+      "hasAction": false,
+      "hasLoader": false,
+      "hasCatchBoundary": false,
+      "hasErrorBoundary": false
+    },
+    "routes/team": {
+      "id": "routes/team",
+      "parentId": "root",
+      "path": "team",
+      "module": "/build/routes/team-5NN5V56M.js",
+      "imports": [
+        "/build/_shared/chunk-EVVRBEM6.js",
+        "/build/_shared/chunk-DU5HCUWB.js"
+      ],
+      "hasAction": false,
+      "hasLoader": false,
+      "hasCatchBoundary": false,
+      "hasErrorBoundary": false
+    },
+    "routes/vision": {
+      "id": "routes/vision",
+      "parentId": "root",
+      "path": "vision",
+      "module": "/build/routes/vision-UTVIAZYR.js",
+      "imports": [
+        "/build/_shared/chunk-EVVRBEM6.js",
+        "/build/_shared/chunk-DU5HCUWB.js"
       ],
       "hasAction": false,
       "hasLoader": false,
@@ -44,5 +73,5 @@
       "hasErrorBoundary": false
     }
   },
-  "url": "/build/manifest-C30068F4.js"
+  "url": "/build/manifest-37CBF419.js"
 }
