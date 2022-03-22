@@ -63,7 +63,7 @@ export default function Home() {
             transformation={[{
               width: "600"
             }]}
-            style={{ margin: '48px auto' }}
+            style={{ margin: '48px auto', cursor: 'pointer' }}
             onClick={() => window.location.assign('/vision')}
           />
         </MainSection>
@@ -75,11 +75,11 @@ export default function Home() {
             THE TEAM
           </HeaderText>
           <IKImage
-            path="/seeing-eye-pyramid-crop_JHKYh1Gy5.png"
+            path="/hands_shX038CJSn.png"
             transformation={[{
-              width: "600"
+              width: "800"
             }]}
-            style={{ margin: '48px auto' }}
+            style={{ margin: '48px auto', cursor: 'pointer' }}
             onClick={() => window.location.assign('/team')}
           />
         </MainSection>

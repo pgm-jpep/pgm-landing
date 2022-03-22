@@ -997,16 +997,16 @@ function Home() {
     transformation: [{
       width: "600"
     }],
-    style: { margin: "48px auto" },
+    style: { margin: "48px auto", cursor: "pointer" },
     onClick: () => window.location.assign("/vision")
   })), /* @__PURE__ */ React.createElement(MainSection, null, /* @__PURE__ */ React.createElement(Divider, null)), /* @__PURE__ */ React.createElement(MainSection, {
     center: true
   }, /* @__PURE__ */ React.createElement(HeaderText, null, "THE TEAM"), /* @__PURE__ */ React.createElement(import_imagekitio_react6.IKImage, {
-    path: "/seeing-eye-pyramid-crop_JHKYh1Gy5.png",
+    path: "/hands_shX038CJSn.png",
     transformation: [{
-      width: "600"
+      width: "800"
     }],
-    style: { margin: "48px auto" },
+    style: { margin: "48px auto", cursor: "pointer" },
     onClick: () => window.location.assign("/team")
   })), /* @__PURE__ */ React.createElement(MainSection, null), /* @__PURE__ */ React.createElement(MainSection, {
     center: true
