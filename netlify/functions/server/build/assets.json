@@ -1,5 +1,5 @@
 {
-  "version": "689237df",
+  "version": "0c31cf55",
   "entry": {
     "module": "/build/entry.client-YC2SBRZX.js",
     "imports": [
@@ -21,10 +21,10 @@
       "id": "routes/home",
       "parentId": "root",
       "path": "home",
-      "module": "/build/routes/home-WMHQKPIH.js",
+      "module": "/build/routes/home-KXG2Y3ER.js",
       "imports": [
-        "/build/_shared/chunk-MIPYSZC2.js",
-        "/build/_shared/chunk-R5B6XEEG.js"
+        "/build/_shared/chunk-YWOPXDIP.js",
+        "/build/_shared/chunk-BD7QGFNO.js"
       ],
       "hasAction": false,
       "hasLoader": false,
@@ -35,9 +35,9 @@
       "id": "routes/index",
       "parentId": "root",
       "index": true,
-      "module": "/build/routes/index-UUAQFEE4.js",
+      "module": "/build/routes/index-JI3Q6DA2.js",
       "imports": [
-        "/build/_shared/chunk-R5B6XEEG.js"
+        "/build/_shared/chunk-BD7QGFNO.js"
       ],
       "hasAction": false,
       "hasLoader": false,
@@ -48,10 +48,10 @@
       "id": "routes/team",
       "parentId": "root",
       "path": "team",
-      "module": "/build/routes/team-5UCCHXI7.js",
+      "module": "/build/routes/team-Z6IVYXPN.js",
       "imports": [
-        "/build/_shared/chunk-MIPYSZC2.js",
-        "/build/_shared/chunk-R5B6XEEG.js"
+        "/build/_shared/chunk-YWOPXDIP.js",
+        "/build/_shared/chunk-BD7QGFNO.js"
       ],
       "hasAction": false,
       "hasLoader": false,
@@ -62,10 +62,10 @@
       "id": "routes/vision",
       "parentId": "root",
       "path": "vision",
-      "module": "/build/routes/vision-DSSPPF76.js",
+      "module": "/build/routes/vision-URW7KR4V.js",
       "imports": [
-        "/build/_shared/chunk-MIPYSZC2.js",
-        "/build/_shared/chunk-R5B6XEEG.js"
+        "/build/_shared/chunk-YWOPXDIP.js",
+        "/build/_shared/chunk-BD7QGFNO.js"
       ],
       "hasAction": false,
       "hasLoader": false,
@@ -73,5 +73,5 @@
       "hasErrorBoundary": false
     }
   },
-  "url": "/build/manifest-689237DF.js"
+  "url": "/build/manifest-0C31CF55.js"
 }

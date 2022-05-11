@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import HelveticaNeueLTPro from '../assets/fonts/HelveticaNeueLTPro-Blk.otf';
 
 export const SplashPageContainer = styled.div`
-  background-image: url(https://ik.imagekit.io/pgm/splash-page-background_ispuh5fagl.png);
+  background-image: url(https://ik.imagekit.io/pgm/background-purple-final-2_NCFJZDfGH.png?ik-sdk-version=javascript-1.4.3&updatedAt=1652303962714);
   background-size: 100% auto;
   height: 100%;
   min-height: 100vh;

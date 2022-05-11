@@ -555,7 +555,7 @@ var HelveticaNeueLTPro_Blk_default = "/build/_assets/HelveticaNeueLTPro-Blk-HVYO
 
 // app/styles/home.js
 var HomePageContainer = import_styled_components3.default.div`
-  background-image: url(https://ik.imagekit.io/pgm/main-page-background_BxJCwGSlS.png);
+  background-image: url(https://ik.imagekit.io/pgm/background-pink-final_6gJAQX-0X.png?ik-sdk-version=javascript-1.4.3&updatedAt=1652304146579);
   background-size: 100% auto;
   height: 100%;
   background-repeat: repeat;
@@ -614,12 +614,7 @@ var Divider = import_styled_components3.default.div`
 init_react();
 var import_styled_components4 = __toModule(require("styled-components"));
 var VisionPageContainer = (0, import_styled_components4.default)(HomePageContainer)`
-  ${""}
-
-  background-image: url(https://ik.imagekit.io/pgm/about-page-background_iT62uu7OZ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647710010332)
-`;
-var VisionPageOverlay = (0, import_styled_components4.default)(HomePageContainer)`
-  background-image: url(https://ik.imagekit.io/pgm/background-overlay-yellow_e-st84ucs.png?ik-sdk-version=javascript-1.4.3&updatedAt=1651980766344)
+  background-image: url(https://ik.imagekit.io/pgm/background-yellow-final__q8HmKfNy.png?ik-sdk-version=javascript-1.4.3&updatedAt=1652304184890)
 `;
 
 // app/components/Footer.jsx
@@ -630,7 +625,7 @@ var import_imagekitio_react2 = __toModule(require("imagekitio-react"));
 init_react();
 var import_styled_components5 = __toModule(require("styled-components"));
 var SplashPageContainer = import_styled_components5.default.div`
-  background-image: url(https://ik.imagekit.io/pgm/splash-page-background_ispuh5fagl.png);
+  background-image: url(https://ik.imagekit.io/pgm/background-purple-final-2_NCFJZDfGH.png?ik-sdk-version=javascript-1.4.3&updatedAt=1652303962714);
   background-size: 100% auto;
   height: 100%;
   min-height: 100vh;
@@ -801,7 +796,7 @@ var Footer = ({ variation = Variations.PURPLE }) => {
       height: "50"
     }]
   })), /* @__PURE__ */ React.createElement(MintButton, {
-    onClick: () => window.location.assign("/something")
+    onClick: () => window.location.assign("/")
   }, /* @__PURE__ */ React.createElement(import_imagekitio_react2.IKImage, {
     path: DiscordPath,
     transformation: [{
@@ -1076,7 +1071,7 @@ var import_imagekitio_react7 = __toModule(require("imagekitio-react"));
 init_react();
 var import_styled_components8 = __toModule(require("styled-components"));
 var TeamPageContainer = (0, import_styled_components8.default)(HomePageContainer)`
-  background-image: url(https://ik.imagekit.io/pgm/team-page-background_P2sNYIzXW.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647920620750)
+  background-image: url(https://ik.imagekit.io/pgm/yellow-background-final-2_7DhPl_vM7.png?ik-sdk-version=javascript-1.4.3&updatedAt=1652305741932)
 `;
 var FlexList = import_styled_components8.default.div`
   display: flex;
