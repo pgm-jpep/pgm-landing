@@ -47,7 +47,7 @@ export default function Index() {
             onClick={() => (window.location.href = "/home")}
           >
             <IKImage
-              path="/enter_button_cropped_toafS3QB-ntK.png"
+              path="/enter-button-final_4i9f4_Ec8.png?ik-sdk-version=javascript-1.4.3&updatedAt=1651981728961"
               transformation={[{
                 "width": "350"
               }]}

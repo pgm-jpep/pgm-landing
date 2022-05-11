@@ -4,6 +4,7 @@ import { HeaderText, HomePageContainer, ParagraphText, TextContainer, MainSectio
 import Footer, { Variations } from "~/components/Footer";
 import { SplashBanner} from '../styles/splash'
 import EmailInput from '~/components/EmailInput';
+import { MintButton } from '../styles/splash';
 
 export default function Home() {
   return (
@@ -43,13 +44,20 @@ export default function Home() {
             }]}
             style={{ margin: 'auto' }}
           />
+          <MintButton
+            onClick={() => (window.location.href = "/mintnow")}
+          >
+
            <IKImage
             path="/mint-now-button_tX1SzsxSW.png"
             transformation={[{
               width: "350"
             }]}
-            style={{ margin: '24px auto' }}
+            style={{
+              margin: '24px auto',
+            }}
           />
+          </MintButton>
         </MainSection>
         <MainSection>
           <Divider />
@@ -58,6 +66,8 @@ export default function Home() {
            <HeaderText>
             THE VISION
           </HeaderText>
+          <MintButton>
+
           <IKImage
             path="/seeing-eye-pyramid-crop_JHKYh1Gy5.png"
             transformation={[{
@@ -66,6 +76,7 @@ export default function Home() {
             style={{ margin: '48px auto', cursor: 'pointer' }}
             onClick={() => window.location.assign('/vision')}
           />
+          </MintButton>
         </MainSection>
         <MainSection>
           <Divider />

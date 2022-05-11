@@ -42,4 +42,22 @@ export const SplashButton = styled.div`
   top: 45%;
   display: flex;
   cursor: pointer;
+  opacity: 0.7;
+  transition: all .2s ease-in-out;
+  &:hover {
+    opacity: 1;
+    transform: scale(1.05);
+
+  }
+`;
+
+export const MintButton = styled.div`
+    cursor: pointer;
+  opacity: 0.7;
+  transition: all .2s ease-in-out;
+  &:hover {
+    opacity: 1;
+    transform: scale(1.05);
+
+  }
 `;

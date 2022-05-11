@@ -1,4 +1,5 @@
 import { IKImage } from "imagekitio-react";
+import { MintButton } from "~/styles/splash";
 import {
   FooterContainer,
   SocialLinks,
@@ -58,24 +59,39 @@ const Footer = ({ variation = Variations.PURPLE }) => {
             }]}
           />
         <SocialLinks>
-          <IKImage
-              path={TwitterPath}
-              transformation={[{
-                height: "50"
-              }]}
-            />
+            <MintButton
+              onClick={() => window.open('https://twitter.com/pharaohgodmob', '_blank')}
+            >
+
+            <IKImage
+                path={TwitterPath}
+                transformation={[{
+                  height: "50"
+                }]}
+              />
+            </MintButton>
+            <MintButton
+              onClick={() => window.location.assign('/something')}
+            >
+
           <IKImage
             path={DiscordPath}
             transformation={[{
               height: "50"
             }]}
           />
+            </MintButton>
+            <MintButton
+              onClick={() => window.open('https://instagram.com/pharaohgodmob', '_blank')}
+            >
+
           <IKImage
             path={InstagramPath}
             transformation={[{
               height: "50"
             }]}
           />
+            </MintButton>
         </SocialLinks>
       </FooterContainer>
     )

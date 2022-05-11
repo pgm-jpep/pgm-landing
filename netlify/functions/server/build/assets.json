@@ -1,5 +1,5 @@
 {
-  "version": "37cbf419",
+  "version": "f25ba9f1",
   "entry": {
     "module": "/build/entry.client-YC2SBRZX.js",
     "imports": [
@@ -21,10 +21,10 @@
       "id": "routes/home",
       "parentId": "root",
       "path": "home",
-      "module": "/build/routes/home-NEDSCDMX.js",
+      "module": "/build/routes/home-WMHQKPIH.js",
       "imports": [
-        "/build/_shared/chunk-EVVRBEM6.js",
-        "/build/_shared/chunk-DU5HCUWB.js"
+        "/build/_shared/chunk-MIPYSZC2.js",
+        "/build/_shared/chunk-R5B6XEEG.js"
       ],
       "hasAction": false,
       "hasLoader": false,
@@ -35,9 +35,9 @@
       "id": "routes/index",
       "parentId": "root",
       "index": true,
-      "module": "/build/routes/index-M4LSNHX2.js",
+      "module": "/build/routes/index-UUAQFEE4.js",
       "imports": [
-        "/build/_shared/chunk-DU5HCUWB.js"
+        "/build/_shared/chunk-R5B6XEEG.js"
       ],
       "hasAction": false,
       "hasLoader": false,
@@ -48,10 +48,10 @@
       "id": "routes/team",
       "parentId": "root",
       "path": "team",
-      "module": "/build/routes/team-5NN5V56M.js",
+      "module": "/build/routes/team-5UCCHXI7.js",
       "imports": [
-        "/build/_shared/chunk-EVVRBEM6.js",
-        "/build/_shared/chunk-DU5HCUWB.js"
+        "/build/_shared/chunk-MIPYSZC2.js",
+        "/build/_shared/chunk-R5B6XEEG.js"
       ],
       "hasAction": false,
       "hasLoader": false,
@@ -62,10 +62,10 @@
       "id": "routes/vision",
       "parentId": "root",
       "path": "vision",
-      "module": "/build/routes/vision-UTVIAZYR.js",
+      "module": "/build/routes/vision-DSSPPF76.js",
       "imports": [
-        "/build/_shared/chunk-EVVRBEM6.js",
-        "/build/_shared/chunk-DU5HCUWB.js"
+        "/build/_shared/chunk-MIPYSZC2.js",
+        "/build/_shared/chunk-R5B6XEEG.js"
       ],
       "hasAction": false,
       "hasLoader": false,
@@ -73,5 +73,5 @@
       "hasErrorBoundary": false
     }
   },
-  "url": "/build/manifest-37CBF419.js"
+  "url": "/build/manifest-F25BA9F1.js"
 }

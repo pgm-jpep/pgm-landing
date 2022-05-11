@@ -1,4 +1,4 @@
-import{a as l,b as n,c as d}from"/build/_shared/chunk-DU5HCUWB.js";import{b as s,e,f as r}from"/build/_shared/chunk-AKSB5QXU.js";r();var c=s(l());r();var a=n.a`
+import{a as l,b as n,c as d}from"/build/_shared/chunk-R5B6XEEG.js";import{b as s,e,f as r}from"/build/_shared/chunk-AKSB5QXU.js";r();var c=s(l());r();var a=n.a`
   color: #fff;
   font-style: italic;
   font-weight: 500;
