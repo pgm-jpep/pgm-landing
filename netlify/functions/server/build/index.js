@@ -597,45 +597,110 @@ var Divider = import_styled_components3.default.div`
 init_react();
 var import_styled_components4 = __toModule(require("styled-components"));
 var VisionPageContainer = (0, import_styled_components4.default)(HomePageContainer)`
+  ${""}
+
   background-image: url(https://ik.imagekit.io/pgm/about-page-background_iT62uu7OZ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647710010332)
+`;
+var VisionPageOverlay = (0, import_styled_components4.default)(HomePageContainer)`
+  background-image: url(https://ik.imagekit.io/pgm/background-overlay-yellow_e-st84ucs.png?ik-sdk-version=javascript-1.4.3&updatedAt=1651980766344)
 `;
 
 // app/components/Footer.jsx
 init_react();
 var import_imagekitio_react2 = __toModule(require("imagekitio-react"));
 
-// app/styles/footer.js
+// app/styles/splash.js
 init_react();
 var import_styled_components5 = __toModule(require("styled-components"));
-var FooterContainer = import_styled_components5.default.div`
+var SplashPageContainer = import_styled_components5.default.div`
+  background-image: url(https://ik.imagekit.io/pgm/splash-page-background_ispuh5fagl.png);
+  background-size: 100% auto;
+  height: 100%;
+  min-height: 100vh;
+  background-repeat: repeat;
+  display: flex;
+  flex-direction: column;
+  @font-face {
+    font-family: 'Neue Helvetica Pro 95 Black';
+    src: url(${HelveticaNeueLTPro_Blk_default});
+  }
+  justify-content: center;
+  align-items: center;
+`;
+var SplashLogoContainer = import_styled_components5.default.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-height: 500px;
+`;
+var SplashLogo = import_styled_components5.default.img`
+  max-width: 300px;
+`;
+var SplashBanner = import_styled_components5.default.div`
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  min-height: 500px;
+  margin: 24px 0px 48px;
+`;
+var SplashButton = import_styled_components5.default.div`
+  width: 100%;
+  max-width: 1200px;
+  position: absolute;
+  top: 45%;
+  display: flex;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: all .2s ease-in-out;
+  &:hover {
+    opacity: 1;
+    transform: scale(1.05);
+
+  }
+`;
+var MintButton = import_styled_components5.default.div`
+    cursor: pointer;
+  opacity: 0.7;
+  transition: all .2s ease-in-out;
+  &:hover {
+    opacity: 1;
+    transform: scale(1.05);
+
+  }
+`;
+
+// app/styles/footer.js
+init_react();
+var import_styled_components6 = __toModule(require("styled-components"));
+var FooterContainer = import_styled_components6.default.div`
   margin: 12px 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 `;
-var FooterBar = import_styled_components5.default.img`
+var FooterBar = import_styled_components6.default.img`
   width: 100%;
   max-width: 1200px;
 `;
-var SocialLinks = import_styled_components5.default.div`
+var SocialLinks = import_styled_components6.default.div`
   margin: 24px auto;
   display: flex;
   justify-content: center;
   gap: 12px;
 `;
-var SocialLink = import_styled_components5.default.img`
+var SocialLink = import_styled_components6.default.img`
   max-height: 50px;
 `;
-var InputContainer = import_styled_components5.default.div`
+var InputContainer = import_styled_components6.default.div`
   display: flex;
   justify-content: center;
   align-items: center;
 
 `;
-var InputFieldBox = import_styled_components5.default.div`
+var InputFieldBox = import_styled_components6.default.div`
     width: 600px;
 `;
-var InputField = import_styled_components5.default.input`
+var InputField = import_styled_components6.default.input`
   background: #443050;
   width: 600px;
   border: 1px solid #443050;
@@ -649,7 +714,7 @@ var InputField = import_styled_components5.default.input`
     font-size: 16px;
   }
 `;
-var InputIconBox = import_styled_components5.default.div`
+var InputIconBox = import_styled_components6.default.div`
   height: 32px;
   width: 32px;
   ${({ solid }) => solid && `
@@ -658,7 +723,7 @@ var InputIconBox = import_styled_components5.default.div`
   `}
   border-radius: 4px;
 `;
-var InputBracketBox = import_styled_components5.default.div`
+var InputBracketBox = import_styled_components6.default.div`
   height: 56px;
 `;
 
@@ -711,67 +776,30 @@ var Footer = ({ variation = Variations.PURPLE }) => {
     transformation: [{
       width: "1200"
     }]
-  }), /* @__PURE__ */ React.createElement(SocialLinks, null, /* @__PURE__ */ React.createElement(import_imagekitio_react2.IKImage, {
+  }), /* @__PURE__ */ React.createElement(SocialLinks, null, /* @__PURE__ */ React.createElement(MintButton, {
+    onClick: () => window.open("https://twitter.com/pharaohgodmob", "_blank")
+  }, /* @__PURE__ */ React.createElement(import_imagekitio_react2.IKImage, {
     path: TwitterPath,
     transformation: [{
       height: "50"
     }]
-  }), /* @__PURE__ */ React.createElement(import_imagekitio_react2.IKImage, {
+  })), /* @__PURE__ */ React.createElement(MintButton, {
+    onClick: () => window.location.assign("/something")
+  }, /* @__PURE__ */ React.createElement(import_imagekitio_react2.IKImage, {
     path: DiscordPath,
     transformation: [{
       height: "50"
     }]
-  }), /* @__PURE__ */ React.createElement(import_imagekitio_react2.IKImage, {
+  })), /* @__PURE__ */ React.createElement(MintButton, {
+    onClick: () => window.open("https://instagram.com/pharaohgodmob", "_blank")
+  }, /* @__PURE__ */ React.createElement(import_imagekitio_react2.IKImage, {
     path: InstagramPath,
     transformation: [{
       height: "50"
     }]
-  })));
+  }))));
 };
 var Footer_default = Footer;
-
-// app/styles/splash.js
-init_react();
-var import_styled_components6 = __toModule(require("styled-components"));
-var SplashPageContainer = import_styled_components6.default.div`
-  background-image: url(https://ik.imagekit.io/pgm/splash-page-background_ispuh5fagl.png);
-  background-size: 100% auto;
-  height: 100%;
-  min-height: 100vh;
-  background-repeat: repeat;
-  display: flex;
-  flex-direction: column;
-  @font-face {
-    font-family: 'Neue Helvetica Pro 95 Black';
-    src: url(${HelveticaNeueLTPro_Blk_default});
-  }
-  justify-content: center;
-  align-items: center;
-`;
-var SplashLogoContainer = import_styled_components6.default.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-height: 500px;
-`;
-var SplashLogo = import_styled_components6.default.img`
-  max-width: 300px;
-`;
-var SplashBanner = import_styled_components6.default.div`
-  width: 100%;
-  max-width: 1200px;
-  position: relative;
-  min-height: 500px;
-  margin: 24px 0px 48px;
-`;
-var SplashButton = import_styled_components6.default.div`
-  width: 100%;
-  max-width: 1200px;
-  position: absolute;
-  top: 45%;
-  display: flex;
-  cursor: pointer;
-`;
 
 // app/components/EmailInput.jsx
 init_react();
@@ -944,7 +972,7 @@ function Index() {
   }), /* @__PURE__ */ React.createElement(SplashButton, {
     onClick: () => window.location.href = "/home"
   }, /* @__PURE__ */ React.createElement(import_imagekitio_react5.IKImage, {
-    path: "/enter_button_cropped_toafS3QB-ntK.png",
+    path: "/enter-button-final_4i9f4_Ec8.png?ik-sdk-version=javascript-1.4.3&updatedAt=1651981728961",
     transformation: [{
       "width": "350"
     }],
@@ -984,22 +1012,26 @@ function Home() {
       width: "875"
     }],
     style: { margin: "auto" }
-  }), /* @__PURE__ */ React.createElement(import_imagekitio_react6.IKImage, {
+  }), /* @__PURE__ */ React.createElement(MintButton, {
+    onClick: () => window.location.href = "/mintnow"
+  }, /* @__PURE__ */ React.createElement(import_imagekitio_react6.IKImage, {
     path: "/mint-now-button_tX1SzsxSW.png",
     transformation: [{
       width: "350"
     }],
-    style: { margin: "24px auto" }
-  })), /* @__PURE__ */ React.createElement(MainSection, null, /* @__PURE__ */ React.createElement(Divider, null)), /* @__PURE__ */ React.createElement(MainSection, {
+    style: {
+      margin: "24px auto"
+    }
+  }))), /* @__PURE__ */ React.createElement(MainSection, null, /* @__PURE__ */ React.createElement(Divider, null)), /* @__PURE__ */ React.createElement(MainSection, {
     center: true
-  }, /* @__PURE__ */ React.createElement(HeaderText, null, "THE VISION"), /* @__PURE__ */ React.createElement(import_imagekitio_react6.IKImage, {
+  }, /* @__PURE__ */ React.createElement(HeaderText, null, "THE VISION"), /* @__PURE__ */ React.createElement(MintButton, null, /* @__PURE__ */ React.createElement(import_imagekitio_react6.IKImage, {
     path: "/seeing-eye-pyramid-crop_JHKYh1Gy5.png",
     transformation: [{
       width: "600"
     }],
     style: { margin: "48px auto", cursor: "pointer" },
     onClick: () => window.location.assign("/vision")
-  })), /* @__PURE__ */ React.createElement(MainSection, null, /* @__PURE__ */ React.createElement(Divider, null)), /* @__PURE__ */ React.createElement(MainSection, {
+  }))), /* @__PURE__ */ React.createElement(MainSection, null, /* @__PURE__ */ React.createElement(Divider, null)), /* @__PURE__ */ React.createElement(MainSection, {
     center: true
   }, /* @__PURE__ */ React.createElement(HeaderText, null, "THE TEAM"), /* @__PURE__ */ React.createElement(import_imagekitio_react6.IKImage, {
     path: "/hands_shX038CJSn.png",

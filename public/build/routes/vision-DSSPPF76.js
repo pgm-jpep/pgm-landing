@@ -1,0 +1,7 @@
+import{a as s,b as n,c as p,d as m,e as l,f as g,g as r,i as h}from"/build/_shared/chunk-MIPYSZC2.js";import{a as x,b as t,f as u,i as a,j as d}from"/build/_shared/chunk-R5B6XEEG.js";import{b as k,e as o,f as i}from"/build/_shared/chunk-AKSB5QXU.js";i();i();var e=k(x());i();var v=t(n)`
+  ${""}
+
+  background-image: url(https://ik.imagekit.io/pgm/about-page-background_iT62uu7OZ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647710010332)
+`,T=t(n)`
+  background-image: url(https://ik.imagekit.io/pgm/background-overlay-yellow_e-st84ucs.png?ik-sdk-version=javascript-1.4.3&updatedAt=1651980766344)
+`;function f(){return o.createElement(e.IKContext,{urlEndpoint:"https://ik.imagekit.io/pgm"},o.createElement(v,null,o.createElement(s,null),o.createElement("div",{className:"container"}),o.createElement(u,null,o.createElement(e.IKImage,{path:"/about-page-banner_GJWwV_zZv.png",loading:"lazy",lqip:{active:!0},style:{width:"100%"}})),o.createElement(r,null,o.createElement(p,null,o.createElement(l,null,"THE VISION"),o.createElement(m,{color:"#CAD913"},"PGM is a collection of 5,000 NFTs existing on the ethereum blockchain. Each unique digital illustration signifies your seat in the mob. Those on the inside benefit from all future roadmap endeavors."))),o.createElement(r,{center:!0},o.createElement(g,null,"KEEP ME POSTED"),o.createElement(h,{variation:a.YELLOW})),o.createElement(d,{variation:a.YELLOW})))}export{f as default};
