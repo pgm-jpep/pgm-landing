@@ -71,7 +71,7 @@ const Footer = ({ variation = Variations.PURPLE }) => {
               />
             </MintButton>
             <MintButton
-              onClick={() => window.location.assign('/something')}
+              onClick={() => window.location.assign('/')}
             >
 
           <IKImage

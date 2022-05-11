@@ -1,7 +1,7 @@
 import { IKImage, IKContext } from 'imagekitio-react'
 import Navbar from "~/components/Navbar";
 import { HeaderText, ParagraphText, TextContainer, MainSection, Divider, SubheaderText, } from "../styles/home";
-import {VisionPageContainer, VisionPageOverlay } from '../styles/vision';
+import {VisionPageContainer } from '../styles/vision';
 import Footer, { Variations } from "~/components/Footer";
 import { SplashBanner} from '../styles/splash'
 import EmailInput from '~/components/EmailInput';

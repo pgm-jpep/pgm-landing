@@ -3,7 +3,7 @@ import HelveticaNeueLTPro from '../assets/fonts/HelveticaNeueLTPro-Blk.otf';
 
 
 export const HomePageContainer = styled.div`
-  background-image: url(https://ik.imagekit.io/pgm/main-page-background_BxJCwGSlS.png);
+  background-image: url(https://ik.imagekit.io/pgm/background-pink-final_6gJAQX-0X.png?ik-sdk-version=javascript-1.4.3&updatedAt=1652304146579);
   background-size: 100% auto;
   height: 100%;
   background-repeat: repeat;
