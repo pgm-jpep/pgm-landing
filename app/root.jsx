@@ -7,6 +7,7 @@ import {
   ScrollRestoration
 } from "remix";
 import rootStyles from './styles/root.css';
+import PGMIcon from '../app/assets/logo.png';
 
 
 export function meta() {
@@ -27,7 +28,15 @@ export const links = () => {
     {
       rel: 'stylesheet',
       href: rootStyles
-    }
+    },
+    {
+      rel: "shortcut icon",
+      href: PGMIcon
+    },
+    {
+      rel: "icon",
+      href: PGMIcon
+    },
   ];
 }
 
@@ -37,6 +46,9 @@ export default function App() {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <link rel="shortcut icon" href="https://ik.imagekit.io/pgm/Logo_Qz3WeWg4H.png?ik-sdk-version=javascript-1.4.3&updatedAt=1652302711550" />
+        <link rel="icon" href="https://ik.imagekit.io/pgm/Logo_Qz3WeWg4H.png?ik-sdk-version=javascript-1.4.3&updatedAt=1652302711550" />
+        <title>PGM</title>
         <Meta />
         <Links />
         {typeof document === "undefined"

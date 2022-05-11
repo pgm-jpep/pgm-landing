@@ -414,6 +414,9 @@ var import_remix2 = __toModule(require_remix());
 // app/styles/root.css
 var root_default = "/build/_assets/root-Y2MH32LR.css";
 
+// app/assets/logo.png
+var logo_default = "/build/_assets/logo-YWPIQDAA.png";
+
 // route-module:/Users/jakepepple/pharoah-god-mob/pgm-landing/app/root.jsx
 function meta() {
   return { title: "New Remix App" };
@@ -433,6 +436,14 @@ var links = () => {
     {
       rel: "stylesheet",
       href: root_default
+    },
+    {
+      rel: "shortcut icon",
+      href: logo_default
+    },
+    {
+      rel: "icon",
+      href: logo_default
     }
   ];
 };
@@ -444,7 +455,13 @@ function App() {
   }), /* @__PURE__ */ React.createElement("meta", {
     name: "viewport",
     content: "width=device-width,initial-scale=1"
-  }), /* @__PURE__ */ React.createElement(import_remix2.Meta, null), /* @__PURE__ */ React.createElement(import_remix2.Links, null), typeof document === "undefined" ? "__STYLES__" : null), /* @__PURE__ */ React.createElement("body", null, /* @__PURE__ */ React.createElement(import_remix2.Outlet, null), /* @__PURE__ */ React.createElement(import_remix2.ScrollRestoration, null), /* @__PURE__ */ React.createElement(import_remix2.Scripts, null), false, /* @__PURE__ */ React.createElement("script", {
+  }), /* @__PURE__ */ React.createElement("link", {
+    rel: "shortcut icon",
+    href: "https://ik.imagekit.io/pgm/Logo_Qz3WeWg4H.png?ik-sdk-version=javascript-1.4.3&updatedAt=1652302711550"
+  }), /* @__PURE__ */ React.createElement("link", {
+    rel: "icon",
+    href: "https://ik.imagekit.io/pgm/Logo_Qz3WeWg4H.png?ik-sdk-version=javascript-1.4.3&updatedAt=1652302711550"
+  }), /* @__PURE__ */ React.createElement("title", null, "PGM"), /* @__PURE__ */ React.createElement(import_remix2.Meta, null), /* @__PURE__ */ React.createElement(import_remix2.Links, null), typeof document === "undefined" ? "__STYLES__" : null), /* @__PURE__ */ React.createElement("body", null, /* @__PURE__ */ React.createElement(import_remix2.Outlet, null), /* @__PURE__ */ React.createElement(import_remix2.ScrollRestoration, null), /* @__PURE__ */ React.createElement(import_remix2.Scripts, null), false, /* @__PURE__ */ React.createElement("script", {
     src: "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js",
     integrity: "sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p",
     crossOrigin: "anonymous"
