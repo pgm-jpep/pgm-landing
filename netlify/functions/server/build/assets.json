@@ -1,5 +1,5 @@
 {
-  "version": "f25ba9f1",
+  "version": "689237df",
   "entry": {
     "module": "/build/entry.client-YC2SBRZX.js",
     "imports": [
@@ -11,7 +11,7 @@
     "root": {
       "id": "root",
       "path": "",
-      "module": "/build/root-YEKPIPIS.js",
+      "module": "/build/root-TSC5LMUQ.js",
       "hasAction": false,
       "hasLoader": false,
       "hasCatchBoundary": false,
@@ -73,5 +73,5 @@
       "hasErrorBoundary": false
     }
   },
-  "url": "/build/manifest-F25BA9F1.js"
+  "url": "/build/manifest-689237DF.js"
 }
