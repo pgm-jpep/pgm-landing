@@ -8,43 +8,34 @@ import {
   SplashButton,
 } from "../styles/splash";
 import { IKContext, IKImage } from "imagekitio-react";
+import PasswordInput, { Variations } from '~/components/PasswordInput';
+import { useLoaderData } from '@remix-run/react'
+import { useState } from 'react';
 
+
+export async function loader() {
+  return process.env.BETA_PASSWORD || null
+}
 export default function Index() {
+  const beta  = useLoaderData();
+  const [password, setPassword] = useState('');
+  const onChange = (e) => {
+    setPassword(e.target.value);
+  }
   return (
     <IKContext urlEndpoint="https://ik.imagekit.io/pgm">
 
       <SplashPageContainer>
-        <SplashLogoContainer style={{maxWidth: '400px'}}>
-          <IKImage
-            path="/w-pharaoh_yBUimLV0dw.gif"
-            transformation={[{
-              width: "500"
-            }]}
-            loading="lazy"
-            lqip={{active: true}}
-          />
-          <IKImage
-            path="/PGM_OXTYtPPw7yvd1.png"
-            transformation={[{
-              width: "500"
-            }]}
-            loading="lazy"
-            lqip={{active: true}}
-            style={{ maxWidth: "300px", margin: "-130px auto 0px"}}
-          />
-        </SplashLogoContainer>
-        <SplashBanner style={{marginTop: '-100px'}}>
-
-          <IKImage
-            path="/splash-page-banner_5zTRhCoW-.png"
-            loading="lazy"
-            lqip={{active: true}}
-            style={{
-            width: "100%"
+        <PasswordInput variation={Variations.PINK} onChange={onChange} value={password} />
+        
+          <div 
+            onClick={() => {
+              if(password === beta) {
+                window.location.href = "/home"
+              } else {
+                alert('Invalid password. Please try again.')
+              }
             }}
-          />
-          <SplashButton
-            onClick={() => (window.location.href = "/home")}
           >
             <IKImage
               path="/enter-button-final_4i9f4_Ec8.png?ik-sdk-version=javascript-1.4.3&updatedAt=1651981728961"
@@ -57,9 +48,7 @@ export default function Index() {
                 "margin": "auto"
               }}
             />
-          </SplashButton>
-        </SplashBanner>
-        <Footer />
+          </div>
       </SplashPageContainer>
     </IKContext>
   );
