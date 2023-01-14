@@ -1,4 +1,4 @@
-import { IKImage, IKContext } from 'imagekitio-react'
+import { IKImage, IKContext, IKVideo } from 'imagekitio-react'
 import Navbar from "~/components/Navbar";
 import { HeaderText, HomePageContainer, ParagraphText, TextContainer, MainSection, Divider, SubheaderText } from "../styles/home";
 import Footer, { Variations } from "~/components/Footer";
@@ -14,7 +14,7 @@ export default function Home() {
         <div className="container"></div>
         <SplashBanner>
           <IKImage
-            path="/main-page-banner_MfwH9Mfib.png"
+            path="/animated_throne_ZV1kUVdN_.gif?ik-sdk-version=javascript-1.4.3&updatedAt=1673722670562"
             loading="lazy"
             lqip={{active: true}}
             style={{
@@ -38,11 +38,8 @@ export default function Home() {
         </MainSection>
         <MainSection center column>
           <IKImage
-            path="/Samples_ogqPMGZD7AWvG.gif"
-            transformation={[{
-              width: "875"
-            }]}
-            style={{ margin: 'auto' }}
+            path="/samples_3TSz1XYS6.gif?ik-sdk-version=javascript-1.4.3&updatedAt=1673724383963"
+            style={{ margin: 'auto', width: '675px', opacity: '0.7' }}
           />
           <MintButton
             onClick={() => (window.location.href = "/mintnow")}
@@ -85,14 +82,16 @@ export default function Home() {
            <HeaderText>
             THE TEAM
           </HeaderText>
-          <IKImage
-            path="/hands_shX038CJSn.png"
-            transformation={[{
-              width: "800"
-            }]}
-            style={{ margin: '48px auto', cursor: 'pointer' }}
-            onClick={() => window.location.assign('/team')}
-          />
+          <MintButton>
+            <IKImage
+              path="/touching_hands_fixed_mWKuW4YM0.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673724931710"
+              transformation={[{
+                width: "800"
+              }]}
+              style={{ margin: '48px auto', cursor: 'pointer' }}
+              onClick={() => window.location.assign('/team')}
+            />
+          </MintButton>
         </MainSection>
         <MainSection>
         </MainSection>

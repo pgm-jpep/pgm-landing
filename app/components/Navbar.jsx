@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <div className="container">
       <nav id="nav" className="navbar navbar-expand-md navbar-light sticky-top">
-        <a href="/" id="pgm-brand" className="navbar-brand">
+        <a href="/splash" id="pgm-brand" className="navbar-brand">
           <IKImage
             path="/logo-vector_1gzBYRGiHGR4.png"
             transformation={[{

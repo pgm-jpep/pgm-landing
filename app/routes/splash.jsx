@@ -24,7 +24,7 @@ export default function Index() {
             lqip={{active: true}}
           />
           <IKImage
-            path="/PGM_OXTYtPPw7yvd1.png"
+            path="/letters_UiWE76Yiy.gif?ik-sdk-version=javascript-1.4.3&updatedAt=1673723677319"
             transformation={[{
               width: "500"
             }]}
