@@ -13,14 +13,15 @@ export default function Home() {
         <Navbar />
         <div className="container"></div>
         <SplashBanner>
-          <IKImage
-            path="/animated_throne_ZV1kUVdN_.gif?ik-sdk-version=javascript-1.4.3&updatedAt=1673722670562"
-            loading="lazy"
-            lqip={{active: true}}
-            style={{
-            width: "100%"
-            }}
-          />
+          <IKVideo
+              path="/throne_hevc_V_XRSiuF7.mov?ik-sdk-version=javascript-1.4.3&updatedAt=1673725908868"
+              style={{
+                width: "100%"
+                }}
+              autoPlay
+              loop
+              
+            />
         </SplashBanner>
 
         <MainSection>

@@ -7,7 +7,7 @@ import {
   SplashBanner,
   SplashButton,
 } from "../styles/splash";
-import { IKContext, IKImage } from "imagekitio-react";
+import { IKContext, IKImage, IKVideo } from "imagekitio-react";
 
 export default function Index() {
   return (
@@ -35,14 +35,15 @@ export default function Index() {
         </SplashLogoContainer>
         <SplashBanner style={{marginTop: '-100px'}}>
 
-          <IKImage
-            path="/splash-page-banner_5zTRhCoW-.png"
-            loading="lazy"
-            lqip={{active: true}}
-            style={{
-            width: "100%"
-            }}
-          />
+          <IKVideo
+              path="/Splash_banner_V9zfPnqpbK.mov?ik-sdk-version=javascript-1.4.3&updatedAt=1673728397200"
+              style={{
+                width: "100%"
+                }}
+              autoPlay
+              loop
+              
+            />
           <SplashButton
             onClick={() => (window.location.href = "/home")}
           >

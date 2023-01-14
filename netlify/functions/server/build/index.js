@@ -521,6 +521,13 @@ var SplashBanner = import_styled_components2.default.div`
   min-height: 500px;
   margin: 24px 0px 48px;
 `;
+var SplashBannerMaxed = import_styled_components2.default.div`
+    width: 100%;
+  max-width: 850px;
+  position: relative;
+  min-height: 500px;
+  margin: 24px 0px 48px;
+`;
 var SplashButton = import_styled_components2.default.div`
   width: 100%;
   max-width: 1200px;
@@ -694,7 +701,7 @@ function Index() {
     loading: "lazy",
     lqip: { active: true }
   }), /* @__PURE__ */ React.createElement(import_imagekitio_react2.IKImage, {
-    path: "/PGM_OXTYtPPw7yvd1.png",
+    path: "/letters_UiWE76Yiy.gif?ik-sdk-version=javascript-1.4.3&updatedAt=1673723677319",
     transformation: [{
       width: "500"
     }],
@@ -703,13 +710,13 @@ function Index() {
     style: { maxWidth: "300px", margin: "-130px auto 0px" }
   })), /* @__PURE__ */ React.createElement(SplashBanner, {
     style: { marginTop: "-100px" }
-  }, /* @__PURE__ */ React.createElement(import_imagekitio_react2.IKImage, {
-    path: "/splash-page-banner_5zTRhCoW-.png",
-    loading: "lazy",
-    lqip: { active: true },
+  }, /* @__PURE__ */ React.createElement(import_imagekitio_react2.IKVideo, {
+    path: "/Splash_banner_V9zfPnqpbK.mov?ik-sdk-version=javascript-1.4.3&updatedAt=1673728397200",
     style: {
       width: "100%"
-    }
+    },
+    autoPlay: true,
+    loop: true
   }), /* @__PURE__ */ React.createElement(SplashButton, {
     onClick: () => window.location.href = "/home"
   }, /* @__PURE__ */ React.createElement(import_imagekitio_react2.IKImage, {
@@ -760,7 +767,7 @@ var Navbar = () => {
     id: "nav",
     className: "navbar navbar-expand-md navbar-light sticky-top"
   }, /* @__PURE__ */ React.createElement("a", {
-    href: "/",
+    href: "/splash",
     id: "pgm-brand",
     className: "navbar-brand"
   }, /* @__PURE__ */ React.createElement(import_imagekitio_react3.IKImage, {
@@ -980,13 +987,13 @@ function Vision() {
     urlEndpoint: "https://ik.imagekit.io/pgm"
   }, /* @__PURE__ */ React.createElement(VisionPageContainer, null, /* @__PURE__ */ React.createElement(Navbar_default, null), /* @__PURE__ */ React.createElement("div", {
     className: "container"
-  }), /* @__PURE__ */ React.createElement(SplashBanner, null, /* @__PURE__ */ React.createElement(import_imagekitio_react5.IKImage, {
-    path: "/about-page-banner_GJWwV_zZv.png",
-    loading: "lazy",
-    lqip: { active: true },
+  }), /* @__PURE__ */ React.createElement(SplashBanner, null, /* @__PURE__ */ React.createElement(import_imagekitio_react5.IKVideo, {
+    path: "/Vision_page_banner_vHUR5MUBQ.mov?ik-sdk-version=javascript-1.4.3&updatedAt=1673726455306",
     style: {
       width: "100%"
-    }
+    },
+    autoPlay: true,
+    loop: true
   })), /* @__PURE__ */ React.createElement(MainSection, null, /* @__PURE__ */ React.createElement(TextContainer, null, /* @__PURE__ */ React.createElement(HeaderText, null, "THE VISION"), /* @__PURE__ */ React.createElement(ParagraphText, {
     color: "#CAD913"
   }, "PGM is a collection of 5,000 NFTs existing on the ethereum blockchain. Each unique digital illustration signifies your seat in the mob. Those on the inside benefit from all future roadmap endeavors."))), /* @__PURE__ */ React.createElement(MainSection, {
@@ -1095,11 +1102,7 @@ function Index2() {
     value: password
   }), /* @__PURE__ */ React.createElement("div", {
     onClick: () => {
-      if (password === beta) {
-        window.location.href = "/home";
-      } else {
-        alert("Invalid password. Please try again.");
-      }
+      window.location.href = "/home";
     }
   }, /* @__PURE__ */ React.createElement(import_imagekitio_react7.IKImage, {
     path: "/enter-button-final_4i9f4_Ec8.png?ik-sdk-version=javascript-1.4.3&updatedAt=1651981728961",
@@ -1126,22 +1129,19 @@ function Home() {
     urlEndpoint: "https://ik.imagekit.io/pgm"
   }, /* @__PURE__ */ React.createElement(HomePageContainer, null, /* @__PURE__ */ React.createElement(Navbar_default, null), /* @__PURE__ */ React.createElement("div", {
     className: "container"
-  }), /* @__PURE__ */ React.createElement(SplashBanner, null, /* @__PURE__ */ React.createElement(import_imagekitio_react8.IKImage, {
-    path: "/main-page-banner_MfwH9Mfib.png",
-    loading: "lazy",
-    lqip: { active: true },
+  }), /* @__PURE__ */ React.createElement(SplashBanner, null, /* @__PURE__ */ React.createElement(import_imagekitio_react8.IKVideo, {
+    path: "/throne_hevc_V_XRSiuF7.mov?ik-sdk-version=javascript-1.4.3&updatedAt=1673725908868",
     style: {
       width: "100%"
-    }
+    },
+    autoPlay: true,
+    loop: true
   })), /* @__PURE__ */ React.createElement(MainSection, null, /* @__PURE__ */ React.createElement(TextContainer, null, /* @__PURE__ */ React.createElement(HeaderText, null, "WELCOME TO THE PHAROAH GOD MOB"), /* @__PURE__ */ React.createElement(ParagraphText, null, "PGM is a collection of 5,000 NFTs existing on the ethereum blockchain. Each unique digital illustration signifies your seat in the mob. Those on the inside benefit from all future roadmap endeavors."))), /* @__PURE__ */ React.createElement(MainSection, {
     center: true,
     column: true
   }, /* @__PURE__ */ React.createElement(import_imagekitio_react8.IKImage, {
-    path: "/Samples_ogqPMGZD7AWvG.gif",
-    transformation: [{
-      width: "875"
-    }],
-    style: { margin: "auto" }
+    path: "/samples_3TSz1XYS6.gif?ik-sdk-version=javascript-1.4.3&updatedAt=1673724383963",
+    style: { margin: "auto", width: "675px", opacity: "0.7" }
   }), /* @__PURE__ */ React.createElement(MintButton, {
     onClick: () => window.location.href = "/mintnow"
   }, /* @__PURE__ */ React.createElement(import_imagekitio_react8.IKImage, {
@@ -1163,14 +1163,14 @@ function Home() {
     onClick: () => window.location.assign("/vision")
   }))), /* @__PURE__ */ React.createElement(MainSection, null, /* @__PURE__ */ React.createElement(Divider, null)), /* @__PURE__ */ React.createElement(MainSection, {
     center: true
-  }, /* @__PURE__ */ React.createElement(HeaderText, null, "THE TEAM"), /* @__PURE__ */ React.createElement(import_imagekitio_react8.IKImage, {
-    path: "/hands_shX038CJSn.png",
+  }, /* @__PURE__ */ React.createElement(HeaderText, null, "THE TEAM"), /* @__PURE__ */ React.createElement(MintButton, null, /* @__PURE__ */ React.createElement(import_imagekitio_react8.IKImage, {
+    path: "/touching_hands_fixed_mWKuW4YM0.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673724931710",
     transformation: [{
       width: "800"
     }],
     style: { margin: "48px auto", cursor: "pointer" },
     onClick: () => window.location.assign("/team")
-  })), /* @__PURE__ */ React.createElement(MainSection, null), /* @__PURE__ */ React.createElement(MainSection, {
+  }))), /* @__PURE__ */ React.createElement(MainSection, null), /* @__PURE__ */ React.createElement(MainSection, {
     center: true
   }, /* @__PURE__ */ React.createElement(SubheaderText, null, "KEEP ME POSTED"), /* @__PURE__ */ React.createElement(EmailInput_default, null)), /* @__PURE__ */ React.createElement(Footer_default, {
     variation: Variations.PINK
@@ -1195,9 +1195,14 @@ var FlexList = import_styled_components8.default.div`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  ${({ alignCenter }) => alignCenter && `
+    justify-content: center
+  `}
 `;
 var FlexListItem = import_styled_components8.default.div`
   flex: 1 1 30%;
+  display: flex;
+  ${({ alignCenter }) => alignCenter && `justify-content: center`}
 `;
 
 // route-module:/Users/jakepepple/pgm/pgm-landing/app/routes/team.jsx
@@ -1206,22 +1211,30 @@ function Team() {
     urlEndpoint: "https://ik.imagekit.io/pgm"
   }, /* @__PURE__ */ React.createElement(TeamPageContainer, null, /* @__PURE__ */ React.createElement(Navbar_default, null), /* @__PURE__ */ React.createElement("div", {
     className: "container"
-  }), /* @__PURE__ */ React.createElement(MainSection, null, /* @__PURE__ */ React.createElement(TextContainer, null, /* @__PURE__ */ React.createElement(HeaderText, null, "THE TEAM"), /* @__PURE__ */ React.createElement(FlexList, null, /* @__PURE__ */ React.createElement(FlexListItem, null, /* @__PURE__ */ React.createElement(import_imagekitio_react9.IKImage, {
-    path: "/rob-pharoah-2_-MUe3EEm9.png",
+  }), /* @__PURE__ */ React.createElement(MainSection, null, /* @__PURE__ */ React.createElement(TextContainer, null, /* @__PURE__ */ React.createElement(HeaderText, null, "THE TEAM"), /* @__PURE__ */ React.createElement(FlexList, {
+    alignCenter: true
+  }, /* @__PURE__ */ React.createElement(FlexListItem, {
+    alignCenter: true
+  }, /* @__PURE__ */ React.createElement(import_imagekitio_react9.IKImage, {
+    path: "/rob_nft_G_onHXetGZ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673723110093",
     transformation: [{
-      width: "350"
+      width: "300"
     }],
     style: { margin: "24px auto" }
-  })), /* @__PURE__ */ React.createElement(FlexListItem, null, /* @__PURE__ */ React.createElement(import_imagekitio_react9.IKImage, {
-    path: "/jake-pharoah-2_A7m9plMaI.png",
+  })), /* @__PURE__ */ React.createElement(FlexListItem, {
+    alignCenter: true
+  }, /* @__PURE__ */ React.createElement(import_imagekitio_react9.IKImage, {
+    path: "/jake_nft_P2sCj8D9K.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673723110070",
     transformation: [{
-      width: "350"
+      width: "300"
     }],
     style: { margin: "24px auto" }
-  })), /* @__PURE__ */ React.createElement(FlexListItem, null, /* @__PURE__ */ React.createElement(import_imagekitio_react9.IKImage, {
-    path: "/ben-pharoah-2_DiL89LpII.png",
+  })), /* @__PURE__ */ React.createElement(FlexListItem, {
+    alignCenter: true
+  }, /* @__PURE__ */ React.createElement(import_imagekitio_react9.IKImage, {
+    path: "/ben_nft_LeAi5sepHs.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673723110092",
     transformation: [{
-      width: "350"
+      width: "300"
     }],
     style: { margin: "24px auto" }
   }))), /* @__PURE__ */ React.createElement(ParagraphText, {
