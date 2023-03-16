@@ -36,7 +36,7 @@ export default function Index() {
         <SplashBanner style={{marginTop: '-100px'}}>
 
           <IKVideo
-              path="/Splash_banner_V9zfPnqpbK.mov?ik-sdk-version=javascript-1.4.3&updatedAt=1673728397200"
+              path="/meeting_trans4k_QyO8Q230-2.mov?updatedAt=1678931219297"
               style={{
                 width: "100%"
                 }}
