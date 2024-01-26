@@ -18,30 +18,30 @@ export default function Team() {
             <HeaderText>
               THE TEAM
             </HeaderText>
-            <FlexList>
-              <FlexListItem>
+            <FlexList alignCenter>
+              <FlexListItem alignCenter>
               <IKImage
-                path="/rob-pharoah-2_-MUe3EEm9.png"
+                path="/rob_nft_G_onHXetGZ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673723110093"
                 transformation={[{
-                  width: "350"
+                  width: "300"
                 }]}
                 style={{ margin: '24px auto' }}
               />
               </FlexListItem>
-              <FlexListItem>
+              <FlexListItem alignCenter>
               <IKImage
-                path="/jake-pharoah-2_A7m9plMaI.png"
+                path="/jake_nft_P2sCj8D9K.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673723110070"
                 transformation={[{
-                  width: "350"
+                  width: "300"
                 }]}
                 style={{ margin: '24px auto' }}
               />
               </FlexListItem>
-              <FlexListItem>
+              <FlexListItem alignCenter>
               <IKImage
-                path="/ben-pharoah-2_DiL89LpII.png"
+                path="/ben_nft_LeAi5sepHs.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673723110092"
                 transformation={[{
-                  width: "350"
+                  width: "300"
                 }]}
                 style={{ margin: '24px auto' }}
               />

@@ -9,7 +9,12 @@ export const FlexList = styled.div`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  ${({ alignCenter }) => alignCenter && `
+    justify-content: center
+  `}
 `;
 export const FlexListItem = styled.div`
   flex: 1 1 30%;
+  display: flex;
+  ${({ alignCenter }) => alignCenter && `justify-content: center`}
 `;

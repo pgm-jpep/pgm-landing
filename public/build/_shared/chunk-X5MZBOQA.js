@@ -1,4 +1,4 @@
-import{a as d,b as g,c as v,d as m,e as s}from"/build/_shared/chunk-M4UNR4AH.js";import{a as l,b as n,c}from"/build/_shared/chunk-BD7QGFNO.js";import{b as p,e as t,f as r}from"/build/_shared/chunk-AKSB5QXU.js";r();var u=p(l());r();var o=n.a`
+import{a as d,b as g,c as v,d as m,e as s}from"/build/_shared/chunk-XP5NXCQF.js";import{a as l,b as n,c}from"/build/_shared/chunk-3ZA4BG2S.js";import{b as p,e as t,f as r}from"/build/_shared/chunk-AKSB5QXU.js";r();var u=p(l());r();var o=n.a`
   color: #fff;
   font-style: italic;
   font-weight: 500;
@@ -8,7 +8,7 @@ import{a as d,b as g,c as v,d as m,e as s}from"/build/_shared/chunk-M4UNR4AH.js"
   transition: .15s;
   cursor: pointer;
   text-decoration: none;
-`;var b=()=>t.createElement("div",{className:"container"},t.createElement("nav",{id:"nav",className:"navbar navbar-expand-md navbar-light sticky-top"},t.createElement("a",{href:"/",id:"pgm-brand",className:"navbar-brand"},t.createElement(u.IKImage,{path:"/logo-vector_1gzBYRGiHGR4.png",transformation:[{height:"130"}],loading:"lazy",lqip:{active:!0}})),t.createElement("button",{"aria-controls":"responsive-navbar-nav",id:"nav-toggle",type:"button","aria-label":"Toggle navigation",className:"navbar-dark navbar-toggler","data-bs-toggle":"collapse","data-bs-target":"#navbarToggler"},t.createElement("span",{className:"navbar-toggler-icon"})),t.createElement("div",{className:"collapse navbar-collapse",id:"navbarToggler",style:{justifyContent:"space-between"}},t.createElement("div",{className:"navbar-nav",id:"nav-bar"},t.createElement(o,{title:"HOME",href:"/home"},"HOME"),t.createElement(o,{title:"VISION",href:"/vision"},"VISION"),t.createElement(o,{title:"TEAM",href:"/team"},"TEAM"))))),A=b;r();var _=n.div`
+`;var b=()=>t.createElement("div",{className:"container"},t.createElement("nav",{id:"nav",className:"navbar navbar-expand-md navbar-light sticky-top"},t.createElement("a",{href:"/splash",id:"pgm-brand",className:"navbar-brand"},t.createElement(u.IKImage,{path:"/logo-vector_1gzBYRGiHGR4.png",transformation:[{height:"130"}],loading:"lazy",lqip:{active:!0}})),t.createElement("button",{"aria-controls":"responsive-navbar-nav",id:"nav-toggle",type:"button","aria-label":"Toggle navigation",className:"navbar-dark navbar-toggler","data-bs-toggle":"collapse","data-bs-target":"#navbarToggler"},t.createElement("span",{className:"navbar-toggler-icon"})),t.createElement("div",{className:"collapse navbar-collapse",id:"navbarToggler",style:{justifyContent:"space-between"}},t.createElement("div",{className:"navbar-nav",id:"nav-bar"},t.createElement(o,{title:"HOME",href:"/home"},"HOME"),t.createElement(o,{title:"VISION",href:"/vision"},"VISION"),t.createElement(o,{title:"TEAM",href:"/team"},"TEAM"))))),A=b;r();var _=n.div`
   background-image: url(https://ik.imagekit.io/pgm/background-pink-final_6gJAQX-0X.png?ik-sdk-version=javascript-1.4.3&updatedAt=1652304146579);
   background-size: 100% auto;
   height: 100%;

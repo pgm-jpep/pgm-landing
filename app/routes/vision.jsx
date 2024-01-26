@@ -1,4 +1,4 @@
-import { IKImage, IKContext } from 'imagekitio-react'
+import { IKImage, IKContext, IKVideo } from 'imagekitio-react'
 import Navbar from "~/components/Navbar";
 import { HeaderText, ParagraphText, TextContainer, MainSection, Divider, SubheaderText, } from "../styles/home";
 import {VisionPageContainer } from '../styles/vision';
@@ -13,13 +13,14 @@ export default function Vision() {
         <Navbar />
         <div className="container"></div>
         <SplashBanner>
-          <IKImage
-            path="/about-page-banner_GJWwV_zZv.png"
-            loading="lazy"
-            lqip={{active: true}}
-            style={{
-            width: "100%"
+          
+          <IKVideo 
+            path="/Vision_page_banner_vHUR5MUBQ.mov?ik-sdk-version=javascript-1.4.3&updatedAt=1673726455306"
+            style={{ 
+              width: "100%"
             }}
+            autoPlay
+            loop
           />
         </SplashBanner>
 

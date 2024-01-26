@@ -30,11 +30,11 @@ export default function Index() {
         
           <div 
             onClick={() => {
-              if(password === beta) {
+              // if(password === beta) {
                 window.location.href = "/home"
-              } else {
-                alert('Invalid password. Please try again.')
-              }
+              // } else {
+                // alert('Invalid password. Please try again.')
+              // }
             }}
           >
             <IKImage

@@ -35,6 +35,13 @@ export const SplashBanner = styled.div`
   min-height: 500px;
   margin: 24px 0px 48px;
 `;
+export const SplashBannerMaxed = styled.div`
+    width: 100%;
+  max-width: 850px;
+  position: relative;
+  min-height: 500px;
+  margin: 24px 0px 48px;
+`;
 export const SplashButton = styled.div`
   width: 100%;
   max-width: 1200px;
