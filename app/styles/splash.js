@@ -22,6 +22,7 @@ export const SplashLogoContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   max-height: 500px;
+  margin: -5%;
 `;
 
 export const SplashLogo = styled.img`
@@ -58,6 +59,7 @@ export const SplashButton = styled.div`
   }
 `;
 
+// TODO: Consider as actual anchor tag
 export const ClickableImage = styled.div`
     cursor: pointer;
   opacity: ${(props) => props.opacity || 0.7};

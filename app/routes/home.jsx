@@ -1,106 +1,50 @@
 import { IKImage, IKContext, IKVideo } from 'imagekitio-react'
 import Navbar from "~/components/Navbar";
-import { HeaderText, HomePageContainer, ParagraphText, TextContainer, MainSection, Divider, SubheaderText } from "../styles/home";
+import { HeaderText, HomePageContainer, ParagraphText, TextContainer, MainSection, Divider, SubheaderText, CenteredText } from "../styles/home";
 import Footer, { Variations } from "~/components/Footer";
-import { SplashBanner} from '../styles/splash'
-import EmailInput from '~/components/EmailInput';
-import { ClickableImage } from '../styles/splash';
+import {  SplashLogoContainer, SplashLogo } from '../styles/splash'
+
+const SPLASH_LOGO_WIDTH = "250";
 
 export default function Home() {
   return (
     <IKContext urlEndpoint="https://ik.imagekit.io/pgm">
       <HomePageContainer>
-        <Navbar />
-        <div className="container"></div>
-        <SplashBanner>
-          <IKVideo
-              path="/throne_hevc_V_XRSiuF7.mov?ik-sdk-version=javascript-1.4.3&updatedAt=1673725908868"
-              style={{
-                width: "100%"
-                }}
-              autoPlay
-              loop
-              
-            />
-        </SplashBanner>
+        <SplashLogoContainer>
+          <IKImage
+            path="/PGM%20website%20files/Untitled_Artwork%203_O1c4PqmNX.gif?updatedAt=1706237717815"
+            transformation={[{
+              width: SPLASH_LOGO_WIDTH
+            }]}
+            loading="lazy"
+            lqip={{active: true}}
+            height={SPLASH_LOGO_WIDTH}
+            width={SPLASH_LOGO_WIDTH}
+          />
+        </SplashLogoContainer>
+        {/* <Navbar /> */}
+        <IKImage
+          path="/PGM%20website%20files/Pink%20page%20gif_TFZUIeOWN.gif?updatedAt=1706237708422"
+          style={{
+            width: "75%",
+            margin: '0 auto',
+          }}
+          autoPlay
+          loop
 
+        />
         <MainSection>
           <TextContainer>
-            <HeaderText>
-              WELCOME TO THE PHAROAH GOD MOB
-            </HeaderText>
-            <ParagraphText>
-              PGM is a collection of 5,000 NFTs existing on the ethereum
-              blockchain. Each unique digital illustration signifies your
-              seat in the mob. Those on the inside benefit from all future
-              roadmap endeavors.
-            </ParagraphText>
+            {/* <SubheaderText> */}
+            <CenteredText>
+
+              Deliverance.
+            </CenteredText>
+            <CenteredText>
+              3.21.22
+            </CenteredText>
+            {/* </SubheaderText> */}
           </TextContainer>
-        </MainSection>
-        <MainSection center column>
-          <IKImage
-            path="/samples_3TSz1XYS6.gif?ik-sdk-version=javascript-1.4.3&updatedAt=1673724383963"
-            style={{ margin: 'auto', width: '675px', opacity: '0.7' }}
-          />
-          <ClickableImage
-            onClick={() => (window.location.href = "/mintnow")}
-          >
-
-           <IKImage
-            path="/mint-now-button_tX1SzsxSW.png"
-            transformation={[{
-              width: "350"
-            }]}
-            style={{
-              margin: '24px auto',
-            }}
-          />
-          </ClickableImage>
-        </MainSection>
-        <MainSection>
-          <Divider />
-        </MainSection>
-        <MainSection center>
-           <HeaderText>
-            THE VISION
-          </HeaderText>
-          <ClickableImage>
-
-          <IKImage
-            path="/seeing-eye-pyramid-crop_JHKYh1Gy5.png"
-            transformation={[{
-              width: "600"
-            }]}
-            style={{ margin: '48px auto', cursor: 'pointer' }}
-            onClick={() => window.location.assign('/vision')}
-          />
-          </ClickableImage>
-        </MainSection>
-        <MainSection>
-          <Divider />
-        </MainSection>
-        <MainSection center>
-           <HeaderText>
-            THE TEAM
-          </HeaderText>
-          <ClickableImage>
-            <IKImage
-              path="/touching_hands_fixed_mWKuW4YM0.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673724931710"
-              transformation={[{
-                width: "800"
-              }]}
-              style={{ margin: '48px auto', cursor: 'pointer' }}
-              onClick={() => window.location.assign('/team')}
-            />
-          </ClickableImage>
-        </MainSection>
-        <MainSection>
-        </MainSection>
-        <MainSection center>
-           <SubheaderText>
-            KEEP ME POSTED
-          </SubheaderText>
-          <EmailInput />
         </MainSection>
         <Footer variation={Variations.PINK} />
       </HomePageContainer>

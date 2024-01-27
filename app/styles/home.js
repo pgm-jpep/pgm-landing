@@ -3,7 +3,7 @@ import HelveticaNeueLTPro from '../assets/fonts/HelveticaNeueLTPro-Blk.otf';
 
 
 export const HomePageContainer = styled.div`
-  background-image: url(https://ik.imagekit.io/pgm/background-pink-final_6gJAQX-0X.png?ik-sdk-version=javascript-1.4.3&updatedAt=1652304146579);
+  background-image: url(https://ik.imagekit.io/pgm/PGM%20website%20files/Pink%20background_RlupOo6jpO.png?updatedAt=1706237713198);
   background-size: 100% auto;
   height: 100%;
   background-repeat: repeat;
@@ -15,6 +15,7 @@ export const HomePageContainer = styled.div`
   }
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
 `;
 
 export const TextContainer = styled.div`
@@ -37,6 +38,11 @@ export const SubheaderText = styled.h3`
   font-size: 1.8em;
   font-weight: 800;
   margin: 24px 0px;
+`;
+export const CenteredText = styled.p`
+  width: 100%;
+  text-align: center;
+
 `;
 
 export const MainSection = styled.div`
