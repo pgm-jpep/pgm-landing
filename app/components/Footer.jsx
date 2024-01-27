@@ -1,5 +1,5 @@
 import { IKImage } from "imagekitio-react";
-import { MintButton } from "~/styles/splash";
+import { ClickableImage } from "~/styles/splash";
 import {
   FooterContainer,
   SocialLinks,
@@ -59,7 +59,7 @@ const Footer = ({ variation = Variations.PURPLE }) => {
             }]}
           />
         <SocialLinks>
-            <MintButton
+            <ClickableImage
               onClick={() => window.open('https://twitter.com/pharaohgodmob', '_blank')}
             >
 
@@ -69,8 +69,8 @@ const Footer = ({ variation = Variations.PURPLE }) => {
                   height: "50"
                 }]}
               />
-            </MintButton>
-            <MintButton
+            </ClickableImage>
+            <ClickableImage
               onClick={() => window.location.assign('/')}
             >
 
@@ -80,8 +80,8 @@ const Footer = ({ variation = Variations.PURPLE }) => {
               height: "50"
             }]}
           />
-            </MintButton>
-            <MintButton
+            </ClickableImage>
+            <ClickableImage
               onClick={() => window.open('https://instagram.com/pharaohgodmob', '_blank')}
             >
 
@@ -91,7 +91,7 @@ const Footer = ({ variation = Variations.PURPLE }) => {
               height: "50"
             }]}
           />
-            </MintButton>
+            </ClickableImage>
         </SocialLinks>
       </FooterContainer>
     )
