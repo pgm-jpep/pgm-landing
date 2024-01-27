@@ -21,6 +21,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   flex-direction: column;
   justify-content: center;
   max-height: 500px;
+  margin: -5%;
 `,So=Ce.img`
   max-width: 300px;
 `,bo=Ce.div`
