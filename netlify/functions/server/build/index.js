@@ -491,10 +491,9 @@ var HelveticaNeueLTPro_Blk_default = "/build/_assets/HelveticaNeueLTPro-Blk-HVYO
 
 // app/styles/splash.js
 var SplashPageContainer = import_styled_components2.default.div`
-  background-image: url(https://ik.imagekit.io/pgm/background-purple-final-2_NCFJZDfGH.png?ik-sdk-version=javascript-1.4.3&updatedAt=1652303962714);
+  background-color: black;
   background-size: 100% auto;
   height: 100%;
-  min-height: 100vh;
   background-repeat: repeat;
   display: flex;
   flex-direction: column;
@@ -504,6 +503,7 @@ var SplashPageContainer = import_styled_components2.default.div`
   }
   justify-content: center;
   align-items: center;
+  padding-bottom: 100px;
 `;
 var SplashLogoContainer = import_styled_components2.default.div`
   display: flex;
@@ -543,15 +543,16 @@ var SplashButton = import_styled_components2.default.div`
 
   }
 `;
-var MintButton = import_styled_components2.default.div`
+var ClickableImage = import_styled_components2.default.div`
     cursor: pointer;
-  opacity: 0.7;
+  opacity: ${(props) => props.opacity || 0.7};
   transition: all .2s ease-in-out;
   &:hover {
     opacity: 1;
     transform: scale(1.05);
 
   }
+  ${(props) => props.margin && `margin: ${props.margin}`}
 `;
 
 // app/styles/footer.js
@@ -661,21 +662,21 @@ var Footer = ({ variation = Variations.PURPLE }) => {
     transformation: [{
       width: "1200"
     }]
-  }), /* @__PURE__ */ React.createElement(SocialLinks, null, /* @__PURE__ */ React.createElement(MintButton, {
+  }), /* @__PURE__ */ React.createElement(SocialLinks, null, /* @__PURE__ */ React.createElement(ClickableImage, {
     onClick: () => window.open("https://twitter.com/pharaohgodmob", "_blank")
   }, /* @__PURE__ */ React.createElement(import_imagekitio_react.IKImage, {
     path: TwitterPath,
     transformation: [{
       height: "50"
     }]
-  })), /* @__PURE__ */ React.createElement(MintButton, {
+  })), /* @__PURE__ */ React.createElement(ClickableImage, {
     onClick: () => window.location.assign("/")
   }, /* @__PURE__ */ React.createElement(import_imagekitio_react.IKImage, {
     path: DiscordPath,
     transformation: [{
       height: "50"
     }]
-  })), /* @__PURE__ */ React.createElement(MintButton, {
+  })), /* @__PURE__ */ React.createElement(ClickableImage, {
     onClick: () => window.open("https://instagram.com/pharaohgodmob", "_blank")
   }, /* @__PURE__ */ React.createElement(import_imagekitio_react.IKImage, {
     path: InstagramPath,
@@ -1008,106 +1009,66 @@ function Vision() {
 // route-module:/Users/jakepepple/pgm/pgm-landing/app/routes/index.jsx
 var routes_exports = {};
 __export(routes_exports, {
-  default: () => Index2,
-  loader: () => loader
+  default: () => Index2
 });
 init_react();
-var import_imagekitio_react7 = __toModule(require("imagekitio-react"));
-
-// app/components/PasswordInput.jsx
-init_react();
 var import_imagekitio_react6 = __toModule(require("imagekitio-react"));
-var Variations3 = {
-  GREEN: "green",
-  PINK: "pink",
-  YELLOW: "yellow"
-};
-var getInputColor2 = (variation) => {
-  return {
-    [Variations3.PINK]: "#443050",
-    [Variations3.YELLOW]: "#485508",
-    [Variations3.GREEN]: "#53702c"
-  }[variation];
-};
-var getInputIconColor2 = (variation) => {
-  return {
-    [Variations3.PINK]: "#e3afff",
-    [Variations3.YELLOW]: "#CAD913",
-    [Variations3.GREEN]: "#263A0B"
-  }[variation];
-};
-var getLeftBracketPath2 = (variation) => {
-  return {
-    [Variations3.PINK]: "/left-bracket-pink_6K2LI739qq.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647916171574",
-    [Variations3.YELLOW]: "/left-bracket-yellow_i0Hxi4GbTw.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647916234146",
-    [Variations3.GREEN]: "/left-bracket-green_cv5DIzo-6.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647922205783"
-  }[variation];
-};
-var getRightBracketPath2 = (variation) => {
-  return {
-    [Variations3.PINK]: "/right-bracket-pink_Vjhzhsrc5.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647916185573",
-    [Variations3.YELLOW]: "/right-bracket-yellow_7zGMd1buh8.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647916234119",
-    [Variations3.GREEN]: "/right-bracket-green_MiZlkJC722.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647922205791"
-  }[variation];
-};
-var PasswordInput = ({ variation = Variations3.PINK, onChange, value }) => {
-  const inputColor = getInputColor2(variation);
-  const inputIconColor = getInputIconColor2(variation);
-  const leftBracketPath = getLeftBracketPath2(variation);
-  const rightBracketPath = getRightBracketPath2(variation);
-  return /* @__PURE__ */ React.createElement(InputContainer2, null, /* @__PURE__ */ React.createElement(InputBracketBox2, null, /* @__PURE__ */ React.createElement(import_imagekitio_react6.IKImage, {
-    path: leftBracketPath,
-    transformation: [{
-      height: "56"
-    }]
-  })), /* @__PURE__ */ React.createElement(InputFieldBox2, null, /* @__PURE__ */ React.createElement(InputField2, {
-    color: inputColor,
-    type: "password",
-    placeholder: "Enter password to continue",
-    onChange,
-    value
-  })), /* @__PURE__ */ React.createElement(InputIconBox2, {
-    color: inputIconColor
-  }, /* @__PURE__ */ React.createElement(import_imagekitio_react6.IKImage, {
-    path: "/dotted-arrow_Q-88Z_X2q.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647711227720",
-    transformation: [{
-      height: "32"
-    }]
-  })), /* @__PURE__ */ React.createElement(InputBracketBox2, null, /* @__PURE__ */ React.createElement(import_imagekitio_react6.IKImage, {
-    path: rightBracketPath,
-    transformation: [{
-      height: "56"
-    }]
-  })));
-};
-var PasswordInput_default = PasswordInput;
-
-// route-module:/Users/jakepepple/pgm/pgm-landing/app/routes/index.jsx
-var import_react = __toModule(require("@remix-run/react"));
-var import_react2 = __toModule(require("react"));
-async function loader() {
-  return process.env.BETA_PASSWORD || null;
-}
 function Index2() {
-  const beta = (0, import_react.useLoaderData)();
-  const [password, setPassword] = (0, import_react2.useState)("");
-  const onChange = (e) => {
-    setPassword(e.target.value);
-  };
-  return /* @__PURE__ */ React.createElement(import_imagekitio_react7.IKContext, {
+  return /* @__PURE__ */ React.createElement(import_imagekitio_react6.IKContext, {
     urlEndpoint: "https://ik.imagekit.io/pgm"
-  }, /* @__PURE__ */ React.createElement(SplashPageContainer, null, /* @__PURE__ */ React.createElement(PasswordInput_default, {
-    variation: Variations3.PINK,
-    onChange,
-    value: password
-  }), /* @__PURE__ */ React.createElement("div", {
+  }, /* @__PURE__ */ React.createElement(SplashPageContainer, null, /* @__PURE__ */ React.createElement(ClickableImage, {
     onClick: () => {
       window.location.href = "/home";
-    }
-  }, /* @__PURE__ */ React.createElement(import_imagekitio_react7.IKImage, {
-    path: "/enter-button-final_4i9f4_Ec8.png?ik-sdk-version=javascript-1.4.3&updatedAt=1651981728961",
+    },
+    opacity: 0.9
+  }, /* @__PURE__ */ React.createElement(import_imagekitio_react6.IKImage, {
+    path: "/PGM%20website%20files/Enter%20page%20top_62hBeVPXs.png?updatedAt=1706237708156",
     transformation: [{
-      "width": "350"
+      "width": "250"
+    }],
+    loading: "lazy",
+    lqip: { active: true },
+    style: {
+      "margin": "auto"
+    }
+  })), /* @__PURE__ */ React.createElement(ClickableImage, {
+    onClick: () => {
+      window.location.href = "/vision";
+    }
+  }, /* @__PURE__ */ React.createElement(import_imagekitio_react6.IKImage, {
+    path: "/PGM%20website%20files/Enter%20page%20middle_fWHav05Yh.png?updatedAt=1706237707522",
+    transformation: [{
+      "width": "200"
+    }],
+    loading: "lazy",
+    lqip: { active: true },
+    style: {
+      "margin": "auto"
+    }
+  })), /* @__PURE__ */ React.createElement(ClickableImage, {
+    onClick: () => {
+      window.location.href = "/team";
+    }
+  }, /* @__PURE__ */ React.createElement(import_imagekitio_react6.IKImage, {
+    path: "/PGM%20website%20files/Enter%20page%20bottom_7FID6S29v.png?updatedAt=1706237709417",
+    transformation: [{
+      "width": "250"
+    }],
+    loading: "lazy",
+    lqip: { active: true },
+    style: {
+      "margin": "auto"
+    }
+  })), /* @__PURE__ */ React.createElement(ClickableImage, {
+    onClick: () => {
+      window.location.href = "/mint";
+    },
+    opacity: 0.9,
+    margin: "-100px 0px 0px 0px"
+  }, /* @__PURE__ */ React.createElement(import_imagekitio_react6.IKImage, {
+    path: "/PGM%20website%20files/Enter%20page%20mint%20button_WGhSyf389.gif?updatedAt=1706237709621",
+    transformation: [{
+      "width": "250"
     }],
     loading: "lazy",
     lqip: { active: true },
@@ -1123,13 +1084,13 @@ __export(home_exports, {
   default: () => Home
 });
 init_react();
-var import_imagekitio_react8 = __toModule(require("imagekitio-react"));
+var import_imagekitio_react7 = __toModule(require("imagekitio-react"));
 function Home() {
-  return /* @__PURE__ */ React.createElement(import_imagekitio_react8.IKContext, {
+  return /* @__PURE__ */ React.createElement(import_imagekitio_react7.IKContext, {
     urlEndpoint: "https://ik.imagekit.io/pgm"
   }, /* @__PURE__ */ React.createElement(HomePageContainer, null, /* @__PURE__ */ React.createElement(Navbar_default, null), /* @__PURE__ */ React.createElement("div", {
     className: "container"
-  }), /* @__PURE__ */ React.createElement(SplashBanner, null, /* @__PURE__ */ React.createElement(import_imagekitio_react8.IKVideo, {
+  }), /* @__PURE__ */ React.createElement(SplashBanner, null, /* @__PURE__ */ React.createElement(import_imagekitio_react7.IKVideo, {
     path: "/throne_hevc_V_XRSiuF7.mov?ik-sdk-version=javascript-1.4.3&updatedAt=1673725908868",
     style: {
       width: "100%"
@@ -1139,12 +1100,12 @@ function Home() {
   })), /* @__PURE__ */ React.createElement(MainSection, null, /* @__PURE__ */ React.createElement(TextContainer, null, /* @__PURE__ */ React.createElement(HeaderText, null, "WELCOME TO THE PHAROAH GOD MOB"), /* @__PURE__ */ React.createElement(ParagraphText, null, "PGM is a collection of 5,000 NFTs existing on the ethereum blockchain. Each unique digital illustration signifies your seat in the mob. Those on the inside benefit from all future roadmap endeavors."))), /* @__PURE__ */ React.createElement(MainSection, {
     center: true,
     column: true
-  }, /* @__PURE__ */ React.createElement(import_imagekitio_react8.IKImage, {
+  }, /* @__PURE__ */ React.createElement(import_imagekitio_react7.IKImage, {
     path: "/samples_3TSz1XYS6.gif?ik-sdk-version=javascript-1.4.3&updatedAt=1673724383963",
     style: { margin: "auto", width: "675px", opacity: "0.7" }
-  }), /* @__PURE__ */ React.createElement(MintButton, {
+  }), /* @__PURE__ */ React.createElement(ClickableImage, {
     onClick: () => window.location.href = "/mintnow"
-  }, /* @__PURE__ */ React.createElement(import_imagekitio_react8.IKImage, {
+  }, /* @__PURE__ */ React.createElement(import_imagekitio_react7.IKImage, {
     path: "/mint-now-button_tX1SzsxSW.png",
     transformation: [{
       width: "350"
@@ -1154,7 +1115,7 @@ function Home() {
     }
   }))), /* @__PURE__ */ React.createElement(MainSection, null, /* @__PURE__ */ React.createElement(Divider, null)), /* @__PURE__ */ React.createElement(MainSection, {
     center: true
-  }, /* @__PURE__ */ React.createElement(HeaderText, null, "THE VISION"), /* @__PURE__ */ React.createElement(MintButton, null, /* @__PURE__ */ React.createElement(import_imagekitio_react8.IKImage, {
+  }, /* @__PURE__ */ React.createElement(HeaderText, null, "THE VISION"), /* @__PURE__ */ React.createElement(ClickableImage, null, /* @__PURE__ */ React.createElement(import_imagekitio_react7.IKImage, {
     path: "/seeing-eye-pyramid-crop_JHKYh1Gy5.png",
     transformation: [{
       width: "600"
@@ -1163,7 +1124,7 @@ function Home() {
     onClick: () => window.location.assign("/vision")
   }))), /* @__PURE__ */ React.createElement(MainSection, null, /* @__PURE__ */ React.createElement(Divider, null)), /* @__PURE__ */ React.createElement(MainSection, {
     center: true
-  }, /* @__PURE__ */ React.createElement(HeaderText, null, "THE TEAM"), /* @__PURE__ */ React.createElement(MintButton, null, /* @__PURE__ */ React.createElement(import_imagekitio_react8.IKImage, {
+  }, /* @__PURE__ */ React.createElement(HeaderText, null, "THE TEAM"), /* @__PURE__ */ React.createElement(ClickableImage, null, /* @__PURE__ */ React.createElement(import_imagekitio_react7.IKImage, {
     path: "/touching_hands_fixed_mWKuW4YM0.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673724931710",
     transformation: [{
       width: "800"
@@ -1183,7 +1144,7 @@ __export(team_exports, {
   default: () => Team
 });
 init_react();
-var import_imagekitio_react9 = __toModule(require("imagekitio-react"));
+var import_imagekitio_react8 = __toModule(require("imagekitio-react"));
 
 // app/styles/team.js
 init_react();
@@ -1207,7 +1168,7 @@ var FlexListItem = import_styled_components8.default.div`
 
 // route-module:/Users/jakepepple/pgm/pgm-landing/app/routes/team.jsx
 function Team() {
-  return /* @__PURE__ */ React.createElement(import_imagekitio_react9.IKContext, {
+  return /* @__PURE__ */ React.createElement(import_imagekitio_react8.IKContext, {
     urlEndpoint: "https://ik.imagekit.io/pgm"
   }, /* @__PURE__ */ React.createElement(TeamPageContainer, null, /* @__PURE__ */ React.createElement(Navbar_default, null), /* @__PURE__ */ React.createElement("div", {
     className: "container"
@@ -1215,7 +1176,7 @@ function Team() {
     alignCenter: true
   }, /* @__PURE__ */ React.createElement(FlexListItem, {
     alignCenter: true
-  }, /* @__PURE__ */ React.createElement(import_imagekitio_react9.IKImage, {
+  }, /* @__PURE__ */ React.createElement(import_imagekitio_react8.IKImage, {
     path: "/rob_nft_G_onHXetGZ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673723110093",
     transformation: [{
       width: "300"
@@ -1223,7 +1184,7 @@ function Team() {
     style: { margin: "24px auto" }
   })), /* @__PURE__ */ React.createElement(FlexListItem, {
     alignCenter: true
-  }, /* @__PURE__ */ React.createElement(import_imagekitio_react9.IKImage, {
+  }, /* @__PURE__ */ React.createElement(import_imagekitio_react8.IKImage, {
     path: "/jake_nft_P2sCj8D9K.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673723110070",
     transformation: [{
       width: "300"
@@ -1231,7 +1192,7 @@ function Team() {
     style: { margin: "24px auto" }
   })), /* @__PURE__ */ React.createElement(FlexListItem, {
     alignCenter: true
-  }, /* @__PURE__ */ React.createElement(import_imagekitio_react9.IKImage, {
+  }, /* @__PURE__ */ React.createElement(import_imagekitio_react8.IKImage, {
     path: "/ben_nft_LeAi5sepHs.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673723110092",
     transformation: [{
       width: "300"
