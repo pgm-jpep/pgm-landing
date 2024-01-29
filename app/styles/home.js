@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import HelveticaNeueLTPro from '../assets/fonts/HelveticaNeueLTPro-Blk.otf';
+import VCR_Mono from '../assets/fonts/VCR_OSD_MONO.ttf'
 
 
 export const HomePageContainer = styled.div`
@@ -10,8 +11,8 @@ export const HomePageContainer = styled.div`
   display: flex;
   flex-direction: column;
   @font-face {
-    font-family: 'Neue Helvetica Pro 95 Black';
-    src: url(${HelveticaNeueLTPro});
+    font-family: 'VCR_OSD_MONO';
+    src: url(${VCR_Mono}) format('truetype');
   }
   justify-content: center;
   align-items: center;
@@ -21,6 +22,10 @@ export const HomePageContainer = styled.div`
 export const TextContainer = styled.div`
   width: 100%;
   padding: 32px;
+  @font-face {
+    font-family: 'VCR_OSD_MONO';
+    src: url(${VCR_Mono}) format('truetype');
+  }
 `;
 export const ParagraphText = styled.p`
   font-size: 1.4em;
