@@ -60,7 +60,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 
   }
   ${e=>e.margin&&`margin: ${e.margin}`}
-`;export{Br as a,Ce as b,Kr as c,yo as d,wo as e,bo as f,To as g,Zo as h};
+`;export{Br as a,Ce as b,yo as c,wo as d,bo as e,To as f,Zo as g};
 /** @license React v16.13.1
  * react-is.production.min.js
  *

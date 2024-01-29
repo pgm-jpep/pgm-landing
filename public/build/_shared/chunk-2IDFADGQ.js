@@ -1,4 +1,4 @@
-import{a as l,b as t,h as n}from"/build/_shared/chunk-54KC6QHN.js";import{b as g,e as r,f as o}from"/build/_shared/chunk-AKSB5QXU.js";o();var a=g(l());o();var p=t.div`
+import{a as l,b as t,g as n}from"/build/_shared/chunk-QY4G7VY5.js";import{b as g,e as r,f as o}from"/build/_shared/chunk-AKSB5QXU.js";o();var a=g(l());o();var p=t.div`
   margin: 12px 24px;
   display: flex;
   flex-direction: column;

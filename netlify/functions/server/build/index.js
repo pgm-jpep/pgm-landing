@@ -412,7 +412,7 @@ init_react();
 var import_remix2 = __toModule(require_remix());
 
 // app/styles/root.css
-var root_default = "/build/_assets/root-Y2MH32LR.css";
+var root_default = "/build/_assets/root-FTU2XHKF.css";
 
 // app/assets/logo.png
 var logo_default = "/build/_assets/logo-YWPIQDAA.png";
@@ -784,6 +784,11 @@ var Navbar_default = Navbar;
 // app/styles/home.js
 init_react();
 var import_styled_components5 = __toModule(require("styled-components"));
+
+// app/assets/fonts/VCR_OSD_MONO.ttf
+var VCR_OSD_MONO_default = "/build/_assets/VCR_OSD_MONO-ID47EYT3.ttf";
+
+// app/styles/home.js
 var HomePageContainer = import_styled_components5.default.div`
   background-image: url(https://ik.imagekit.io/pgm/PGM%20website%20files/Pink%20background_RlupOo6jpO.png?updatedAt=1706237713198);
   background-size: 100% auto;
@@ -792,8 +797,8 @@ var HomePageContainer = import_styled_components5.default.div`
   display: flex;
   flex-direction: column;
   @font-face {
-    font-family: 'Neue Helvetica Pro 95 Black';
-    src: url(${HelveticaNeueLTPro_Blk_default});
+    font-family: 'VCR_OSD_MONO';
+    src: url(${VCR_OSD_MONO_default}) format('truetype');
   }
   justify-content: center;
   align-items: center;
@@ -802,6 +807,10 @@ var HomePageContainer = import_styled_components5.default.div`
 var TextContainer = import_styled_components5.default.div`
   width: 100%;
   padding: 32px;
+  @font-face {
+    font-family: 'VCR_OSD_MONO';
+    src: url(${VCR_OSD_MONO_default}) format('truetype');
+  }
 `;
 var ParagraphText = import_styled_components5.default.p`
   font-size: 1.4em;
