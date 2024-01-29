@@ -1,5 +1,5 @@
 import { IKImage } from "imagekitio-react";
-import { ClickableImage } from "~/styles/splash";
+import { ClickableImage } from "~/styles/ascension";
 import {
   FooterContainer,
   SocialLinks,

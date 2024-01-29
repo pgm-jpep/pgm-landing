@@ -1,8 +1,8 @@
 
 import {
   SplashPageContainer,
-} from "../styles/splash";
-import { ClickableImage } from "../styles/splash";
+} from "../styles/ascension";
+import { ClickableImage } from "../styles/ascension";
 import { IKContext, IKImage } from "imagekitio-react";
 
 export default function Index() {

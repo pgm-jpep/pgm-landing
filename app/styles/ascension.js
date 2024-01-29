@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import HelveticaNeueLTPro from '../assets/fonts/HelveticaNeueLTPro-Blk.otf';
 
+
+
 export const SplashPageContainer = styled.div`
   background-color: black;
   background-size: 100% auto;
@@ -8,13 +10,13 @@ export const SplashPageContainer = styled.div`
   background-repeat: repeat;
   display: flex;
   flex-direction: column;
-  @font-face {
-    font-family: 'Neue Helvetica Pro 95 Black';
-    src: url(${HelveticaNeueLTPro});
-  }
   justify-content: center;
   align-items: center;
   padding-bottom: 100px;
+`;
+export const AscensionPageContainer = styled(SplashPageContainer)`
+  background-image: url(https://ik.imagekit.io/pgm/PGM%20website%20files/Green%20background_lzIc_aC5x4.png?updatedAt=1706237717988);
+  background-color: unset;
 `;
 
 export const SplashLogoContainer = styled.div`
