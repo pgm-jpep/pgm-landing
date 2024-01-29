@@ -9,7 +9,7 @@ import {
 } from "../styles/splash";
 import { IKContext, IKImage, IKVideo } from "imagekitio-react";
 
-export default function Index() {
+export default function Genesis() {
   return (
     <IKContext urlEndpoint="https://ik.imagekit.io/pgm">
 

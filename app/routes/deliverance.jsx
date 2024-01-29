@@ -1,7 +1,7 @@
 import PageLayout from '~/components/PageLayout';
 import { Variations } from '~/components/Footer';
 
-export default function Home() {
+export default function Deliverance() {
   return (
     <PageLayout 
       splashImagePath="/PGM%20website%20files/Untitled_Artwork%203_O1c4PqmNX.gif?updatedAt=1706237717815" 

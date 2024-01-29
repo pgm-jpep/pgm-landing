@@ -6,7 +6,7 @@ import Footer, { Variations } from "~/components/Footer";
 import { SplashBanner} from '../styles/splash'
 import EmailInput from '~/components/EmailInput';
 
-export default function Vision() {
+export default function Ascension() {
   return (
     <IKContext urlEndpoint="https://ik.imagekit.io/pgm">
       <VisionPageContainer>
