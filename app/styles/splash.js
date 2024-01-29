@@ -22,7 +22,6 @@ export const SplashLogoContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   max-height: 500px;
-  margin: -5%;
 `;
 
 export const SplashLogo = styled.img`
