@@ -3,7 +3,7 @@ import Navbar from "~/components/Navbar";
 import { HeaderText, ParagraphText, TextContainer, MainSection, Divider, SubheaderText, } from "../styles/home";
 import {FlexList, FlexListItem, TeamPageContainer } from '../styles/team';
 import Footer, { Variations } from "~/components/Footer";
-import { SplashBanner} from '../styles/splash'
+import { SplashBanner} from '../styles/ascension'
 import EmailInput from '~/components/EmailInput';
 
 export default function Team() {

@@ -412,7 +412,7 @@ init_react();
 var import_remix2 = __toModule(require_remix());
 
 // app/styles/root.css
-var root_default = "/build/_assets/root-Y2MH32LR.css";
+var root_default = "/build/_assets/root-FTU2XHKF.css";
 
 // app/assets/logo.png
 var logo_default = "/build/_assets/logo-YWPIQDAA.png";
@@ -471,64 +471,137 @@ function App() {
   })));
 }
 
-// route-module:/Users/jakepepple/pgm/pgm-landing/app/routes/splash.jsx
-var splash_exports = {};
-__export(splash_exports, {
-  default: () => Index
+// route-module:/Users/jakepepple/pgm/pgm-landing/app/routes/deliverance.jsx
+var deliverance_exports = {};
+__export(deliverance_exports, {
+  default: () => Deliverance
 });
 init_react();
+
+// app/components/PageLayout.jsx
+init_react();
+var import_imagekitio_react2 = __toModule(require("imagekitio-react"));
+
+// app/styles/home.js
+init_react();
+var import_styled_components2 = __toModule(require("styled-components"));
+
+// app/assets/fonts/VCR_OSD_MONO.ttf
+var VCR_OSD_MONO_default = "/build/_assets/VCR_OSD_MONO-ID47EYT3.ttf";
+
+// app/styles/home.js
+var HomePageContainer = import_styled_components2.default.div`
+  background-image: url(https://ik.imagekit.io/pgm/PGM%20website%20files/Pink%20background_RlupOo6jpO.png?updatedAt=1706237713198);
+  background-size: 100% auto;
+  height: 100%;
+  background-repeat: repeat;
+  display: flex;
+  flex-direction: column;
+  @font-face {
+    font-family: 'VCR_OSD_MONO';
+    src: url(${VCR_OSD_MONO_default}) format('truetype');
+  }
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+`;
+var TextContainer = import_styled_components2.default.div`
+  width: 100%;
+  padding: 32px;
+  @font-face {
+    font-family: 'VCR_OSD_MONO';
+    src: url(${VCR_OSD_MONO_default}) format('truetype');
+  }
+`;
+var ParagraphText = import_styled_components2.default.p`
+  font-size: 1.4em;
+  color: ${({ color }) => color};
+  text-align: center;
+`;
+var HeaderText = import_styled_components2.default.h1`
+  text-align: center;
+  font-size: 2.4em;
+  font-weight: 900;
+  margin: 24px 0px;
+`;
+var SubheaderText = import_styled_components2.default.h3`
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: 800;
+  margin: 24px 0px;
+`;
+var CenteredText = import_styled_components2.default.p`
+  width: 100%;
+  text-align: center;
+
+`;
+var MainSection = import_styled_components2.default.div`
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  margin: 24px 0px;
+  ${({ center }) => center && `
+    text-align: center
+  `};
+  ${({ column }) => column && `
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+  `}
+`;
+var Divider = import_styled_components2.default.div`
+  background-color: #e3afff;
+  width: 100%;
+  max-width: 1200px;
+  height: 4px;
+`;
 
 // app/components/Footer.jsx
 init_react();
 var import_imagekitio_react = __toModule(require("imagekitio-react"));
 
-// app/styles/splash.js
+// app/styles/ascension.js
 init_react();
-var import_styled_components2 = __toModule(require("styled-components"));
-
-// app/assets/fonts/HelveticaNeueLTPro-Blk.otf
-var HelveticaNeueLTPro_Blk_default = "/build/_assets/HelveticaNeueLTPro-Blk-HVYOXMFI.otf";
-
-// app/styles/splash.js
-var SplashPageContainer = import_styled_components2.default.div`
-  background-image: url(https://ik.imagekit.io/pgm/background-purple-final-2_NCFJZDfGH.png?ik-sdk-version=javascript-1.4.3&updatedAt=1652303962714);
+var import_styled_components3 = __toModule(require("styled-components"));
+var SplashPageContainer = import_styled_components3.default.div`
+  background-color: black;
   background-size: 100% auto;
   height: 100%;
-  min-height: 100vh;
   background-repeat: repeat;
   display: flex;
   flex-direction: column;
-  @font-face {
-    font-family: 'Neue Helvetica Pro 95 Black';
-    src: url(${HelveticaNeueLTPro_Blk_default});
-  }
   justify-content: center;
   align-items: center;
+  padding-bottom: 100px;
 `;
-var SplashLogoContainer = import_styled_components2.default.div`
+var AscensionPageContainer = (0, import_styled_components3.default)(SplashPageContainer)`
+  background-image: url(https://ik.imagekit.io/pgm/PGM%20website%20files/Green%20background_lzIc_aC5x4.png?updatedAt=1706237717988);
+  background-color: unset;
+`;
+var SplashLogoContainer = import_styled_components3.default.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   max-height: 500px;
 `;
-var SplashLogo = import_styled_components2.default.img`
+var SplashLogo = import_styled_components3.default.img`
   max-width: 300px;
 `;
-var SplashBanner = import_styled_components2.default.div`
+var SplashBanner = import_styled_components3.default.div`
   width: 100%;
   max-width: 1200px;
   position: relative;
   min-height: 500px;
   margin: 24px 0px 48px;
 `;
-var SplashBannerMaxed = import_styled_components2.default.div`
+var SplashBannerMaxed = import_styled_components3.default.div`
     width: 100%;
   max-width: 850px;
   position: relative;
   min-height: 500px;
   margin: 24px 0px 48px;
 `;
-var SplashButton = import_styled_components2.default.div`
+var SplashButton = import_styled_components3.default.div`
   width: 100%;
   max-width: 1200px;
   position: absolute;
@@ -543,49 +616,50 @@ var SplashButton = import_styled_components2.default.div`
 
   }
 `;
-var MintButton = import_styled_components2.default.div`
+var ClickableImage = import_styled_components3.default.div`
     cursor: pointer;
-  opacity: 0.7;
+  opacity: ${(props) => props.opacity || 0.7};
   transition: all .2s ease-in-out;
   &:hover {
     opacity: 1;
     transform: scale(1.05);
 
   }
+  ${(props) => props.margin && `margin: ${props.margin}`}
 `;
 
 // app/styles/footer.js
 init_react();
-var import_styled_components3 = __toModule(require("styled-components"));
-var FooterContainer = import_styled_components3.default.div`
+var import_styled_components4 = __toModule(require("styled-components"));
+var FooterContainer = import_styled_components4.default.div`
   margin: 12px 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 `;
-var FooterBar = import_styled_components3.default.img`
+var FooterBar = import_styled_components4.default.img`
   width: 100%;
   max-width: 1200px;
 `;
-var SocialLinks = import_styled_components3.default.div`
+var SocialLinks = import_styled_components4.default.div`
   margin: 24px auto;
   display: flex;
   justify-content: center;
   gap: 12px;
 `;
-var SocialLink = import_styled_components3.default.img`
+var SocialLink = import_styled_components4.default.img`
   max-height: 50px;
 `;
-var InputContainer = import_styled_components3.default.div`
+var InputContainer = import_styled_components4.default.div`
   display: flex;
   justify-content: center;
   align-items: center;
 
 `;
-var InputFieldBox = import_styled_components3.default.div`
+var InputFieldBox = import_styled_components4.default.div`
     width: 600px;
 `;
-var InputField = import_styled_components3.default.input`
+var InputField = import_styled_components4.default.input`
   background: #443050;
   width: 600px;
   border: 1px solid #443050;
@@ -599,7 +673,7 @@ var InputField = import_styled_components3.default.input`
     font-size: 16px;
   }
 `;
-var InputIconBox = import_styled_components3.default.div`
+var InputIconBox = import_styled_components4.default.div`
   height: 32px;
   width: 32px;
   ${({ solid }) => solid && `
@@ -608,7 +682,7 @@ var InputIconBox = import_styled_components3.default.div`
   `}
   border-radius: 4px;
 `;
-var InputBracketBox = import_styled_components3.default.div`
+var InputBracketBox = import_styled_components4.default.div`
   height: 56px;
 `;
 
@@ -619,18 +693,10 @@ var Variations = {
   YELLOW: "yellow",
   GREEN: "green"
 };
-var getFooterBarImagePath = (variation) => {
-  return {
-    [Variations.PURPLE]: "/bar-purple_zL2qHlmDLQ0Ug.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647716394704",
-    [Variations.PINK]: "/bar-pink_5box97MV6.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647740115147",
-    [Variations.YELLOW]: "/bar-yellow_BXbrtuCWY.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647740115220",
-    [Variations.GREEN]: "/bar-green_5-nUD_VPwb.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647922144336"
-  }[variation];
-};
 var getInstagramImagePath = (variation) => {
   return {
     [Variations.PURPLE]: "/instagram-purple_1YkVL_3WXp8SY.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647716304712",
-    [Variations.PINK]: "/instagram-pink_SEsHVWNNU.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647716211708",
+    [Variations.PINK]: "/PGM%20website%20files/PinkInstagram.png?updatedAt=1706389306027",
     [Variations.YELLOW]: "/instagram-yellow_84f2YzvbsF.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647716211792",
     [Variations.GREEN]: "/instagram-green_CRdS4msc7.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647922144271"
   }[variation];
@@ -638,45 +704,25 @@ var getInstagramImagePath = (variation) => {
 var getTwitterImagePath = (variation) => {
   return {
     [Variations.PURPLE]: "/twitter-purple_dBcNgQlNe2.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647716211896",
-    [Variations.PINK]: "/twitter-pink_5IvjTJvCcA.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647716211908",
+    [Variations.PINK]: "/PGM%20website%20files/PinkTwitter.png?updatedAt=1706389266841",
     [Variations.YELLOW]: "/twitter-yellow_Ydkia8xH9T.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647716211930",
     [Variations.GREEN]: "/twitter-green_BLOI2JRs_.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647922144360"
   }[variation];
 };
-var getDiscordImagePath = (variation) => {
-  return {
-    [Variations.PURPLE]: "/discord-purple_QGcqb_xHlVkLc.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647716279853",
-    [Variations.PINK]: "/discord-pink_sNIlBiwsAq.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647716211863",
-    [Variations.YELLOW]: "/discord-yellow_zzDwUgrlvJ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647716211878",
-    [Variations.GREEN]: "/discord-green_nQ7TryHQq.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647922205774"
-  }[variation];
-};
 var Footer = ({ variation = Variations.PURPLE }) => {
-  const FooterBarPath = getFooterBarImagePath(variation);
   const TwitterPath = getTwitterImagePath(variation);
   const InstagramPath = getInstagramImagePath(variation);
-  const DiscordPath = getDiscordImagePath(variation);
-  return /* @__PURE__ */ React.createElement(FooterContainer, null, /* @__PURE__ */ React.createElement(import_imagekitio_react.IKImage, {
-    path: FooterBarPath,
-    transformation: [{
-      width: "1200"
-    }]
-  }), /* @__PURE__ */ React.createElement(SocialLinks, null, /* @__PURE__ */ React.createElement(MintButton, {
-    onClick: () => window.open("https://twitter.com/pharaohgodmob", "_blank")
+  return /* @__PURE__ */ React.createElement(FooterContainer, null, /* @__PURE__ */ React.createElement(SocialLinks, null, /* @__PURE__ */ React.createElement(ClickableImage, {
+    onClick: () => window.open("https://twitter.com/pharaohgodmob", "_blank"),
+    opacity: 0.9
   }, /* @__PURE__ */ React.createElement(import_imagekitio_react.IKImage, {
     path: TwitterPath,
     transformation: [{
       height: "50"
     }]
-  })), /* @__PURE__ */ React.createElement(MintButton, {
-    onClick: () => window.location.assign("/")
-  }, /* @__PURE__ */ React.createElement(import_imagekitio_react.IKImage, {
-    path: DiscordPath,
-    transformation: [{
-      height: "50"
-    }]
-  })), /* @__PURE__ */ React.createElement(MintButton, {
-    onClick: () => window.open("https://instagram.com/pharaohgodmob", "_blank")
+  })), /* @__PURE__ */ React.createElement(ClickableImage, {
+    onClick: () => window.open("https://instagram.com/pharaohgodmob", "_blank"),
+    opacity: 0.9
   }, /* @__PURE__ */ React.createElement(import_imagekitio_react.IKImage, {
     path: InstagramPath,
     transformation: [{
@@ -686,68 +732,180 @@ var Footer = ({ variation = Variations.PURPLE }) => {
 };
 var Footer_default = Footer;
 
-// route-module:/Users/jakepepple/pgm/pgm-landing/app/routes/splash.jsx
-var import_imagekitio_react2 = __toModule(require("imagekitio-react"));
-function Index() {
+// app/components/PageLayout.jsx
+var SPLASH_LOGO_WIDTH = "250";
+function PageLayout({
+  splashImagePath,
+  bannerImagePath,
+  footerText,
+  footerVariation,
+  PageContainerComponent = HomePageContainer
+}) {
   return /* @__PURE__ */ React.createElement(import_imagekitio_react2.IKContext, {
     urlEndpoint: "https://ik.imagekit.io/pgm"
-  }, /* @__PURE__ */ React.createElement(SplashPageContainer, null, /* @__PURE__ */ React.createElement(SplashLogoContainer, {
-    style: { maxWidth: "400px" }
-  }, /* @__PURE__ */ React.createElement(import_imagekitio_react2.IKImage, {
-    path: "/w-pharaoh_yBUimLV0dw.gif",
+  }, /* @__PURE__ */ React.createElement(PageContainerComponent, null, /* @__PURE__ */ React.createElement(SplashLogoContainer, null, /* @__PURE__ */ React.createElement(import_imagekitio_react2.IKImage, {
+    path: splashImagePath,
     transformation: [{
-      width: "500"
-    }],
-    loading: "lazy",
-    lqip: { active: true }
-  }), /* @__PURE__ */ React.createElement(import_imagekitio_react2.IKImage, {
-    path: "/letters_UiWE76Yiy.gif?ik-sdk-version=javascript-1.4.3&updatedAt=1673723677319",
-    transformation: [{
-      width: "500"
+      width: SPLASH_LOGO_WIDTH
     }],
     loading: "lazy",
     lqip: { active: true },
-    style: { maxWidth: "300px", margin: "-130px auto 0px" }
-  })), /* @__PURE__ */ React.createElement(SplashBanner, {
-    style: { marginTop: "-100px" }
-  }, /* @__PURE__ */ React.createElement(import_imagekitio_react2.IKVideo, {
-    path: "/meeting_trans4k_QyO8Q230-2.mov?updatedAt=1678931219297",
+    height: SPLASH_LOGO_WIDTH,
+    width: SPLASH_LOGO_WIDTH
+  })), /* @__PURE__ */ React.createElement(import_imagekitio_react2.IKImage, {
+    path: bannerImagePath,
     style: {
-      width: "100%"
+      width: "75%",
+      margin: "0 auto"
     },
+    height: "75%",
+    width: "75%",
     autoPlay: true,
     loop: true
-  }), /* @__PURE__ */ React.createElement(SplashButton, {
-    onClick: () => window.location.href = "/home"
-  }, /* @__PURE__ */ React.createElement(import_imagekitio_react2.IKImage, {
-    path: "/enter-button-final_4i9f4_Ec8.png?ik-sdk-version=javascript-1.4.3&updatedAt=1651981728961",
+  }), /* @__PURE__ */ React.createElement(MainSection, null, /* @__PURE__ */ React.createElement(TextContainer, null, /* @__PURE__ */ React.createElement(CenteredText, null, footerText), /* @__PURE__ */ React.createElement(CenteredText, null, "3.21.22"))), /* @__PURE__ */ React.createElement(Footer_default, {
+    variation: footerVariation
+  })));
+}
+
+// route-module:/Users/jakepepple/pgm/pgm-landing/app/routes/deliverance.jsx
+function Deliverance() {
+  return /* @__PURE__ */ React.createElement(PageLayout, {
+    splashImagePath: "/PGM%20website%20files/Untitled_Artwork%203_O1c4PqmNX.gif?updatedAt=1706237717815",
+    bannerImagePath: "/PGM%20website%20files/Pink%20page%20gif_TFZUIeOWN.gif?updatedAt=1706237708422",
+    footerVariation: Variations.PINK,
+    footerText: "Deliverance."
+  });
+}
+
+// route-module:/Users/jakepepple/pgm/pgm-landing/app/routes/ascension.jsx
+var ascension_exports = {};
+__export(ascension_exports, {
+  default: () => Ascension
+});
+init_react();
+function Ascension() {
+  return /* @__PURE__ */ React.createElement(PageLayout, {
+    splashImagePath: "/PGM%20website%20files/Untitled_Artwork%204_OIrZlgLLTp.gif?updatedAt=1706237718372",
+    bannerImagePath: "/PGM%20website%20files/Green%20page%20gif_jDmTfwIY2.gif?updatedAt=1706237715855",
+    footerVariation: Variations.YELLOW,
+    footerText: "Ascension.",
+    PageContainerComponent: AscensionPageContainer
+  });
+}
+
+// route-module:/Users/jakepepple/pgm/pgm-landing/app/routes/genesis.jsx
+var genesis_exports = {};
+__export(genesis_exports, {
+  default: () => Genesis
+});
+init_react();
+
+// app/styles/genesis.js
+init_react();
+var import_styled_components5 = __toModule(require("styled-components"));
+var GenesisPageContainer = (0, import_styled_components5.default)(HomePageContainer)`
+  background-image: url(https://ik.imagekit.io/pgm/PGM%20website%20files/Purple%20background_Wjz7uIW9GA.png?updatedAt=1706237710136)
+`;
+
+// route-module:/Users/jakepepple/pgm/pgm-landing/app/routes/genesis.jsx
+function Genesis() {
+  return /* @__PURE__ */ React.createElement(PageLayout, {
+    splashImagePath: "/PGM%20website%20files/Untitled_Artwork%202_58orFnQqa.gif?updatedAt=1706237708132",
+    bannerImagePath: "/PGM%20website%20files/Purple%20page%20gif_ghWkHmfJ6v.gif?updatedAt=1706237718166",
+    footerVariation: Variations.PURPLE,
+    footerText: "Genesis.",
+    PageContainerComponent: GenesisPageContainer
+  });
+}
+
+// route-module:/Users/jakepepple/pgm/pgm-landing/app/routes/index.jsx
+var routes_exports = {};
+__export(routes_exports, {
+  default: () => Index
+});
+init_react();
+var import_imagekitio_react3 = __toModule(require("imagekitio-react"));
+function Index() {
+  return /* @__PURE__ */ React.createElement(import_imagekitio_react3.IKContext, {
+    urlEndpoint: "https://ik.imagekit.io/pgm"
+  }, /* @__PURE__ */ React.createElement(SplashPageContainer, null, /* @__PURE__ */ React.createElement(ClickableImage, {
+    onClick: () => {
+      window.location.href = "/genesis";
+    },
+    opacity: 0.9
+  }, /* @__PURE__ */ React.createElement(import_imagekitio_react3.IKImage, {
+    path: "/PGM%20website%20files/Enter%20page%20top_62hBeVPXs.png?updatedAt=1706237708156",
     transformation: [{
-      "width": "350"
+      "width": "200"
     }],
     loading: "lazy",
     lqip: { active: true },
     style: {
       "margin": "auto"
     }
-  }))), /* @__PURE__ */ React.createElement(Footer_default, null)));
+  })), /* @__PURE__ */ React.createElement(ClickableImage, {
+    onClick: () => {
+      window.location.href = "/deliverance";
+    }
+  }, /* @__PURE__ */ React.createElement(import_imagekitio_react3.IKImage, {
+    path: "/PGM%20website%20files/Enter%20page%20middle_fWHav05Yh.png?updatedAt=1706237707522",
+    transformation: [{
+      "width": "150"
+    }],
+    loading: "lazy",
+    lqip: { active: true },
+    style: {
+      "margin": "auto"
+    }
+  })), /* @__PURE__ */ React.createElement(ClickableImage, {
+    onClick: () => {
+      window.location.href = "/ascension";
+    }
+  }, /* @__PURE__ */ React.createElement(import_imagekitio_react3.IKImage, {
+    path: "/PGM%20website%20files/Enter%20page%20bottom_7FID6S29v.png?updatedAt=1706237709417",
+    transformation: [{
+      "width": "200"
+    }],
+    loading: "lazy",
+    lqip: { active: true },
+    style: {
+      "margin": "auto"
+    }
+  })), /* @__PURE__ */ React.createElement(ClickableImage, {
+    onClick: () => {
+      window.location.href = "/mint";
+    },
+    opacity: 0.9,
+    margin: "-100px 0px 0px 0px"
+  }, /* @__PURE__ */ React.createElement(import_imagekitio_react3.IKImage, {
+    path: "/PGM%20website%20files/Enter%20page%20mint%20button_WGhSyf389.gif?updatedAt=1706237709621",
+    transformation: [{
+      "width": "200"
+    }],
+    loading: "lazy",
+    lqip: { active: true },
+    style: {
+      "margin": "auto"
+    }
+  }))));
 }
 
-// route-module:/Users/jakepepple/pgm/pgm-landing/app/routes/vision.jsx
-var vision_exports = {};
-__export(vision_exports, {
-  default: () => Vision
+// route-module:/Users/jakepepple/pgm/pgm-landing/app/routes/team.jsx
+var team_exports = {};
+__export(team_exports, {
+  default: () => Team
 });
 init_react();
-var import_imagekitio_react5 = __toModule(require("imagekitio-react"));
+var import_imagekitio_react6 = __toModule(require("imagekitio-react"));
 
 // app/components/Navbar.jsx
 init_react();
-var import_imagekitio_react3 = __toModule(require("imagekitio-react"));
+var import_imagekitio_react4 = __toModule(require("imagekitio-react"));
 
 // app/styles/navbar.js
 init_react();
-var import_styled_components4 = __toModule(require("styled-components"));
-var NavLink = import_styled_components4.default.a`
+var import_styled_components6 = __toModule(require("styled-components"));
+var NavLink = import_styled_components6.default.a`
   color: #fff;
   font-style: italic;
   font-weight: 500;
@@ -770,7 +928,7 @@ var Navbar = () => {
     href: "/splash",
     id: "pgm-brand",
     className: "navbar-brand"
-  }, /* @__PURE__ */ React.createElement(import_imagekitio_react3.IKImage, {
+  }, /* @__PURE__ */ React.createElement(import_imagekitio_react4.IKImage, {
     path: "/logo-vector_1gzBYRGiHGR4.png",
     transformation: [{
       height: "130"
@@ -807,88 +965,42 @@ var Navbar = () => {
 };
 var Navbar_default = Navbar;
 
-// app/styles/home.js
+// app/styles/team.js
 init_react();
-var import_styled_components5 = __toModule(require("styled-components"));
-var HomePageContainer = import_styled_components5.default.div`
-  background-image: url(https://ik.imagekit.io/pgm/background-pink-final_6gJAQX-0X.png?ik-sdk-version=javascript-1.4.3&updatedAt=1652304146579);
-  background-size: 100% auto;
-  height: 100%;
-  background-repeat: repeat;
+var import_styled_components7 = __toModule(require("styled-components"));
+var TeamPageContainer = (0, import_styled_components7.default)(HomePageContainer)`
+  background-image: url(https://ik.imagekit.io/pgm/yellow-background-final-2_7DhPl_vM7.png?ik-sdk-version=javascript-1.4.3&updatedAt=1652305741932)
+`;
+var FlexList = import_styled_components7.default.div`
   display: flex;
-  flex-direction: column;
-  @font-face {
-    font-family: 'Neue Helvetica Pro 95 Black';
-    src: url(${HelveticaNeueLTPro_Blk_default});
-  }
-  justify-content: center;
-  align-items: center;
-`;
-var TextContainer = import_styled_components5.default.div`
-  width: 100%;
-  padding: 32px;
-`;
-var ParagraphText = import_styled_components5.default.p`
-  font-size: 1.4em;
-  color: ${({ color }) => color};
-  text-align: center;
-`;
-var HeaderText = import_styled_components5.default.h1`
-  text-align: center;
-  font-size: 2.4em;
-  font-weight: 900;
-  margin: 24px 0px;
-`;
-var SubheaderText = import_styled_components5.default.h3`
-  text-align: center;
-  font-size: 1.8em;
-  font-weight: 800;
-  margin: 24px 0px;
-`;
-var MainSection = import_styled_components5.default.div`
-  width: 100%;
-  max-width: 1200px;
-  position: relative;
-  margin: 24px 0px;
-  ${({ center }) => center && `
-    text-align: center
-  `};
-  ${({ column }) => column && `
-    display: flex;
-    flex-direction: column;
-    gap: 64px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  ${({ alignCenter }) => alignCenter && `
+    justify-content: center
   `}
 `;
-var Divider = import_styled_components5.default.div`
-  background-color: #e3afff;
-  width: 100%;
-  max-width: 1200px;
-  height: 4px;
-`;
-
-// app/styles/vision.js
-init_react();
-var import_styled_components6 = __toModule(require("styled-components"));
-var VisionPageContainer = (0, import_styled_components6.default)(HomePageContainer)`
-  background-image: url(https://ik.imagekit.io/pgm/background-yellow-final__q8HmKfNy.png?ik-sdk-version=javascript-1.4.3&updatedAt=1652304184890)
+var FlexListItem = import_styled_components7.default.div`
+  flex: 1 1 30%;
+  display: flex;
+  ${({ alignCenter }) => alignCenter && `justify-content: center`}
 `;
 
 // app/components/EmailInput.jsx
 init_react();
-var import_imagekitio_react4 = __toModule(require("imagekitio-react"));
+var import_imagekitio_react5 = __toModule(require("imagekitio-react"));
 
 // app/styles/forms.js
 init_react();
-var import_styled_components7 = __toModule(require("styled-components"));
-var InputContainer2 = import_styled_components7.default.div`
+var import_styled_components8 = __toModule(require("styled-components"));
+var InputContainer2 = import_styled_components8.default.div`
   display: flex;
   justify-content: center;
   align-items: center;
 `;
-var InputFieldBox2 = import_styled_components7.default.div`
+var InputFieldBox2 = import_styled_components8.default.div`
     width: 600px;
 `;
-var InputField2 = import_styled_components7.default.input`
+var InputField2 = import_styled_components8.default.input`
   ${({ color }) => color && `
     background: ${color};
     border: 1px solid ${color}
@@ -904,7 +1016,7 @@ var InputField2 = import_styled_components7.default.input`
     font-size: 16px;
   }
 `;
-var InputIconBox2 = import_styled_components7.default.div`
+var InputIconBox2 = import_styled_components8.default.div`
   height: 32px;
   width: 32px;
   ${({ color }) => color && `
@@ -913,7 +1025,7 @@ var InputIconBox2 = import_styled_components7.default.div`
   `}
   border-radius: 4px;
 `;
-var InputBracketBox2 = import_styled_components7.default.div`
+var InputBracketBox2 = import_styled_components8.default.div`
   height: 56px;
 `;
 
@@ -956,7 +1068,7 @@ var EmailInput = ({ variation = Variations2.PINK }) => {
   const inputIconColor = getInputIconColor(variation);
   const leftBracketPath = getLeftBracketPath(variation);
   const rightBracketPath = getRightBracketPath(variation);
-  return /* @__PURE__ */ React.createElement(InputContainer2, null, /* @__PURE__ */ React.createElement(InputBracketBox2, null, /* @__PURE__ */ React.createElement(import_imagekitio_react4.IKImage, {
+  return /* @__PURE__ */ React.createElement(InputContainer2, null, /* @__PURE__ */ React.createElement(InputBracketBox2, null, /* @__PURE__ */ React.createElement(import_imagekitio_react5.IKImage, {
     path: leftBracketPath,
     transformation: [{
       height: "56"
@@ -967,12 +1079,12 @@ var EmailInput = ({ variation = Variations2.PINK }) => {
     placeholder: "Email address"
   })), /* @__PURE__ */ React.createElement(InputIconBox2, {
     color: inputIconColor
-  }, /* @__PURE__ */ React.createElement(import_imagekitio_react4.IKImage, {
+  }, /* @__PURE__ */ React.createElement(import_imagekitio_react5.IKImage, {
     path: "/dotted-arrow_Q-88Z_X2q.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647711227720",
     transformation: [{
       height: "32"
     }]
-  })), /* @__PURE__ */ React.createElement(InputBracketBox2, null, /* @__PURE__ */ React.createElement(import_imagekitio_react4.IKImage, {
+  })), /* @__PURE__ */ React.createElement(InputBracketBox2, null, /* @__PURE__ */ React.createElement(import_imagekitio_react5.IKImage, {
     path: rightBracketPath,
     transformation: [{
       height: "56"
@@ -981,233 +1093,9 @@ var EmailInput = ({ variation = Variations2.PINK }) => {
 };
 var EmailInput_default = EmailInput;
 
-// route-module:/Users/jakepepple/pgm/pgm-landing/app/routes/vision.jsx
-function Vision() {
-  return /* @__PURE__ */ React.createElement(import_imagekitio_react5.IKContext, {
-    urlEndpoint: "https://ik.imagekit.io/pgm"
-  }, /* @__PURE__ */ React.createElement(VisionPageContainer, null, /* @__PURE__ */ React.createElement(Navbar_default, null), /* @__PURE__ */ React.createElement("div", {
-    className: "container"
-  }), /* @__PURE__ */ React.createElement(SplashBanner, null, /* @__PURE__ */ React.createElement(import_imagekitio_react5.IKVideo, {
-    path: "/Vision_page_banner_vHUR5MUBQ.mov?ik-sdk-version=javascript-1.4.3&updatedAt=1673726455306",
-    style: {
-      width: "100%"
-    },
-    autoPlay: true,
-    loop: true
-  })), /* @__PURE__ */ React.createElement(MainSection, null, /* @__PURE__ */ React.createElement(TextContainer, null, /* @__PURE__ */ React.createElement(HeaderText, null, "THE VISION"), /* @__PURE__ */ React.createElement(ParagraphText, {
-    color: "#CAD913"
-  }, "PGM is a collection of 5,000 NFTs existing on the ethereum blockchain. Each unique digital illustration signifies your seat in the mob. Those on the inside benefit from all future roadmap endeavors."))), /* @__PURE__ */ React.createElement(MainSection, {
-    center: true
-  }, /* @__PURE__ */ React.createElement(SubheaderText, null, "KEEP ME POSTED"), /* @__PURE__ */ React.createElement(EmailInput_default, {
-    variation: Variations.YELLOW
-  })), /* @__PURE__ */ React.createElement(Footer_default, {
-    variation: Variations.YELLOW
-  })));
-}
-
-// route-module:/Users/jakepepple/pgm/pgm-landing/app/routes/index.jsx
-var routes_exports = {};
-__export(routes_exports, {
-  default: () => Index2,
-  loader: () => loader
-});
-init_react();
-var import_imagekitio_react7 = __toModule(require("imagekitio-react"));
-
-// app/components/PasswordInput.jsx
-init_react();
-var import_imagekitio_react6 = __toModule(require("imagekitio-react"));
-var Variations3 = {
-  GREEN: "green",
-  PINK: "pink",
-  YELLOW: "yellow"
-};
-var getInputColor2 = (variation) => {
-  return {
-    [Variations3.PINK]: "#443050",
-    [Variations3.YELLOW]: "#485508",
-    [Variations3.GREEN]: "#53702c"
-  }[variation];
-};
-var getInputIconColor2 = (variation) => {
-  return {
-    [Variations3.PINK]: "#e3afff",
-    [Variations3.YELLOW]: "#CAD913",
-    [Variations3.GREEN]: "#263A0B"
-  }[variation];
-};
-var getLeftBracketPath2 = (variation) => {
-  return {
-    [Variations3.PINK]: "/left-bracket-pink_6K2LI739qq.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647916171574",
-    [Variations3.YELLOW]: "/left-bracket-yellow_i0Hxi4GbTw.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647916234146",
-    [Variations3.GREEN]: "/left-bracket-green_cv5DIzo-6.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647922205783"
-  }[variation];
-};
-var getRightBracketPath2 = (variation) => {
-  return {
-    [Variations3.PINK]: "/right-bracket-pink_Vjhzhsrc5.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647916185573",
-    [Variations3.YELLOW]: "/right-bracket-yellow_7zGMd1buh8.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647916234119",
-    [Variations3.GREEN]: "/right-bracket-green_MiZlkJC722.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647922205791"
-  }[variation];
-};
-var PasswordInput = ({ variation = Variations3.PINK, onChange, value }) => {
-  const inputColor = getInputColor2(variation);
-  const inputIconColor = getInputIconColor2(variation);
-  const leftBracketPath = getLeftBracketPath2(variation);
-  const rightBracketPath = getRightBracketPath2(variation);
-  return /* @__PURE__ */ React.createElement(InputContainer2, null, /* @__PURE__ */ React.createElement(InputBracketBox2, null, /* @__PURE__ */ React.createElement(import_imagekitio_react6.IKImage, {
-    path: leftBracketPath,
-    transformation: [{
-      height: "56"
-    }]
-  })), /* @__PURE__ */ React.createElement(InputFieldBox2, null, /* @__PURE__ */ React.createElement(InputField2, {
-    color: inputColor,
-    type: "password",
-    placeholder: "Enter password to continue",
-    onChange,
-    value
-  })), /* @__PURE__ */ React.createElement(InputIconBox2, {
-    color: inputIconColor
-  }, /* @__PURE__ */ React.createElement(import_imagekitio_react6.IKImage, {
-    path: "/dotted-arrow_Q-88Z_X2q.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647711227720",
-    transformation: [{
-      height: "32"
-    }]
-  })), /* @__PURE__ */ React.createElement(InputBracketBox2, null, /* @__PURE__ */ React.createElement(import_imagekitio_react6.IKImage, {
-    path: rightBracketPath,
-    transformation: [{
-      height: "56"
-    }]
-  })));
-};
-var PasswordInput_default = PasswordInput;
-
-// route-module:/Users/jakepepple/pgm/pgm-landing/app/routes/index.jsx
-var import_react = __toModule(require("@remix-run/react"));
-var import_react2 = __toModule(require("react"));
-async function loader() {
-  return process.env.BETA_PASSWORD || null;
-}
-function Index2() {
-  const beta = (0, import_react.useLoaderData)();
-  const [password, setPassword] = (0, import_react2.useState)("");
-  const onChange = (e) => {
-    setPassword(e.target.value);
-  };
-  return /* @__PURE__ */ React.createElement(import_imagekitio_react7.IKContext, {
-    urlEndpoint: "https://ik.imagekit.io/pgm"
-  }, /* @__PURE__ */ React.createElement(SplashPageContainer, null, /* @__PURE__ */ React.createElement(PasswordInput_default, {
-    variation: Variations3.PINK,
-    onChange,
-    value: password
-  }), /* @__PURE__ */ React.createElement("div", {
-    onClick: () => {
-      window.location.href = "/home";
-    }
-  }, /* @__PURE__ */ React.createElement(import_imagekitio_react7.IKImage, {
-    path: "/enter-button-final_4i9f4_Ec8.png?ik-sdk-version=javascript-1.4.3&updatedAt=1651981728961",
-    transformation: [{
-      "width": "350"
-    }],
-    loading: "lazy",
-    lqip: { active: true },
-    style: {
-      "margin": "auto"
-    }
-  }))));
-}
-
-// route-module:/Users/jakepepple/pgm/pgm-landing/app/routes/home.jsx
-var home_exports = {};
-__export(home_exports, {
-  default: () => Home
-});
-init_react();
-var import_imagekitio_react8 = __toModule(require("imagekitio-react"));
-function Home() {
-  return /* @__PURE__ */ React.createElement(import_imagekitio_react8.IKContext, {
-    urlEndpoint: "https://ik.imagekit.io/pgm"
-  }, /* @__PURE__ */ React.createElement(HomePageContainer, null, /* @__PURE__ */ React.createElement(Navbar_default, null), /* @__PURE__ */ React.createElement("div", {
-    className: "container"
-  }), /* @__PURE__ */ React.createElement(SplashBanner, null, /* @__PURE__ */ React.createElement(import_imagekitio_react8.IKVideo, {
-    path: "/throne_hevc_V_XRSiuF7.mov?ik-sdk-version=javascript-1.4.3&updatedAt=1673725908868",
-    style: {
-      width: "100%"
-    },
-    autoPlay: true,
-    loop: true
-  })), /* @__PURE__ */ React.createElement(MainSection, null, /* @__PURE__ */ React.createElement(TextContainer, null, /* @__PURE__ */ React.createElement(HeaderText, null, "WELCOME TO THE PHAROAH GOD MOB"), /* @__PURE__ */ React.createElement(ParagraphText, null, "PGM is a collection of 5,000 NFTs existing on the ethereum blockchain. Each unique digital illustration signifies your seat in the mob. Those on the inside benefit from all future roadmap endeavors."))), /* @__PURE__ */ React.createElement(MainSection, {
-    center: true,
-    column: true
-  }, /* @__PURE__ */ React.createElement(import_imagekitio_react8.IKImage, {
-    path: "/samples_3TSz1XYS6.gif?ik-sdk-version=javascript-1.4.3&updatedAt=1673724383963",
-    style: { margin: "auto", width: "675px", opacity: "0.7" }
-  }), /* @__PURE__ */ React.createElement(MintButton, {
-    onClick: () => window.location.href = "/mintnow"
-  }, /* @__PURE__ */ React.createElement(import_imagekitio_react8.IKImage, {
-    path: "/mint-now-button_tX1SzsxSW.png",
-    transformation: [{
-      width: "350"
-    }],
-    style: {
-      margin: "24px auto"
-    }
-  }))), /* @__PURE__ */ React.createElement(MainSection, null, /* @__PURE__ */ React.createElement(Divider, null)), /* @__PURE__ */ React.createElement(MainSection, {
-    center: true
-  }, /* @__PURE__ */ React.createElement(HeaderText, null, "THE VISION"), /* @__PURE__ */ React.createElement(MintButton, null, /* @__PURE__ */ React.createElement(import_imagekitio_react8.IKImage, {
-    path: "/seeing-eye-pyramid-crop_JHKYh1Gy5.png",
-    transformation: [{
-      width: "600"
-    }],
-    style: { margin: "48px auto", cursor: "pointer" },
-    onClick: () => window.location.assign("/vision")
-  }))), /* @__PURE__ */ React.createElement(MainSection, null, /* @__PURE__ */ React.createElement(Divider, null)), /* @__PURE__ */ React.createElement(MainSection, {
-    center: true
-  }, /* @__PURE__ */ React.createElement(HeaderText, null, "THE TEAM"), /* @__PURE__ */ React.createElement(MintButton, null, /* @__PURE__ */ React.createElement(import_imagekitio_react8.IKImage, {
-    path: "/touching_hands_fixed_mWKuW4YM0.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673724931710",
-    transformation: [{
-      width: "800"
-    }],
-    style: { margin: "48px auto", cursor: "pointer" },
-    onClick: () => window.location.assign("/team")
-  }))), /* @__PURE__ */ React.createElement(MainSection, null), /* @__PURE__ */ React.createElement(MainSection, {
-    center: true
-  }, /* @__PURE__ */ React.createElement(SubheaderText, null, "KEEP ME POSTED"), /* @__PURE__ */ React.createElement(EmailInput_default, null)), /* @__PURE__ */ React.createElement(Footer_default, {
-    variation: Variations.PINK
-  })));
-}
-
-// route-module:/Users/jakepepple/pgm/pgm-landing/app/routes/team.jsx
-var team_exports = {};
-__export(team_exports, {
-  default: () => Team
-});
-init_react();
-var import_imagekitio_react9 = __toModule(require("imagekitio-react"));
-
-// app/styles/team.js
-init_react();
-var import_styled_components8 = __toModule(require("styled-components"));
-var TeamPageContainer = (0, import_styled_components8.default)(HomePageContainer)`
-  background-image: url(https://ik.imagekit.io/pgm/yellow-background-final-2_7DhPl_vM7.png?ik-sdk-version=javascript-1.4.3&updatedAt=1652305741932)
-`;
-var FlexList = import_styled_components8.default.div`
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  ${({ alignCenter }) => alignCenter && `
-    justify-content: center
-  `}
-`;
-var FlexListItem = import_styled_components8.default.div`
-  flex: 1 1 30%;
-  display: flex;
-  ${({ alignCenter }) => alignCenter && `justify-content: center`}
-`;
-
 // route-module:/Users/jakepepple/pgm/pgm-landing/app/routes/team.jsx
 function Team() {
-  return /* @__PURE__ */ React.createElement(import_imagekitio_react9.IKContext, {
+  return /* @__PURE__ */ React.createElement(import_imagekitio_react6.IKContext, {
     urlEndpoint: "https://ik.imagekit.io/pgm"
   }, /* @__PURE__ */ React.createElement(TeamPageContainer, null, /* @__PURE__ */ React.createElement(Navbar_default, null), /* @__PURE__ */ React.createElement("div", {
     className: "container"
@@ -1215,7 +1103,7 @@ function Team() {
     alignCenter: true
   }, /* @__PURE__ */ React.createElement(FlexListItem, {
     alignCenter: true
-  }, /* @__PURE__ */ React.createElement(import_imagekitio_react9.IKImage, {
+  }, /* @__PURE__ */ React.createElement(import_imagekitio_react6.IKImage, {
     path: "/rob_nft_G_onHXetGZ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673723110093",
     transformation: [{
       width: "300"
@@ -1223,7 +1111,7 @@ function Team() {
     style: { margin: "24px auto" }
   })), /* @__PURE__ */ React.createElement(FlexListItem, {
     alignCenter: true
-  }, /* @__PURE__ */ React.createElement(import_imagekitio_react9.IKImage, {
+  }, /* @__PURE__ */ React.createElement(import_imagekitio_react6.IKImage, {
     path: "/jake_nft_P2sCj8D9K.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673723110070",
     transformation: [{
       width: "300"
@@ -1231,7 +1119,7 @@ function Team() {
     style: { margin: "24px auto" }
   })), /* @__PURE__ */ React.createElement(FlexListItem, {
     alignCenter: true
-  }, /* @__PURE__ */ React.createElement(import_imagekitio_react9.IKImage, {
+  }, /* @__PURE__ */ React.createElement(import_imagekitio_react6.IKImage, {
     path: "/ben_nft_LeAi5sepHs.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673723110092",
     transformation: [{
       width: "300"
@@ -1260,21 +1148,29 @@ var routes = {
     caseSensitive: void 0,
     module: root_exports
   },
-  "routes/splash": {
-    id: "routes/splash",
+  "routes/deliverance": {
+    id: "routes/deliverance",
     parentId: "root",
-    path: "splash",
+    path: "deliverance",
     index: void 0,
     caseSensitive: void 0,
-    module: splash_exports
+    module: deliverance_exports
   },
-  "routes/vision": {
-    id: "routes/vision",
+  "routes/ascension": {
+    id: "routes/ascension",
     parentId: "root",
-    path: "vision",
+    path: "ascension",
     index: void 0,
     caseSensitive: void 0,
-    module: vision_exports
+    module: ascension_exports
+  },
+  "routes/genesis": {
+    id: "routes/genesis",
+    parentId: "root",
+    path: "genesis",
+    index: void 0,
+    caseSensitive: void 0,
+    module: genesis_exports
   },
   "routes/index": {
     id: "routes/index",
@@ -1283,14 +1179,6 @@ var routes = {
     index: true,
     caseSensitive: void 0,
     module: routes_exports
-  },
-  "routes/home": {
-    id: "routes/home",
-    parentId: "root",
-    path: "home",
-    index: void 0,
-    caseSensitive: void 0,
-    module: home_exports
   },
   "routes/team": {
     id: "routes/team",

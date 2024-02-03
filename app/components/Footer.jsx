@@ -1,5 +1,5 @@
 import { IKImage } from "imagekitio-react";
-import { MintButton } from "~/styles/splash";
+import { ClickableImage } from "~/styles/ascension";
 import {
   FooterContainer,
   SocialLinks,
@@ -23,7 +23,7 @@ const getFooterBarImagePath = (variation) => {
 const getInstagramImagePath = (variation) => {
   return {
     [Variations.PURPLE]: '/instagram-purple_1YkVL_3WXp8SY.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647716304712',
-    [Variations.PINK]: '/instagram-pink_SEsHVWNNU.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647716211708',
+    [Variations.PINK]: '/PGM%20website%20files/PinkInstagram.png?updatedAt=1706389306027',
     [Variations.YELLOW]: '/instagram-yellow_84f2YzvbsF.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647716211792',
     [Variations.GREEN]: '/instagram-green_CRdS4msc7.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647922144271',
   }[variation]
@@ -31,7 +31,7 @@ const getInstagramImagePath = (variation) => {
 const getTwitterImagePath = (variation) => {
   return {
     [Variations.PURPLE]: '/twitter-purple_dBcNgQlNe2.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647716211896',
-    [Variations.PINK]: '/twitter-pink_5IvjTJvCcA.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647716211908',
+    [Variations.PINK]: '/PGM%20website%20files/PinkTwitter.png?updatedAt=1706389266841',
     [Variations.YELLOW]: '/twitter-yellow_Ydkia8xH9T.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647716211930',
     [Variations.GREEN]: '/twitter-green_BLOI2JRs_.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647922144360',
   }[variation]
@@ -45,56 +45,37 @@ const getDiscordImagePath = (variation) => {
   }[variation]
 }
 const Footer = ({ variation = Variations.PURPLE }) => {
-  const FooterBarPath = getFooterBarImagePath(variation);
   const TwitterPath = getTwitterImagePath(variation);
   const InstagramPath = getInstagramImagePath(variation);
-  const DiscordPath = getDiscordImagePath(variation);
 
-    return (
-      <FooterContainer >
-        <IKImage
-            path={FooterBarPath}
-            transformation={[{
-              width: "1200"
-            }]}
-          />
-        <SocialLinks>
-            <MintButton
-              onClick={() => window.open('https://twitter.com/pharaohgodmob', '_blank')}
-            >
-
-            <IKImage
-                path={TwitterPath}
-                transformation={[{
-                  height: "50"
-                }]}
-              />
-            </MintButton>
-            <MintButton
-              onClick={() => window.location.assign('/')}
-            >
-
+  return (
+    <FooterContainer >
+      <SocialLinks>
+        <ClickableImage
+          onClick={() => window.open('https://twitter.com/pharaohgodmob', '_blank')}
+          opacity={0.9}
+        >
           <IKImage
-            path={DiscordPath}
+            path={TwitterPath}
             transformation={[{
               height: "50"
             }]}
           />
-            </MintButton>
-            <MintButton
-              onClick={() => window.open('https://instagram.com/pharaohgodmob', '_blank')}
-            >
-
+        </ClickableImage>
+        <ClickableImage
+          onClick={() => window.open('https://instagram.com/pharaohgodmob', '_blank')}
+          opacity={0.9}
+        >
           <IKImage
             path={InstagramPath}
             transformation={[{
               height: "50"
             }]}
           />
-            </MintButton>
-        </SocialLinks>
-      </FooterContainer>
-    )
+        </ClickableImage>
+      </SocialLinks>
+    </FooterContainer>
+  )
 }
 
 export default Footer

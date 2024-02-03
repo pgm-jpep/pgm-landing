@@ -1,10 +1,9 @@
 {
-  "version": "fdc3f856",
+  "version": "37ff9260",
   "entry": {
-    "module": "/build/entry.client-QWYJRTLD.js",
+    "module": "/build/entry.client-YC2SBRZX.js",
     "imports": [
-      "/build/_shared/chunk-NVLBFYJY.js",
-      "/build/_shared/chunk-N32XUBFF.js",
+      "/build/_shared/chunk-FBJ7M2KA.js",
       "/build/_shared/chunk-AKSB5QXU.js"
     ]
   },
@@ -12,21 +11,51 @@
     "root": {
       "id": "root",
       "path": "",
-      "module": "/build/root-2ZZONOEO.js",
+      "module": "/build/root-ODSLKVL6.js",
       "hasAction": false,
       "hasLoader": false,
       "hasCatchBoundary": false,
       "hasErrorBoundary": false
     },
-    "routes/home": {
-      "id": "routes/home",
+    "routes/ascension": {
+      "id": "routes/ascension",
       "parentId": "root",
-      "path": "home",
-      "module": "/build/routes/home-3HVNO346.js",
+      "path": "ascension",
+      "module": "/build/routes/ascension-ZVUG4CUN.js",
       "imports": [
-        "/build/_shared/chunk-X5MZBOQA.js",
-        "/build/_shared/chunk-XP5NXCQF.js",
-        "/build/_shared/chunk-3ZA4BG2S.js"
+        "/build/_shared/chunk-GJL46XHD.js",
+        "/build/_shared/chunk-INJOWPF7.js",
+        "/build/_shared/chunk-R5CZRLFI.js"
+      ],
+      "hasAction": false,
+      "hasLoader": false,
+      "hasCatchBoundary": false,
+      "hasErrorBoundary": false
+    },
+    "routes/deliverance": {
+      "id": "routes/deliverance",
+      "parentId": "root",
+      "path": "deliverance",
+      "module": "/build/routes/deliverance-VUSES5RA.js",
+      "imports": [
+        "/build/_shared/chunk-GJL46XHD.js",
+        "/build/_shared/chunk-INJOWPF7.js",
+        "/build/_shared/chunk-R5CZRLFI.js"
+      ],
+      "hasAction": false,
+      "hasLoader": false,
+      "hasCatchBoundary": false,
+      "hasErrorBoundary": false
+    },
+    "routes/genesis": {
+      "id": "routes/genesis",
+      "parentId": "root",
+      "path": "genesis",
+      "module": "/build/routes/genesis-GU4TCFIZ.js",
+      "imports": [
+        "/build/_shared/chunk-GJL46XHD.js",
+        "/build/_shared/chunk-INJOWPF7.js",
+        "/build/_shared/chunk-R5CZRLFI.js"
       ],
       "hasAction": false,
       "hasLoader": false,
@@ -37,23 +66,9 @@
       "id": "routes/index",
       "parentId": "root",
       "index": true,
-      "module": "/build/routes/index-NZZHPZEG.js",
+      "module": "/build/routes/index-3Q3DD6QF.js",
       "imports": [
-        "/build/_shared/chunk-XP5NXCQF.js",
-        "/build/_shared/chunk-3ZA4BG2S.js"
-      ],
-      "hasAction": false,
-      "hasLoader": true,
-      "hasCatchBoundary": false,
-      "hasErrorBoundary": false
-    },
-    "routes/splash": {
-      "id": "routes/splash",
-      "parentId": "root",
-      "path": "splash",
-      "module": "/build/routes/splash-2TRPCG55.js",
-      "imports": [
-        "/build/_shared/chunk-3ZA4BG2S.js"
+        "/build/_shared/chunk-R5CZRLFI.js"
       ],
       "hasAction": false,
       "hasLoader": false,
@@ -64,26 +79,10 @@
       "id": "routes/team",
       "parentId": "root",
       "path": "team",
-      "module": "/build/routes/team-FTXZTZMF.js",
+      "module": "/build/routes/team-7NNQRLKF.js",
       "imports": [
-        "/build/_shared/chunk-X5MZBOQA.js",
-        "/build/_shared/chunk-XP5NXCQF.js",
-        "/build/_shared/chunk-3ZA4BG2S.js"
-      ],
-      "hasAction": false,
-      "hasLoader": false,
-      "hasCatchBoundary": false,
-      "hasErrorBoundary": false
-    },
-    "routes/vision": {
-      "id": "routes/vision",
-      "parentId": "root",
-      "path": "vision",
-      "module": "/build/routes/vision-7QEBQ5PU.js",
-      "imports": [
-        "/build/_shared/chunk-X5MZBOQA.js",
-        "/build/_shared/chunk-XP5NXCQF.js",
-        "/build/_shared/chunk-3ZA4BG2S.js"
+        "/build/_shared/chunk-INJOWPF7.js",
+        "/build/_shared/chunk-R5CZRLFI.js"
       ],
       "hasAction": false,
       "hasLoader": false,
@@ -91,5 +90,5 @@
       "hasErrorBoundary": false
     }
   },
-  "url": "/build/manifest-FDC3F856.js"
+  "url": "/build/manifest-37FF9260.js"
 }

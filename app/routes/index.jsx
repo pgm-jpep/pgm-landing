@@ -1,54 +1,89 @@
-import Footer from '../components/Footer';
 
 import {
   SplashPageContainer,
-  SplashLogoContainer,
-  SplashLogo,
-  SplashBanner,
-  SplashButton,
-} from "../styles/splash";
+} from "../styles/ascension";
+import { ClickableImage } from "../styles/ascension";
 import { IKContext, IKImage } from "imagekitio-react";
-import PasswordInput, { Variations } from '~/components/PasswordInput';
-import { useLoaderData } from '@remix-run/react'
-import { useState } from 'react';
 
-
-export async function loader() {
-  return process.env.BETA_PASSWORD || null
-}
 export default function Index() {
-  const beta  = useLoaderData();
-  const [password, setPassword] = useState('');
-  const onChange = (e) => {
-    setPassword(e.target.value);
-  }
   return (
     <IKContext urlEndpoint="https://ik.imagekit.io/pgm">
 
       <SplashPageContainer>
-        <PasswordInput variation={Variations.PINK} onChange={onChange} value={password} />
-        
-          <div 
-            onClick={() => {
-              // if(password === beta) {
-                window.location.href = "/home"
-              // } else {
-                // alert('Invalid password. Please try again.')
-              // }
+
+        <ClickableImage
+          onClick={() => {
+            window.location.href = "/genesis"
+          }}
+          opacity={0.9}
+        >
+          <IKImage
+            path="/PGM%20website%20files/Enter%20page%20top_62hBeVPXs.png?updatedAt=1706237708156"
+            transformation={[{
+              "width": "200"
+            }]}
+            loading="lazy"
+            lqip={{ active: true }}
+            style={{
+              "margin": "auto",
             }}
-          >
-            <IKImage
-              path="/enter-button-final_4i9f4_Ec8.png?ik-sdk-version=javascript-1.4.3&updatedAt=1651981728961"
-              transformation={[{
-                "width": "350"
-              }]}
-              loading="lazy"
-              lqip={{active: true}}
-              style={{
-                "margin": "auto"
-              }}
-            />
-          </div>
+          />
+        </ClickableImage>
+        <ClickableImage
+          onClick={() => {
+            window.location.href = "/deliverance"
+          }}
+        >
+          <IKImage
+            path="/PGM%20website%20files/Enter%20page%20middle_fWHav05Yh.png?updatedAt=1706237707522"
+            transformation={[{
+              "width": "150"
+            }]}
+            loading="lazy"
+            lqip={{ active: true }}
+            style={{
+              "margin": "auto",
+            }}
+          />
+        </ClickableImage>
+        <ClickableImage
+          onClick={() => {
+            window.location.href = "/ascension"
+          }}
+        >
+          <IKImage
+            path="/PGM%20website%20files/Enter%20page%20bottom_7FID6S29v.png?updatedAt=1706237709417"
+            transformation={[{
+              "width": "200"
+            }]}
+            loading="lazy"
+            lqip={{ active: true }}
+            style={{
+              "margin": "auto",
+            }}
+          />
+        </ClickableImage>
+
+        <ClickableImage
+          onClick={() => {
+            window.location.href = "/mint"
+          }}
+          opacity={0.9}
+          margin="-100px 0px 0px 0px"
+        >
+          <IKImage
+            path="/PGM%20website%20files/Enter%20page%20mint%20button_WGhSyf389.gif?updatedAt=1706237709621"
+            transformation={[{
+              "width": "200"
+            }]}
+            loading="lazy"
+            lqip={{ active: true }}
+            style={{
+              "margin": "auto",
+            }}
+          />
+        </ClickableImage>
+
       </SplashPageContainer>
     </IKContext>
   );
