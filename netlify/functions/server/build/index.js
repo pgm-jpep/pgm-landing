@@ -748,8 +748,6 @@ function PageLayout({
     transformation: [{
       width: SPLASH_LOGO_WIDTH
     }],
-    loading: "lazy",
-    lqip: { active: true },
     height: SPLASH_LOGO_WIDTH,
     width: SPLASH_LOGO_WIDTH
   })), /* @__PURE__ */ React.createElement(import_imagekitio_react2.IKImage, {
@@ -758,6 +756,11 @@ function PageLayout({
       width: "75%",
       margin: "0 auto"
     },
+    transformation: [{
+      format: "gif"
+    }, {
+      width: 500
+    }],
     height: "75%",
     width: "75%",
     autoPlay: true,
@@ -770,7 +773,7 @@ function PageLayout({
 // route-module:/Users/jakepepple/pgm/pgm-landing/app/routes/deliverance.jsx
 function Deliverance() {
   return /* @__PURE__ */ React.createElement(PageLayout, {
-    splashImagePath: "/PGM%20website%20files/Untitled_Artwork%203_O1c4PqmNX.gif?updatedAt=1706237717815",
+    splashImagePath: "/PGM%20website%20files/Pink%20compress_sPtsiFcar.gif?updatedAt=1707272663753",
     bannerImagePath: "/PGM%20website%20files/Pink%20page%20gif_TFZUIeOWN.gif?updatedAt=1706237708422",
     footerVariation: Variations.PINK,
     footerText: "Deliverance."
@@ -785,7 +788,7 @@ __export(ascension_exports, {
 init_react();
 function Ascension() {
   return /* @__PURE__ */ React.createElement(PageLayout, {
-    splashImagePath: "/PGM%20website%20files/Untitled_Artwork%204_OIrZlgLLTp.gif?updatedAt=1706237718372",
+    splashImagePath: "/PGM%20website%20files/Green%20compress_CutMzFE3M.gif?updatedAt=1707272663817",
     bannerImagePath: "/PGM%20website%20files/Green%20page%20gif_jDmTfwIY2.gif?updatedAt=1706237715855",
     footerVariation: Variations.YELLOW,
     footerText: "Ascension.",
@@ -810,7 +813,7 @@ var GenesisPageContainer = (0, import_styled_components5.default)(HomePageContai
 // route-module:/Users/jakepepple/pgm/pgm-landing/app/routes/genesis.jsx
 function Genesis() {
   return /* @__PURE__ */ React.createElement(PageLayout, {
-    splashImagePath: "/PGM%20website%20files/Untitled_Artwork%202_58orFnQqa.gif?updatedAt=1706237708132",
+    splashImagePath: "/PGM%20website%20files/Purple%20gif%20compress_qPJZxzRyN.gif?updatedAt=1707272662413",
     bannerImagePath: "/PGM%20website%20files/Purple%20page%20gif_ghWkHmfJ6v.gif?updatedAt=1706237718166",
     footerVariation: Variations.PURPLE,
     footerText: "Genesis.",

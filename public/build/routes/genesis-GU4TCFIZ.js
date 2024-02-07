@@ -1,3 +1,0 @@
-import{a as r}from"/build/_shared/chunk-GJL46XHD.js";import{a as n,h as i}from"/build/_shared/chunk-INJOWPF7.js";import{b as o}from"/build/_shared/chunk-R5CZRLFI.js";import{e as t,f as e}from"/build/_shared/chunk-AKSB5QXU.js";e();e();e();var a=o(n)`
-  background-image: url(https://ik.imagekit.io/pgm/PGM%20website%20files/Purple%20background_Wjz7uIW9GA.png?updatedAt=1706237710136)
-`;function s(){return t.createElement(r,{splashImagePath:"/PGM%20website%20files/Untitled_Artwork%202_58orFnQqa.gif?updatedAt=1706237708132",bannerImagePath:"/PGM%20website%20files/Purple%20page%20gif_ghWkHmfJ6v.gif?updatedAt=1706237718166",footerVariation:i.PURPLE,footerText:"Genesis.",PageContainerComponent:a})}export{s as default};
