@@ -21,8 +21,6 @@ export default function PageLayout({
             transformation={[{
               width: SPLASH_LOGO_WIDTH
             }]}
-            loading="lazy"
-            lqip={{active: true}}
             height={SPLASH_LOGO_WIDTH}
             width={SPLASH_LOGO_WIDTH}
           />
@@ -34,6 +32,13 @@ export default function PageLayout({
             width: "75%",
             margin: '0 auto',
           }}
+          
+          transformation={[ {
+            format: 'gif'
+          }, {
+            width: 500,
+            // quality: 10
+          },]}
           height="75%"
           width="75%"
           autoPlay
